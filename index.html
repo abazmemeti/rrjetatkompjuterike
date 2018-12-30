@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+	<meta charset="UTF-8">
+	<title>Rrjetat kompjuterike dhe komunikime</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Abaz Memeti">
+	<meta name="description" content="Rrjetat kompjuterike dhe komunikime">
+	<meta name="keywords" content="Rrjetat kompjuterike dhe komunikime">
+	<link rel="shortcut icon" type="image/x-icon" href="lib/figura/logo.png" />
+	<link rel="stylesheet" type="text/css" href="lib/style.css">
+	<script src="lib/jquery.js"></script>
+	<script src="lib/scroll.js"></script>
+</head>
+
+<body>
+
+<input type="checkbox" id="menuToggle">
+<label for="menuToggle" class="menu-icon">
+	<div class="navigimi"></div>
+	<div class="navigimi"></div>
+	<div class="navigimi"></div>
+</label>
+
+<header>
+<div id="brand"><a href="#">Rrjetat Kompjuterike dhe Komunikime</a></div>
+</header>
+
+<nav class="menu">
+    <p style="text-align: left; padding-bottom:15px; padding-left: 10px; letter-spacing:0.5px; display: inline-block">Përmbajtja</p>
+    <button><a href="javascript:void(0)" onclick="if(this.innerHTML =='Pamja natën'){this.innerHTML = 'Pamja ditën'}else{this.innerHTML = 'Pamja natën'}">Pamja natën</a></button>
+    
+	<ul id="uncheck">
+    	<li><a href="#parathenie"><em>Parathënie</em></a></li>
+    	<li><a href="#telekomunikimet">Telekomunikimet</a></li>
+        <li><a href="#rrjetat-kompjuterike">Rrjetat Kompjuterike</a></li>
+        <li><a href="#mediumet-transmetuese">Mediumet Transmetuese</a></li>
+        <li><a href="#shtresa-fizike">Shtresa Fizike</a></li>
+        <li><a href="#shtresa-data-linkut">Shtresa e Data-Linkut</a></li>
+        <li><a href="#shtresa-rrjetit">Shtresa e Rrjetit</a></li>
+        <li><a href="#shtresa-transportit">Shtresa e Transportit</a></li>
+        <li><a href="#shtresat-eperme">Shtresat e Epërme</a></li>
+        <li><a href="#rrjetat-lokale">Rrjetat Lokale (LAN)</a></li>
+        <li><a href="#interneti">Modeli TCP/IP dhe Interneti</a></li>
+        <li><a href="#referencat"><em>Referencat</em></a></li>
+    </ul>
+	<p>Zhvilluar dhe dizajnuar nga: <span><a href="http://abazmemeti.co.nf/" target="_blank">Abaz Memeti</a></span>
+	<br />&copy; Copyright, MMXVII</p>
+	<p>&nbsp;</p>
+</nav>
+
+
+<div id="content">
+
+	<div id="kopertina">
+		<img src="lib/figura/kopertina.jpg" alt="kopertina" />
+		<img src="lib/figura/kopertina-mini.jpg" alt="kopertina"/>
+	</div>
+    
+	<div id="faqja">
+
+        <article id="parathenie">
+
+            <h1>Parathënie</h1>
+            <hr />
+
+            <p style="padding-top:5px;">T&euml; dashur nx&euml;n&euml;s! Para jush keni nj&euml; material t&euml; p&euml;rmbledhur nga l&euml;nda Rrjetat Kompjuterike dhe Komunikime p&euml;r klas&euml;n e kat&euml;rt profili arsimor Elektroteknik i Kompjuter&euml;ve, q&euml; do t'ju ndihmoj n&euml; nx&euml;nien e njohurive teorike nga l&euml;mi i rrjetave kompjuterike.</p>
+            <p>P&euml;rmbledhja e k&euml;tij materiali &euml;sht&euml; realizuar p&euml;r disa vite radhazi duke hulumtuar nga burime t&euml; ndryshme, e duke u munduar q&euml; p&euml;rmbajtja e tij t&euml; jet&euml; n&euml; p&euml;rputhje me plan-programin zyrtar t&euml; p&euml;rpiluar nga Ministria e Arsimit.</p>
+            <p>Rrjetat kompjuterike jan&euml; l&euml;mi shum&euml; voluminoze, e n&euml; k&euml;t&euml; material jan&euml; p&euml;rfshir&euml; vet&euml;m nj&euml; pjes&euml; e vog&euml;l e k&euml;tyre njohurive, pra, ato tema bazike q&euml; duhet t'i p&euml;rvet&euml;soj tekniku i kompjuter&euml;ve pasi t&euml; ket&euml; njohuri themelore kompjuterike.</p>
+            <p>Ky material i p&euml;rmbledhur nuk &euml;sht&euml; definitiv, posa&ccedil;&euml;risht kapitujt: Shtresa e rrjetit, Shtresa e transportit dhe Shtresat e ep&euml;rme, andaj puna nuk mbaron k&euml;tu por nevojitet p&euml;rkushtim edhe m&euml; tej p&euml;r ta p&euml;rsosur, e mang&euml;sit&euml; nga ky material do t&euml; mundohemi t'i eliminojm&euml; gjat&euml; realizimit t&euml; or&euml;ve m&euml;simore, duke u sh&euml;rbyer edhe me literatura tjera.</p>
+            <p>Dua t&euml; theksoj, se q&euml;llimi i m&euml;simit t&euml; k&euml;saj l&euml;nde &euml;sht&euml; njoftimi me nocionet themelore, r&euml;nd&euml;sin&euml;, m&euml;nyr&euml;n e funksionimit, aplikimin dhe sigurin&euml; e rrjetave dhe komunikimeve kompjuterike, e n&euml; kuad&euml;r t&euml; saj edhe rrjetit t&euml; rrjetave, p&euml;rkat&euml;sisht Internetit.</p>
+            <p>Shpresoj se p&euml;rmbajtjet e parapara me leht&euml;si do t&rsquo;i zot&euml;roni, e detyrat e dh&euml;na praktike dhe teorike do t&rsquo;i kryeni me sukses!</p>
+            <p style="text-align: right; padding-right:5px;">Autori</p>
+
+        </article>
+
+        <article id="telekomunikimet">
+
+            <h1>Nocionet Themelore – Telekomunikimet</h1>
+            <hr />
+
+            <div class="permbajtja">
+                <p>Përmbajtje</p><hr />
+                <ul>
+                    <li id="porosia-dhe-sinjali-scroll">Porosia dhe sinjali</li>
+                    <li class="h3-titull" id="transmetimi-serik-dhe-paralel-scroll">Transmetimi serik dhe paralel</li>
+                    <li class="h3-titull" id="transmetimi-asinkron-dhe-sinkron-scroll">Transmetimi asinkron dhe sinkron</li>
+                    <li class="h4-titull" id="transmetimi-asinkron-scroll">Transmetimi asinkron</li>
+                    <li class="h4-titull" id="transmetimi-sinkron-scroll">Transmetimi sinkron</li>
+                    <li id="standardet-scroll">Standardet</li>
+                </ul>
+            </div>
+
+            <p>Procesi i njohjes së gjendjes të ndonjë sistemi paraqet <i>informacionin</i> apo <i> porosinë</i>. Paraqitja fizike e informacionit quhet <i> sinjal</i>. Sinjali mund të shqyrtohet në domenin kohor dhe në domenin frekuencor. Funksioni i cili e përshkruan përmbajtjen frekuencore të sinjalit quhet <i>spektër i sinjalit</i>.</p>
+            <p>Me nocionin <i>komunikim</i> nënkuptohet këmbimi i informacioneve në mes dy apo më shumë subjekteve (p.sh. personave dhe/ose kompjuterëve). Për komunikim të suksesshëm është e nevojshme që të gjithë pjesëmarrësit në komunikim të përdorin të njëjtën “gjuhë”. Me termin “gjuhë” nënkuptojmë bashkësinë e simboleve, të cilëve ju është ndarë një domethënie e veçantë. Komunikimi ndërmjet kompjuterëve realizohet me gjuhën e shifrave, më saktësisht me gjuhën, alfabeti i së cilës përbëhet prej dy simboleve: 0 dhe 1.</p>
+            <p>Bartja e të dhënave ndërmjet pajisjeve realizohet përmes <i>mediumit për bartjen e sinjalit</i>, përkatësisht <i>linjën e komunikimit</i>.</p>
+            <p>Mediumi paraqet ambientin (mjedisin) nëpër të cilin bëhet bartja e porosisë nga dhënësi, përkatësisht burimi deri tek marrësi, përkatësisht destinacioni.</p>
+            <figure>
+                <img src="lib/figura/telekomunikimet/1.jpg" alt="Modeli themelor i sistemit komunikues" class="sm300">
+                <figcaption>Modeli themelor i sistemit komunikues</figcaption>
+            </figure>
+            <p>Në raport me kahun e komunikimit, ekzistojnë tri lloje të komunikimeve:</p>
+            <ul>
+                <li>komunikimi simpleks, përkatësisht komunikim në një kah,</li>
+                <li>komunikimi gjysëm dupleks, përkatësisht komunikim në dy kahe, por jo njëkohësisht dhe</li>
+                <li>komunikimi dupleks, përkatësisht komunikim në dy kahe njëkohësisht.</li>
+            </ul>
+            <figure>
+                <img src="lib/figura/telekomunikimet/2.jpg" alt="Kahu i bartjes së të dhënave">
+                <figcaption>Kahu i bartjes së të dhënave: (a) simpleks; (b) gjysëmdupleks; (c) dupleks</figcaption>
+            </figure>
+
+            <h2 id="porosia-dhe-sinjali">POROSIA DHE SINJALI</h2>
+
+            <p>Porositë mund të jenë <i>kontinuale</i> ose <i>diskrete</i>.</p>
+            <p>Porositë kontinuale janë të lidhura për sisteme, gjendjet e të cilave janë të definuara në çdo moment kohor gjatë periodës së shqyrtimit dhe të cilat së paku në ndonjë brez kanë pafundësisht shumë gjendje. Brezi i kufizuar ndërmjet vlerave minimale dhe maksimale quhet <i>brez dinamik</i>. Porositë kontinuale paraqiten me <i>sinjale analoge</i>, përkatësisht <i>kontinuale</i>, në formën e funksionit të pandërprerë kohor, p.sh. shtypja, temperatura, zëri, etj.</p>
+            <p>Porositë diskrete janë të lidhura për sisteme, gjendjet e të cilave definohen në intervale të caktuara kohore. Sinjalet që shërbejnë për bartjen e porosive diskrete mund të paraqiten në formë të impulseve, ku amplituda e impulseve mund të ketë numër të pafundmë të vlerave në brezin e dhënë dinamik. Pra, sinjalet impulsive janë diskrete sipas kohës, ndërsa kontinuale sipas vlerave momentale.</p>
+            <p>Porositë kontinuale mund të barten edhe me sinjale diskrete nëse plotësohet kushti i <i>teoremës së mostrimit</i>. Kjo teoremë thotë se çdo sinjal kontinual mund të paraqitet në mënyrë unike me numër të fundmë të impulseve ndërmjet vete të larguar, të ashtuquajtura <i>mostra</i>, me kusht që spektri i sinjalit është i kufizuar, ndërsa mostrimi (zgjedhja e mostrave) kryhet me shpejtësi <em>f<sub>0</sub> ≥ 2f<sub>g</sub></em>, ku fg paraqet frekuencën e epërme kufitare të sinjalit që mostrohet.</p>
+            <p>Çdo sinjal kontinual që i plotëson kushtet e teoremës së mostrimit, mund të digjitalizohet, ashtu që duhet kryer tri operacione:</p>
+            <ol>
+                <li><b>mostrimi</b> – diskretizimi i sinjalit sipas kohës,</li>
+                <li><b>kuantizimi</b> – diskretizimi i sinjalit sipas vlerave momentale,</li>
+                <li><b>kodimi</b> – paraqitja e vlerave të sinjalit të diskretizuar (kuantizuar) me një grup të shifrave, përkatësisht impulseve.</li>
+            </ol>
+            <p>Rast special i sinjalit digjital është <i>sinjali binar</i>, në të cilin të gjitha vlerat momentale diskrete paraqiten me kombinimin e dy shifrave binare – 0 dhe 1.</p>
+            <p>Transmetimi i porosive, që realizohet ashtu që transmetohen sinjale kontinuale quhet <i>transmetim analog</i>.</p>
+            <p>Transmetimi i porosive, që realizohet me transmetimin e sinjaleve digjitale quhet <i>transmetim digjital</i>.</p>
+            <p>Transmetimi digjital është shumë më tepër rezistent ndaj ndikimit të zhurmave se sa transmetimi analog, sepse në vend të <b>përforcimit</b> të sinjalit, bëhet <b>rigjenerimi</b> i tij. Pas rigjenerimit, sinjali praktikisht është i “pastruar” nga zhurma.</p>
+            <p>Influencë vendimtare në kualitetin e transmetimit digjital ka operacioni i kuantizimit, përkatësisht rrumbullakimi i vlerës momentale të mostrës në vlerën diskrete më të afërt. Në këtë rast futet <i>gabimi i kuantizimit</i>, i cili më nuk mund të eliminohet.</p>
+            <p>Në rastin e transmetimit digjital, nevojitet brez më i gjerë i lëshimit në krahasim me rastin e transmetimit analog.</p>
+
+            <h3 id="transmetimi-serik-dhe-paralel">TRANSMETIMI SERIK DHE PARALEL</h3>
+
+            <p>Nëse ndërmjet dhënësit dhe marrësit, transmetimi i të dhënave bëhet nëpër një kanal komunikues, atëherë bitët (fizikisht këto janë sinjale në formë të impulseve) mund të dërgohen në mënyrë sukcesive, njëri pas tjetrit, në këtë rast bëhet fjalë për transmetim serik. Pra, në një takt kohor, përkatësisht në një njësi kohore mund të transmetohet (dërgohet) vetëm një bit.</p>
+            <figure>
+                <img src="lib/figura/telekomunikimet/3.jpg" alt="Transmetimi serik">
+                <figcaption>Në rastin e transmetimit serik, porosia dërgohet në mënyrë sukcesive, bit pas biti nëpër një kanal komunikues</figcaption>
+            </figure>
+            <p>Në rastin e transmetimit paralel, ndërmjet dhënësit dhe marrësit duhet të ekzistojnë n-kanale komunikuese. Kjo mundëson që njëkohësisht, pra, në një takt kohor, të dërgohen n-bitë. Padyshim se transmetimi paralel është n-herë më i shpejtë se transmetimi serik.</p>
+            <figure>
+                <img src="lib/figura/telekomunikimet/4.jpg" alt="Transmetimi paralel">
+                <figcaption>Shembull i transmetimit paralel, ku njëkohësisht transmetohen tetë bitë. Transmetimi i paraqitur në këtë figurë, kryhet tetë herë më shpejtë se transmetimi i serik</figcaption>
+            </figure>
+            <p>Brenda kompjuterit, për të arritur shpejtësi më të madhe, përdoret transmetimi paralel. Në telekomunikimet e sotme, e gjithashtu edhe në rastin e komunikimit ndërmjet kompjuterëve, për arsye ekonomike, përdoret transmetimi serik. Duke pasur parasysh këto fakte, në portin hyrës të kompjuterit, duhet kryer konvertimin e transmetimit serik në transmetim paralel, ndërsa në portin dalës, procesin e anasjelltë.</p>
+
+            <h3 id="transmetimi-asinkron-dhe-sinkron">TRANSMETIMI ASINKRON DHE SINKRON</h3>
+
+            <p>Të shqyrtojmë transmetimin serik të të dhënave. Dhënësi (transmetuesi) mund të filloj të dërgoj të dhëna, vetëm atëherë kur marrësi është i gatshëm t’i pranoj ato. Nëse do të dërgohet vetëm një fjalë binare, me gjatësi të njohur, me marrëveshje ndërmjet dhënësit dhe marrësit për shpejtësinë e transmetimit, atëherë transmetimi do të realizohet pa probleme. Marrësi duhet ta dijë, kur një fjalë binare fillon dhe kur mbaron, në të kundërtën do të vijë deri te pranimi i gabueshëm i të dhënave. Kjo nënkupton se marrësi duhet të jetë i sinkronizuar me dhënësin. Ky problem është zgjidhur me aplikimin e dy mënyrave të transmetimit të të dhënave: transmetimi <i>asinkron</i> dhe <i>sinkron</i>.</p>
+
+            <h4 id="transmetimi-asinkron">Transmetimi asinkron</h4>
+
+            <p>Gjatë transmetimit asinkron, në grupin e shifrave binare me gjatësi të caktuar, zakonisht në çdo fjalë binare futen bitët shtesë, edhe atë, në fillim të vargut, i ashtuquajturi <i>start-biti</i> dhe në fund të vargut një apo më shumë bita, të ashtuquajtur <i>stop-bit(a)</i>.</p>
+            <p>Zakonisht start-biti është zero logjike (0), ndërsa stop-biti është një logjike (1). Start-biti i lajmëron marrësit se po fillon ardhja e të dhënës, ndërsa stop-biti lajmëron se përfundoj e dhëna.</p>
+            <p>Gjatë transmetimit asinkron vërehet se rritet numri i bitëve që duhet bartur, prandaj transmetimi i këtillë përdoret në rastin e porosive në intervale të shkurta kohore dhe kur sasia e të dhënave është e vogël. Në periodën kur nuk ka transmetim, tensioni që iu përgjigjet stop-bitit do të jetë tërë kohën i pranishëm në linjë.</p>
+
+            <h4 id="transmetimi-sinkron">Transmetimi sinkron</h4>
+
+            <p>Në rastin e transmetimit sinkron, bitët e të dhënave barten në mënyrë kontinuale. Problemi se si marrësi ta njoh bitin e parë të fjalës binare, është zgjedhur ashtu që para fillimit të transmetimit, marrësi të vije “në hap” me dhënësin, përkatësisht të sinkronizohet. Kjo realizohet, ashtu që dhënësi tek marrësi disa herë pandërprerë dërgon shenjën për sinkronizim, e cila p.sh. tek kodi ASCII është 10010110.</p>
+            <p>Transmetimi sinkron përdoret në rastet kur duhet bartur sasi të mëdha të të dhënave, sepse kërkon numër më të vogël të bitëve dirigjues.</p>
+
+            <h2 id="standardet">STANDARDET</h2>
+
+            <p>Pajisjet e prodhuesve të ndryshëm të pajimeve kompjuterike dhe telekomunikuese, dallojnë ndërmjet vete sipas konceptit dhe karakteristikave teknike. Me standardizim të pajimeve harduerike dhe softuerike, sigurohet kompatibiliteti i tyre, përkatësisht mundësohet bashkimi dhe lidhja e pajisjeve të prodhuesve të ndryshëm, zvogëlohen shpenzimet e prodhimit, e me këtë zvogëlohet edhe çmimi i pajisjes.</p>
+            <p>Standardet mund të ndahen në dy grupe:</p>
+            <ul>
+                <li>standarde <i>de fakto</i> dhe</li>
+                <li>standarde <i>de jure</i>.</li>
+            </ul>
+            <p>Standardet de fakto janë ato standarde te të cilët është arritur pa ndonjë plan formal. P.sh. kompjuteri PC IBM është standard de fakto për kompjuterë të vegjël shtëpiak, sepse disa dhjetëra prodhues tjerë e kopjojnë kompjuterin PC IBM.</p>
+            <p>Standardet de jure (latinisht: <i>sipas ligjit</i>) janë standarde formale, legale, të cilat i ka miratuar një trup ndërkombëtar i autorizuar për standardizime.</p>
+            <p>Standardet ndërkombëtare i definon Organizata Ndërkombëtare për Standardizime ISO (<b>I</b>nternational <b>O</b>rganization for <b>S</b>tandardization).</p>
+            <p>Në fushën e telekomunikimeve, ISO-ja bashkëpunon me Komitetin për standardizime në fushën e telekomunikimeve të Unionit Ndërkombëtar për Telekomunikacione, të ashtuquajtur Komiteti ITU-T (<b>I</b>nternational <b>T</b>elecommunication <b>U</b>nion – <b>T</b>elecommunication Standard Sector).</p>
+            <p>Në Evropë për standardizime në telekomunikacion janë organizatat ETSI (European Telecommunication Standard Institute) dhe CEPT (<b>C</b>ommittee of <b>E</b>uropean <b>P</b>ost, <b>T</b>elegraph and <b>T</b>elephone), të cilat parashtrojnë propozime në ITU-T dhe në mënyrë aktive marrin pjesë në punimet e saj. Në SHBA rol të ngjashëm ka ANSI (<b>A</b>merican <b>N</b>ational <b>S</b>tandard <b>I</b>nstitute).</p>
+            <p>Rol vendimtar në botën e standardeve ka edhe IEEE (<b>I</b>nstitute of <b>E</b>lectrical and <b>E</b>lectronics <b>E</b>ngineers). IEEE-ja ka grupin e saj të standardeve e që zhvillon standarde në fushën e inxhinierisë elektrike dhe kompjuterike. Për shembull, standardi IEEE 802 paraqet standardin kyç për rrjeta lokale.</p>
+
+        </article>
+
+        <article id="rrjetat-kompjuterike">
+
+            <h1>Rrjetat Kompjuterike – Nocionet Themelore</h1>
+            <hr />
+
+            <div class="permbajtja">
+                <p>Përmbajtje</p><hr />
+                <ul>
+                    <li id="formimi-i-paketave-scroll">Formimi i paketave</li>
+                    <li id="menyrat-themelore-per-lidhjen-e-pajisjeve-scroll">Mënyrat themelore për lidhjen e pajisjeve</li>
+                    <li id="klasifikimi-i-rrjetave-kompjuterike-scroll">Klasifikimi i rrjetave kompjuterike</li>
+                    <li class="h3-titull" id="topologjia-e-lidhjes-se-kompjutereve-scroll">Topologjia e lidhjes së kompjuterëve</li>
+                    <li class="h4-titull" id="rrjetat-prej-pike-ne-pike-scroll">Rrjetat prej pike në pikë</li>
+                    <li class="h4-titull" id="rrjetat-difuzive-scroll">Rrjetat difuzive</li>
+                    <li class="h3-titull" id="ndarja-e-rrjetave-sipas-madhesise-scroll">Ndarja e rrjetave sipas madhësisë</li>
+                    <li class="h3-titull" id="ndarja-e-rrjetave-sipas-raporteve-funksionale-ne-mes-elementeve-te-rrjetit-scroll">Ndarja e rrjetave sipas raporteve funksionale në mes elementeve të rrjetit</li>
+                    <li class="h4-titull" id="konfigurimi-klient-server-scroll">Konfigurimi klient-server</li>
+                    <li class="h4-titull" id="rrjetat-me-kompjutere-te-njejte-scroll">Rrjetat me kompjuterë të njëjtë</li>
+                    <li id="sistemi-operativ-i-rrjetave-scroll">Sistemi operativ i rrjetave</li>
+                    <li id="modeli-referent-osi-scroll">Modeli referent OSI</li>
+                </ul>
+            </div>
+
+            <p>Për kompjuterët themi se komunikojnë, nëse ndërmjet veti mund të këmbejnë të dhëna. Për të komunikuar kompjuterët, nevojitet të lidhen në rrjetë. Me lidhjen e kompjuterëve në rrjetë, mundësohet shfrytëzimi i përbashkët i të gjitha resurseve të pajisjeve të rrjetëzuara: të dhënave, harduerit (p.sh. printeri) dhe softuerit. Rrjeta kompjuterike paraqet grupin e lidhur të kompjuterëve të <b>pavarur</b>, përkatësisht, kompjuterëve të cilët munden në mënyrë të pavarur të realizojnë përpunimin, por të cilët sipas nevojës mund t’i përdorin resurset e pajisjeve tjera në rrjetë.</p>
+            <p>Rrjeta përbëhet nga bashkësia e pajisjeve të lidhura me <i>linqe</i>. Pajisjet e rrjetëzuara, pa marrë parasysh a gjenden në brendi të rrjetës apo në skajet e saj (pajisjet fundore, përkatësisht, kompjuterët e shfrytëzuesve), quhen <i>nyje</i>. Linku paraqet linjën komunikuese, e cila drejtpërsëdrejti i lidh dy nyje fqinje. Nyejt e brendshme quhen <i>mesnyje</i>. Këto janë pajisje të rrjetit, si: rigjeneratorë, ura, ruterë. Për kompjuterin e shfrytëzuesit përdoren edhe këto emërtime: <i>stacion, host, kompjuter amë</i> ose <i>DTE</i> (<b>D</b>ata <b>T</b>erminal <b>E</b>quipment – pajisje e cila gjeneron dhe/ose përdor të dhëna digjitale). Linja komunikuese e cila i lidh dy nyje të skajshme, përkatësisht dhënësin dhe marrësin, quhet <i>shteg</i>. Në rrjetat kompjuterike, për stacionin që dërgon të dhëna, zakonisht përdoret termi <i>burim</i>, ndërsa për stacionin që pranon të dhëna, përdoret termi <i>destinacion</i>.</p>
+            <figure>
+                <img src="lib/figura/rrjetat-kompjuterike/1.jpg" alt="Elementet e rrjetit">
+                <figcaption>Elementet e rrjetit: nyja e skajshme, mesnyja, linku dhe shtegu</figcaption>
+            </figure>
+            <p>Kompjuteri manipulon me të dhëna ashtu siç e dikton programi. Të dhënat ndahen në njësi të dhënash, të cilat varësisht nga vendi dhe mënyra e përpunimit, ruajtja dhe bartja, mund të jenë të ndryshme. Njësia më e madhe e të dhënave është <i>porosia</i>. Porosia paraqet një informacion të plotë, p.sh. një fajll me të dhëna. Njësia më e vogël e të dhënave është biti.</p>
+            <p>Për të komunikuar dy kompjuterë, nuk mjafton vetëm të lidhen me një medium komunikues; nevojitet që të dy kompjuterët “të flasin” gjuhën e njëjtë. Ata duhet të akordohen se si të zhvillohet komunikimi: me çfarë shpejtësie, cili lloj kodimi të përdoret, çfarë të ndërmerret nëse gjatë transmetimit paraqiten gabime, etj. Bashkësia e rregullave që dirigjon transmetimin e të dhënave quhet <i>protokoll</i>. Pra, që të mund të komunikojnë dy kompjuterë ndërmjet vete, është e domosdoshme:</p>
+            <ul>
+                <li>të jenë të lidhur me linjë komunikuese,</li>
+                <li> të ekzistoj protokoll i caktuar, pra, marrëveshje e ndërsjellët me cilat rregulla do të realizohet komunikimi.</li>
+            </ul>
+
+            <h2 id="formimi-i-paketave">FORMIMI I PAKETAVE</h2>
+
+            <p>Porositë që i këmbejnë kompjuterët mund të jenë të gjatësive të ndryshme, prej disa bitë deri në disa milion bitë. Gjatë transmetimit mund të vije deri te ndonjë gabim. Në komunikimet kompjuterike, kur në marrje vërtetohet se në porosinë e pranuar ekziston gabimi, nga burimi kërkohet që përsëri ta dërgoj porosinë e tillë. Për këtë arsye, burimi duhet që porosinë e dërguar ta ruaj në memorien amë, të ashtuquajtur <i>bafer</i>, deri sa nga destinacioni nuk e merr konfirmimin se porosia ka arritur pa gabime. Gjithashtu edhe në destinacion ekziston baferi në të cilin ruhet porosia e pranuar. Meqenëse gjatësia e porosisë (përkatësisht numri i bitëve në porosi) është e pakufizuar, është e pamundur të projektohet bafer i cili me një siguri të plotë do të mund të pranonte çdo porosi. Nga ana tjetër, ndërtimi i baferit me kapacitet të madh memorues do të ishte jashtëzakonisht joekonomik, sepse shumë shpesh baferi do të ishte gati plotësisht i zbrazët.</p>
+            <p>Për këtë arsye, në procesin e komunikimit, porosia në emitim (burim) ndahet në pjesë më të vogla, të ashtuquajtura <i>paketa</i> të të dhënave, për t’u siguruar transmetim më ekonomik. Në destinacion paketat e arritura përsëri rikuperohen (bashkohen) në porosi të plotë. Në këtë mënyrë në rrjetat kompjuterike zhvillohet <i>komunikacioni paketor</i>. Madhësia maksimale e paketave varet nga lloji i rrjetës në të cilën realizohet transmetimi.</p>
+            <p>Përparësitë e komunikacionit paketor janë:</p>
+            <ul>
+                <li>Meqenëse gjatësia maksimale e paketave është e kufizuar, lehtë mund të projektohet madhësia e baferit në nyjet e rrjetit.</li>
+                <li>Kur në destinacion konfirmohet gabimi në transmetim, burimi nuk e riemiton porosinë e plotë, por vetëm paketën në të cilën është hasur gabimi. Në këtë mënyrë, dukshëm zvogëlohet numri i bitëve që duhet përsëri të dërgohen.</li>
+                <li>Porosia e gjatë “do të bllokonte” për një kohë të gjatë një apo më shumë linja komunikuese në rrjetë dhe në këtë mënyrë do të pamundësonte që në këtë shteg të barten edhe porosi tjera. Me ndarjen e porosisë në paketa, mundësohet qasja e barabartë në rrjetë e të gjithë të interesuarve.</li>
+            </ul>
+            <p>Përparësitë e komunikacionit paketor e kanë edhe çmimin e vet:</p>
+            <ul>
+                <li>E metë është se rritet numri i përgjithshëm i bitëve që duhet bartur. Çdo paketë duhet përveç bitëve të porosisë, të përmbaj edhe një varg të informacioneve shtesë (p.sh. adresën e burimit dhe destinacionit, numrin rendor të paketës, a bëhet fjalë për paketën e fundit të porosisë, a ka paketa prioritet dhe me çfarë shkalle, etj.). Të gjitha këto informacione vendosen në të ashtuquajturën <i>koka</i> e paketës (ang.: <i>header</i>). Për këtë arsye paketa ndahet në dy pjesë: <i>koka</i> dhe <i>fusha e të dhënave</i>. Pasi koka përmban një varg të informacioneve dirigjuese, gjithashtu përmban edhe numër të caktuar të nënfushave, të cilat në rastin e përgjithshëm kanë gjatësi të ndryshme.</li>
+                <li>Komunikacioni paketor kërkon që në nyje të kryhen më shumë detyra: në emetim, ndarja e porosisë në paketa dhe në marrje, rikombinimi i paketave në  porosi, emetim dhe pranim i numrit më të madh të njësive individuale, etj.</li>
+            </ul>
+            <figure>
+                <img src="lib/figura/rrjetat-kompjuterike/2.jpg" alt="Struktura e përgjithshme e paketit të të dhënave">
+                <figcaption>Struktura e përgjithshme e paketit të të dhënave</figcaption>
+            </figure>
+
+            <h2 id="menyrat-themelore-per-lidhjen-e-pajisjeve">MËNYRAT THEMELORE PËR LIDHJEN E PAJISJEVE</h2>
+
+            <p>Të shqyrtojmë rastin kur duhet lidhur kompjuterin me terminalet e tij. Lidhjen mund ta realizojmë në dy mënyra:</p>
+            <ul>
+                <li>Lidhjen e tipit pikë-pikë (ang.: <i>point-to-point link</i>);</li>
+                <li>Lidhjen shumëpikësh (ang.: <i>multipoint link</i> ose <i>multidrop link</i>).</li>
+            </ul>
+            <p>Kompjuterin me periferitë e tij që gjenden afër, zakonisht i lidhim me tipin pikë-pikë.</p>
+            <figure>
+                <img src="lib/figura/rrjetat-kompjuterike/3.jpg" alt="Lidhja e tipit pikë-pikë">
+                <figcaption>Lidhja e tipit pikë-pikë, në rastin: (a) kompjuter – një terminal dhe (b) kompjuter – më shumë terminale</figcaption>
+            </figure>
+            <figure>
+                <img src="lib/figura/rrjetat-kompjuterike/4.jpg" alt="Lidhja shumëpikëshe">
+                <figcaption>Lidhja shumëpikësh e kompjuterit me terminalet në largësi</figcaption>
+            </figure>
+            <p>Për lidhjen e N-terminaleve, kompjuteri duhet t’i ketë N-porte. Nëse terminalet gjeografikisht gjenden në largësi nga kompjuteri, më racionale është përdorimi i lidhjes shumëpikëshe.</p>
+
+            <h2 id="klasifikimi-i-rrjetave-kompjuterike">KLASIFIKIMI I RRJETAVE KOMPJUTERIKE</h2>
+
+            <p>Rrjetat kompjuterike mund të klasifikohen sipas karakteristikave të ndryshme: topologjisë, madhësisë, mënyrës së lidhjes, teknologjisë harduerike që përdoret për lidhjen e kompjuterëve, raporteve funksionale që ekzistojnë ndërmjet elementeve të ndryshme të rrjetit, protokollit komunikues që përdoret në rrjetë, etj.</p>
+
+            <h3 id="topologjia-e-lidhjes-se-kompjutereve">TOPOLOGJIA E LIDHJES SË KOMPJUTERËVE</h3>
+
+            <p>Mënyra se si disa kompjuter lidhen në mes vete quhet <i>topologji e lidhjes</i>.</p>
+            <p>Rrjetat telekomunikuese mund të ndahen në dy grupe themelore:</p>
+            <ul>
+                <li><i>rrjetat difuzive</i> (ang.: <i>broadcast networks</i>) dhe</li>
+                <li><i>rrjetat prej pike në pikë</i> (ang.: <i>point-to-point networks</i>).</li>
+            </ul>
+            <p>Rrjetat difuzive kryesisht mbulojnë sipërfaqe të vogla. Rrjetat, që mbulojnë sipërfaqe më të mëdha, më së shpeshti ndërtohen si rrjeta prej pike në pikë.</p>
+
+            <h4 id="rrjetat-prej-pike-ne-pike">Rrjetat prej pike në pikë</h4>
+
+            <p>Rrjetat prej pike në pikë mund të jenë rrjeta <i>jokomutuese</i> dhe <i>komutuese</i>.</p>
+            <p>Rrjetat jokomutuese janë ato rrjeta te të cilat ekziston lidhje e përhershme në mes të gjitha stacioneve të lidhura në atë rrjetë. Andaj, në këto rrjeta nuk ekzistojnë mesnyjet.</p>
+            <p>Rrjetat komutuese përmbajnë shumë lidhje ndërmjet stacioneve të ndryshme, prandaj, të dhënat nga burimi deri në destinacion barten nëpërmjet një vargu të mesnyjeve të cilat quhen <i>komutator</i> (ang. <i>switches</i>). Komutatori është sistem harduerik dhe/ose softuerik, i cili mundëson komunikimin e përkohshëm në mes dy apo më shumë pajisjeve të cilat nuk janë të lidhur drejtpërdrejt ndërmjet veti, por janë të lidhur përmes komutatorit. Rrjetat komutuese ndahen në rrjeta me komutim të qarkut (rrjeta e telefonisë klasike) dhe në rrjeta me komutim të porosive, përkatësisht me komutim të paketave (rrjetat kompjuterike).</p>
+
+            <h4 id="rrjetat-difuzive">Rrjetat difuzive</h4>
+
+            <p>Karakteristika themelore e rrjetave difuzive është ekzistimi i vetëm një kanali komunikues të cilin e përdorin të gjithë kompjuterët në rrjetë. Andaj, porositë që i dërgon një kompjuter arrin te të gjithë kompjuterët në rrjetë. Me marrjen e porosisë, çdo stacion verifikon adresën e destinimit dhe nëse ajo porosi ju dedikohet ndonjë stacioni tjetër, ai nuk do ta pranoj.</p>
+            <p>Në rrjetat difuzive mundësohen tri mënyra të dërgimit të porosive:</p>
+            <ul>
+                <li>stacioni stacionit (<i>unicasting</i>),</li>
+                <li>stacioni një grupi të stacioneve (<i>multicasting</i>) dhe</li>
+                <li>stacioni të gjithë stacioneve tjerë në rrjetë (<i>broadcasting</i>).</li>
+            </ul>
+            <p>Topologjitë themelore difuzive janë:</p>
+            <ul>
+                <li>topologjia në formë të magjistrales (ang.: <i>bus topology</i>),</li>
+                <li>topologjia në formë të yllit (ang.: <i>star topology</i>) dhe</li>
+                <li>topologjia në formë të unazës (ang.: <i>ring topology</i>).</li>
+            </ul>
+            <p><b>Topologjia në formë të magjistrales</b>. Kjo topologji paraqet rrjetë në shumë pika, në të cilën të gjithë stacionet janë të lidhura me kabllo koaksiale, të ashtuquajtur magjistrale, që do të thotë se të gjithë pajisjet e rrjetëzuara e ndajnë kanalin komunikues.</p>
+            <figure>
+                <img src="lib/figura/rrjetat-kompjuterike/5.jpg" alt="Topologjia në formë të magjistrales">
+                <figcaption>Topologjia në formë të magjistrales</figcaption>
+            </figure>
+            <p>Në skajet e magjistrales gjenden pikat fundore (terminatorët) me të cilët absorbohet sinjali dhe në këtë mënyrë pamundësohet reflektimi i tij.</p>
+            <p>Rrjetat në formë të magjistrales lehtë instalohen, nevojitet sasi e vogël në krahasim me topologjitë me lidhje të plotë, ndërsa çdo stacioni ju nevojitet një port hyrës-dalës.</p>
+            <p>Dobësitë e kësaj topologjie janë: nëse në cilindo vend të magjistrales vije deri te ndërprerja, i tërë rrjeti nuk funksionon; gjatë përhapjes së sinjalit nëpër magjistrale, ai dobësohet, sepse një pjesë e energjisë së tij shndërrohet në nxehtësi.</p>
+
+            <p><b>Topologjia në formë të yllit</b>. Në këtë topologji të gjitha stacionet janë të lidhur në përmbledhësen qendrore, të ashtuquajtur <i>hab</i> (ang.: <i>hub</i>).</p>
+            <figure>
+                <img src="lib/figura/rrjetat-kompjuterike/6.jpg" alt="Topologjia në formë të yllit">
+                <figcaption>Topologjia në formë të yllit</figcaption>
+            </figure>
+            <p>Stacioni i cili donë t’i dërgoj porosi një stacioni tjetër, porosinë e përcjell në hab, ndërsa habi e ritransmeton në të gjitha linjat dalëse.</p>
+            <p>Përparësi e kësaj topologjie është: nëse vije deri te ndërprerja e një linje, do të “bie” nga rrjeti vetëm stacioni i lidhur në atë linjë, ndërsa pjesa tjetër e rrjetit do të funksionoj në mënyrë normale.</p>
+
+            <p><b>Topologjia në formë të unazës</b>. Në rastin e kësaj topologjie, rrjeta përbëhet nga një grup i regjeneratorëve, të lidhur në atë formë, ashtu që formojnë rrjetë të mbyllur. Çdo stacion është i lidhur në rrjetë përmes regjeneratorit të tij.</p>
+            <figure>
+                <img src="lib/figura/rrjetat-kompjuterike/7.jpg" alt="Topologjia në formë të unazës">
+                <figcaption>Topologjia në formë të unazës</figcaption>
+            </figure>
+            <p>Regjeneratori është pajisje harduerike i cili në njërën linjë i pranon të dhënat, ndërsa në linjën tjetër, pas regjenerimit menjëherë i dërgon bit pas biti me të njëjtën shpejtësi që i ka pranuar, por duke vendosur një vonesë. Në këtë konfigurim çdo regjeneratorë, përveç se paraqet element aktiv të unazës, shërben edhe si interfejs, përkatësisht si pikë lidhëse e stacionit në rrjetë.</p>
+            <p>Transmetimi në topologjinë unazë zhvillohet vetëm në një kahje. Çdo stacion afër të cilit kalojnë paketat, verifikon adresën e destinimit të tyre dhe nëse vërteton se ndonjë paketë ju është dërguar atij e kopjon përmbajtjen e atij paketi, ndërsa paketi vazhdon të qarkulloj përgjatë unazës. Largimi i paketit nga unaza bëhet nga stacioni që e ka dërguar atë, pasi ta bëjë një qark në unazë.</p>
+            <p>Nëse në topologjinë në formë të unazës vije deri te ndërprerja e një linku apo deri te defekti i ndonjë regjeneratori, i tërë rrjeti nuk do të funksionoj.</p>
+
+            <h3 id="ndarja-e-rrjetave-sipas-madhesise">NDARJA E RRJETAVE SIPAS MADHËSISË</h3>
+
+            <p>Në varshmëri nga hapësira të cilën e mbulojnë, rrjetat kompjuterike sipas një ndarjeje themelore mund të klasifikohen në:</p>
+            <ul>
+                <li>rrjeta lokale ose LAN (ang.: <i>Local Area Network</i>),</li>
+                <li>rrjeta e qytetit ose MAN (ang.: <i>Metropolitan Area Network</i>),</li>
+                <li>rrjeta regjionale ose WAN (ang.: <i>Wide Area Network</i>).</li>
+            </ul>
+            <p>Definicioni i zakonshëm i rrjetave lokale është se kjo rrjetë mbulon një zonë të vogël, rrezja e së cilës nuk është më e madhe se disa kilometra. LAN-i i lidh kompjuterët dhe stacionet punuese me tela dhe pa tela (WLAN – <b>W</b>ireless LAN) në kuadër të ndonjë objekti apo grupi të objekteve të afërta. Për shkak të rrezes së vogël, shpejtësia e punës është dukshëm më e madhe se në rastin e rrjetave WAN dhe arrin shpejtësi deri në 100 Gbit/s. Rrjetat LAN në parim janë rrjeta difuzive.</p>
+            <p>Rrjeta MAN zakonisht lidh disa rrjeta lokale në ndonjë qytet, që nënkupton se mbulon sipërfaqen e përafërt me një qytet.</p>
+            <p>Rrjeta WAN mbulon një zonë të madhe gjeografike, si p.sh. një shtet ose ndërlidh një shtet me një tjetër apo edhe një kontinent me një kontinent tjetër. Në këto rrjeta shpesh shfrytëzohen pajisjet dhe shërbimet e kompanive telekomunikuese. Shpejtësi më të madhe të transmetimit në parim arrihen mes provajderëve të mëdhenj, dhe kjo shpejtësi ditët e sodit arrin deri në 40 Gbit/s.</p>
+            <p>Ekziston edhe ndarje më e detajizuar e rrjetave sipas madhësisë:</p>
+            <ul>
+                <li>rrjeta personale ose PAN (ang.: <i><b>P</b>ersonal <b>A</b>rea <b>N</b>etwork</i>),</li>
+                <li> rrjeta CAN (ang.: <i><b>C</b>ampus <b>A</b>rea <b>N</b>etwork</i>),</li>
+                <li>rrjeta globale ose GAN (ang.: <i><b>G</b>lobal <b>A</b>rea <b>N</b>etwork</i>).</li>
+            </ul>
+
+            <h3 id="ndarja-e-rrjetave-sipas-raporteve-funksionale-ne-mes-elementeve-te-rrjetit">NDARJA E RRJETAVE SIPAS RAPORTEVE FUNKSIONALE NË MES ELEMENTEVE TË RRJETIT</h3>
+
+            <p>Dy konfigurime themelore të rrjetave kompjuterike janë:</p>
+            <ul>
+                <li>rrjeta klient-server dhe</li>
+                <li>rrjeta me kompjuterë të njëjtë (rrjeta <i>peer-to-peer</i>).</li>
+            </ul>
+
+            <h4 id="konfigurimi-klient-server">Konfigurimi klient-server</h4>
+
+            <p>Sistemi i këtillë përbëhet prej disa klientëve dhe një apo më shumë serverëve. Klient mund të jetë një kompjuter apo një program. Server, gjithashtu mund të jetë një kompjuter apo një program. Serveri i ka dy detyra kryesore:</p>
+            <ul>
+                <li>t’i ofroj shërbime klient-kompjuterëve apo klient-programeve dhe</li>
+                <li>të mbikëqyr funksionimin e rrjetit.</li>
+            </ul>
+            <p>Me kërkesën e klientit, serveri i kryen punët të cilat klienti nuk mund t’i realizoj, për shkak të fuqisë së pamjaftueshme të procesorit ose mungesës së hapësirës memoruese.</p>
+            <p>Komunikimi zhvillohet ashtu që klienti i dërgon serverit kërkesën që ai ta kryej ndonjë punë. Kur serveri pranon kërkesën e klientit, e kryen detyrën e dhënë dhe përgjigjen ia dërgon përsëri klientit. Pra, klienti është ai i cili gjithmonë i pari e inicion dialogun.</p>
+            <p>Varësisht nga funksioni të cilin e kryejnë, serverët ndahen në <i>fajll-serverë, serverë për baza të të dhënave</i> dhe <i>serverë me qëllim special</i> në të cilët, përveç tjerash bëjnë pjesë edhe <i>serverët për qasje</i> dhe <i>serverët për printim</i>.</p>
+            <figure>
+                <img src="lib/figura/rrjetat-kompjuterike/8.jpg" alt="Modeli klient-server">
+                <figcaption>Modeli klient-server</figcaption>
+            </figure>
+
+            <h4 id="rrjetat-me-kompjutere-te-njejte">Rrjetat me kompjuterë të njëjtë</h4>
+
+            <p>Rrjetat me kompjuterë të njëjtë (ang.: <i>peer-to-peer networks</i>) quhen ato rrjeta kompjuterike te të cilat të gjitha pajisjet janë të njëjta për nga përgjegjësia: çdo kompjuter mundet në mënyrë të pavarur t’i kryej detyrat, por i mundëson edhe kompjuterëve tjerë në rrjetë që t’i shfrytëzojnë resurset e tij, e gjithashtu edhe vet mund t’i shfrytëzoj resurset e kompjuterëve tjerë në rrjetë. Me fjalë tjera, në këtë lloj rrjete nuk ekzistojnë serverë të cilët do ta dirigjonin rrjetën dhe do të përmbajnë resurse  që i nevojiten klientëve, por çdo kompjuterë në rrjetë mund të funksionoj edhe si klient edhe si server.</p>
+
+            <h2 id="sistemi-operativ-i-rrjetave">SISTEMI OPERATIV I RRJETAVE</h2>
+
+            <p>Që kompjuterët të mund të komunikojnë në mes vete, nuk mjafton që vetëm të lidhen fizikisht përmes mediumit të caktuar, por, duhet definuar edhe një varg rregullash të cilat do të rregullonin procesin e këmbimit të të dhënave. Këto rregulla mund të paraqiten në formë të programit. Bashkësia e të gjitha programeve që mundësojnë komunikimin e kompjuterëve paraqet <i>sistemin operativ të rrjetit</i>.</p>
+            <p>Detyra e sistemit operativ të rrjetit është lidhja e të gjithë kompjuterëve dhe pajisjeve periferike dhe kësisoj të mundësoj që kompjuterët në rrjetë t’i ndajnë, përkatësisht t’i përdorin resurset e rrjetit (fajllat, njësitë dalëse, etj.).</p>
+            <p>Sisteme operative të rrjetit më të njohur janë: <i>Windows Server 2003, Windows Server 2008,</i> etj.</p>
+
+            <h2 id="modeli-referent-osi">MODELI REFERENT OSI</h2>
+
+            <p>Organizata ndërkombëtare për standardizime ISO në vitin 1984 ka definuar standardin e njohur me emrin modeli referent OSI (<i><b>O</b>pen <b>S</b>ystem <b>I</b>nterconnection</i> – sistem i hapur i ndërlidhjes). Quhet “sistem i hapur” sepse nuk kërkon modifikime në harduer dhe në softuer të sistemeve që komunikojnë, pa marrë parasysh se sa mund të dallojnë ndërmjet vete. Duhet cekur se modeli referent OSI nuk është protokoll, por model i cili ka për qëllim të lehtësoj kuptimin dhe projektimin e arkitekturës së rrjetit.</p>
+            <p>Modeli referent OSI përbëhet prej shtatë shtresave (niveleve) nëpër të cilat duhet të kalojnë të dhënat, në rrugën e tyrë prej burimit deri në destinacion, e ato janë:</p>
+            <ol>
+                <li>Shtresa fizike (ang.: <i>physical layer</i>), përkatësisht shtresa e parë,</li>
+                <li>Shtresa e lidhjes (ang.: <i>data link layer</i>), përkatësisht shtresa e dytë,</li>
+                <li>Shtresa e rrjetit (ang.: <i>network layer</i>), përkatësisht shtresa e tretë,</li>
+                <li>Shtresa e transportit (ang.: <i>transport layer</i>), përkatësisht shtresa e katërt,</li>
+                <li>Shtresa e sesionit (ang.: <i>session layer</i>), përkatësisht shtresa e pestë,</li>
+                <li>Shtresa e prezantimit (ang.: <i>presentation layer</i>), përkatësisht shtresa e gjashtë,</li>
+                <li>Shtresa e aplikacioni (ang.: <i>application layer</i>), përkatësisht shtresa e shtatë.</li>
+            </ol>
+            <div class="tabelat tabela2-1">
+                <figure>
+                    <table>
+                        <tr>
+                            <td>Shtresa e aplikacionit (shtresa e 7-të)</td>
+                        </tr>
+                        <tr>
+                            <td>Shtresa e prezantimit (shtresa e 6-të)</td>
+                        </tr>
+                        <tr>
+                            <td>Shtresa e sesionit (shtresa e 5-të)</td>
+                        </tr>
+                        <tr>
+                            <td>Shtresa e transportit (shtresa e 4-të)</td>
+                        </tr>
+                        <tr>
+                            <td>Shtresa e rrjetit (shtresa e 3-të)</td>
+                        </tr>
+                        <tr>
+                            <td>Shtresa e lidhjes (shtresa e 2-të)</td>
+                        </tr>
+                        <tr>
+                            <td>Shtresa fizike (shtresa e 1-rë)</td>
+                        </tr>
+                    </table>
+                    <figcaption>Modeli referent OSI</figcaption>
+                </figure>
+            </div>
+            <p>Bashkësia e shtresave dhe protokolleve paraqet <i>arkitekturën e rrjetit</i>. Specifikimi i arkitekturës së rrjetit duhet të përmbaj informacione që janë të domosdoshme ashtu që për çdo shtresë të mund të ndërtohet hardueri përkatës si dhe të shkruhet programi me ndihmën e të cilit do të realizohet protokolli i caktuar.</p>
+            <p>Parimi themelor i strukturës shtresore është: çdo shtresë është e pavarur nga shtresa nën atë. Çdo shtresë i siguron shërbime shtresës mbi atë. <i>Shërbimi</i> ose <i>servisi</i> është bashkësi e operacioneve që i kryen shtresa në shqyrtim për shtresën mbi atë.</p>
+            <p>Në modelin OSI themelore janë tri koncepte:</p>
+            <ul>
+                <li>koncepti i <i>shërbimit</i> (<i>service</i>): shërbimi tregon <b>çka</b> bënë shtresa,</li>
+                <li>koncepti i <i>protokollit</i>: protokolli tregon <b>si</b> funksionon shtresa dhe</li>
+                <li>koncepti i <i>interfejsit</i>: interfejsi i thotë proceseve/programeve përmbi <b>si t’i pranojnë shërbimet</b>.</li>
+            </ul>
+            <p>Pas njohjes me modelin OSI mund të japim një definicion më preciz për rrjetat lokale dhe rrjetat regjionale:</p>
+            <ul>
+                <li>çdo rrjetë kompjuterike që punon në dy shtresat e poshtme të modelit OSI (në shtresën fizike dhe në shtresën e lidhjes) paraqet rrjetë lokale – LAN.</li>
+                <li>çdo rrjetë kompjuterike që punon në tri shtresat e poshtme të modelit OSI (në shtresën fizike, të lidhjes dhe të rrjetit) paraqet rrjetë regjionale – WAN.</li>
+            </ul>
+
+        </article>
+
+        <article id="mediumet-transmetuese">
+
+            <h1>Mediumet për Transmetim të Sinjaleve</h1>
+            <hr />
+
+            <div class="permbajtja">
+                <p>Përmbajtje</p><hr />
+                <ul>
+                    <li id="mediumet-me-vem-te-kanalizuar-scroll">Mediumet me VEM të kanalizuar</li>
+                    <li class="h3-titull" id="ciftorja-e-perdredhur-scroll">Çiftorja e përdredhur</li>
+                    <li class="h3-titull" id="kabllo-koaksial-scroll">Kabllo koaksial</li>
+                    <li class="h3-titull" id="fibra-optike-scroll">Fibra optike</li>
+                    <li id="mediumet-me-vem-te-pakanalizuar-scroll">Mediumet me VEM të pakanalizuar</li>
+                    <li class="h3-titull" id="telefonia-mobile-scroll">Telefonia mobile</li>
+                    <li id="transmetimi-i-multipleksuar-scroll">Transmetimi i multipleksuar</li>
+                    <li class="h3-titull" id="multipleksimi-frekuencor-scroll">Multipleksimi frekuencor</li>
+                    <li class="h3-titull" id="multipleksimi-kohor-scroll">Multipleksimi kohor</li>
+                </ul>
+            </div>
+
+            <p>Mediumi paraqet mjedisin (ambientin) nëpër të cilin transmetohen porositë, pa marrë parasysh a bëhet fjalë për sinjale të të folurit, fotografisë apo të dhënave tjera, edhe atë me valë elektromagnetike (VEM) të kanalizuar dhe të pakanalizuar nga burimi i informacionit (burimi) deri tek shfrytëzuesi i informacionit (destinacioni). Në telekomunikime, e me këtë edhe në rrjetat kompjuterike mund të përdoren mediume të ndryshme. Çdonjëri prej tyre ka veçoritë e tij specifike: gjerësinë e brezit lëshues, shpejtësinë e përhapjes së sinjalit, shpejtësinë e transmetimit të të dhënave, vonesat, çmimin, sa lehtë instalohen dhe mirëmbahen, etj.</p>
+            <p><b>Shpejtësia e përhapjes së sinjalit</b> paraqet distancën që e kalon ndonjë sinjal elementar në njësi të kohës.</p>
+            <p><b>Shpejtësia e transmetimit të të dhënave</b> ose <b>rrjedha</b> paraqet numrin e sinjaleve elementare të cilët në njësinë e kohës kalojnë nëpër ndonjë pikë në linjën komunikuese. Shpejtësia e transmetimit varet nga aftësia lëshuese (kapaciteti) e kanalit, e zakonisht shprehet me numër të bitëve në sekondë (b/s).</p>
+            <p><b>Aftësia lëshuese</b>, përkatësisht <b>kapaciteti i kanalit</b> paraqet rrjedhën maksimale të mundshme nëpër kanal, ndërsa gjatë rrjedhës impulset e transmetuar nuk pësojnë deformime, ku do të pamundësohej njohja e tyre në marrje.</p>
+
+            <h2 id="mediumet-me-vem-te-kanalizuar">MEDIUMET ME VEM TË KANALIZUAR</h2>
+
+            <p>Sot kryesisht përdoren tri lloje të mediumeve me VEM të kanalizuar:</p>
+            <ol>
+                <li>Çiftorja e përdredhur,</li>
+                <li>Kabllo koaksial dhe</li>
+                <li>Fibra optike.</li>
+            </ol>
+            <p>Çiftorja e përdredhur dhe kabllo koaksial përdorin përçues metalik (të bakrit) nëpër të cilët barten (transmetohen) sinjalet në formë të rrymës elektrike. Fibra optike është fije e hollë nga xhami ose plastika, nëpër të cilën barten sinjalet në formë të dritës.</p>
+            <div class="tabela3-1 tabelat">
+                <figure>
+                    <figcaption>Karakteristikat e mediumeve me VEM të kanalizuar gjatë transmetimit pikë-pikë</figcaption>
+                    <table>
+                        <tr>
+                            <th>Mediumi transmetues</th>
+                            <th>Shpejtësia maksimale e transmetimit</th>
+                            <th>Gjerësia e brezit lëshues</th>
+                            <th>Distanca ndërmjet regjeneratorëve</th>
+                        </tr>
+                        <tr>
+                            <td>Çiftorja e përdredhur</td>
+                            <td>4 Mb/s</td>
+                            <td>100 Hz – 5 MHz</td>
+                            <td>2 – 10 km</td>
+                        </tr>
+                        <tr>
+                            <td>Kabllo koaksial</td>
+                            <td>500 Mb/s</td>
+                            <td>100 kHz – 500 MHz</td>
+                            <td>1 – 10 km</td>
+                        </tr>
+                        <tr>
+                            <td>Fibra optike</td>
+                            <td>2 Gb/s</td>
+                            <td>2 GHz</td>
+                            <td>10 – 100 km</td>
+                        </tr>
+                    </table>
+                </figure>
+            </div>
+
+            <h3 id="ciftorja-e-perdredhur">ÇIFTORJA E PËRDREDHUR</h3>
+
+            <p>Medium më i vjetër transmetues por edhe më tej më i përdorur është çiftorja e përdredhur. Përbëhet prej dy telave të izoluar, e të përdredhur në spirale nga materiali i bakrit me trashësi rreth 1 mm. Me përdredhjen e telave në çiftore, arrihet zvogëlimi i interferencës elektrike me çiftoret tjera.</p>
+            <p>Çiftoret e përdredhura mund të përdoren për transmetimin e sinjaleve analoge dhe digjitale. Gjerësia e brezit lëshues të çiftores së përdredhur varet nga trashësia e telit dhe gjatësia e trasës. Në rastin e transmetimit analog pikë-pikë, gjerësia e brezit të çiftores së përdredhur është rreth 250 kHz. Kur bëhet fjalë për transmetimin digjital pikë-pikë mund të arrihen shpejtësi deri në disa Mb/s por në distanca të shkurta.</p>
+            <p>Ekzistojnë dy lloje të çiftoreve të përdredhura:</p>
+            <ol>
+                <li><i>Çiftorja e përdredhur e pambrojtur</i> ose UTP (<b>U</b>nshielded <b>T</b>wisted <b>P</b>air) dhe</li>
+                <li><i>Çiftorja e përdredhur e mbrojtur</i> ose STP (<b>S</b>hielded <b>T</b>wisted <b>P</b>air).</li>
+            </ol>
+            <p><b>Çiftorja UTP.</b> Këto çiftore janë të standardizuara sipas kualitetit në disa kategori. Çdo kategori është e përshtatshme për fusha të caktuara të aplikimit:</p>
+            <p><i>Kategoria 1</i> – përdoret në telefoni. Është e përshtatshme për transmetimin e sinjaleve të të folurit dhe të dhënave me shpejtësi të vogël.</p>
+            <p><i>Kategoria 2</i> – është e përshtatshme për transmetimin e sinjaleve telefonike dhe të dhënave me shpejtësi deri në 4 Mb/s.</p>
+            <p><i>Kategoria 3</i> – shërben për transmetimin e sinjaleve të të dhënave me shpejtësi deri në 10 Mb/s.</p>
+            <p><i>Kategoria 4</i> – mundëson transmetim të sinjaleve të të dhënave me shpejtësi deri në 16 Mb/s.</p>
+            <p><i>Kategoria 5</i> – mundëson transmetim të sinjaleve të të dhënave me shpejtësi deri në 100 Mb/s.</p>
+            <p><i>Kategoria 6</i> – mundëson transmetim të sinjaleve të të dhënave me shpejtësi deri në 10 Gb/s.</p>
+            <p>Çiftoret UTP të kategorive më të larta përdoren në rrjetat lokale (LAN). Lidhja e çiftoreve UTP me pajisjet e rrjetit bëhet përmes konektorëve UTP.</p>
+            <figure>
+                <img src="lib/figura/mediumet/1.jpg" alt="Konektorët dhe çiftorja UTP">
+                <figcaption>Konektorët dhe çiftorja UTP</figcaption>
+            </figure>
+
+            <h3 id="kabllo-koaksial">KABLLO KOAKSIAL</h3>
+
+            <p>Konstruksioni i kabllos koaksiale tërësisht dallon nga konstruksioni i çiftores së përdredhur, andaj mundëson transmetim në distanca më të mëdha dhe me shpejtësi më të madhe. Përbëhet prej katër elementeve: bërthamës së bakrit, materialit izolues që mbulon bërthamën, përçuesit të jashtëm cilindrik (të rrjetëzuar) dhe mbështjellësit mbrojtës nga plastika.</p>
+            <figure>
+                <img src="lib/figura/mediumet/2.jpg" alt="Kabllo koaksial">
+                <figcaption>Kabllo koaksial</figcaption>
+            </figure>
+            <p>Aplikim të gjerë kanë dy tipa të kabllove koaksiale: kabllo 50-omësh dhe kabllo 75-omësh.</p>
+            <p>Kabllo 50-omësh kryesisht përdoret për transmetim analog, andaj shpesh quhet edhe <i>kabllo koaksial brezngushtë</i> (ang.: <i>baseband coaxial cable</i>). Në kabllon koaksial brezngushtë me gjatësi 1 km mund të realizohet shpejtësia e transmetimit prej 1 Gb/s deri në 2 Gb/s.</p>
+            <p>Kabllo 75-omësh kryesisht përdoret për transmetim digjital, andaj shpesh quhet edhe <i>kabllo koaksial brezgjerë</i> (ang.: <i>broadband coaxial cable</i>). Kabllot koaksial brezgjerë përdoren në teknikën standarde të televizionit kabllor, prandaj këto kabllo punojnë në frekuenca deri në 450 MHz dhe mund të jenë të gjatë deri në 100 km.</p>
+
+            <h3 id="fibra-optike">FIBRA OPTIKE</h3>
+
+            <p>Fibra optike është përçues i hollë (prej 2 μm deri në 125 μm), fleksibil, i aftë për të transmetuar rrezet e dritës. Për ndërtimin e fibrave optike përdoren lloje të ndryshme të xhamit dhe plastikës. Fibra e plastikës është më e lirë dhe mund të përdoret në linja komunikuese të shkurta, tek të cilat janë të pranueshme humbjet në vlera më të mëdha.</p>
+            <p>Kabllo optik ka formën cilindrike dhe përbëhet prej tri elementeve të koncentruar: <i>bërthamës, mbështjellësit të bërthamës</i> dhe <i>mbështjellësit të jashtëm</i>. <b>Bërthama</b> është element i brendshëm dhe përbëhet prej një apo më shumë fijeve të holla të xhamit apo plastikës. Çdo fije është e rrethuar me <b>mbështjellësin</b> e saj, i cili gjithashtu është i ndërtuar nga xhami apo plastika, por me indeks të thyerjes së dritës më të vogël se bërthama. <b>Mbështjellësi i jashtëm</b> është i ndërtuar nga plastika ose nga ndonjë material tjetër dhe shërben për mbrojtjen e fibrave nga lagështia, thyerja dhe nga rreziqet tjera.</p>
+            <p>Sinjali digjital i informacionit para transmetimit nëpër fibrën optike, shndërrohet në sinjal të dritës në formën e vargut të impulseve të dritës, që i përgjigjen shifrave binare 0 dhe 1.</p>
+            <figure>
+                <img src="lib/figura/mediumet/3-1.jpg" alt="Kabllo optik">
+                <figcaption>Kabllo me fibra optike</figcaption>
+            </figure>
+            <p>Ekzistojnë dy mënyra të përhapjes së dritës nëpër fibrën optike:</p>
+            <ul>
+                <li>përhapja monomode dhe</li>
+                <li>përhapja multimode.</li>
+            </ul>
+            <p>Përhapja monomode shfaqet atëherë kur diametri i fibrës është i rendit të gjatësisë valore të rrezes së dritës: atëherë nëpër fibër mund të kaloj vetëm rrezja aksiale (rreze e cila bije vetëm nën një kënd ose, siç thuhet, që është në një mod). Pasi në këtë rast rrezet përhapen paralelisht me boshtin gjatësor të fibrës, rrugëtimi i rrezeve nëpër fibër është gati identik, me ç’rast të gjitha rrezet arrin njëkohësisht në destinacion. Është e qart se për përhapjen monomode nevojitet burim jashtëzakonisht i fokusuar i dritës, i cili rigorozisht kufizon shpërbërjen e rrezes.</p>
+            <p>Në rastin e transmetimit multimod, rrezet e dritës nëpër fibër kalojnë në rrugë të ndryshme.</p>
+            <figure>
+                <img src="lib/figura/mediumet/3.jpg" alt="Fibra optike">
+                <figcaption>Rrugëtimet e rrezeve nëpër fibrën optike në rastin e transmetimit multimod</figcaption>
+            </figure>
+            <p>Kështu rrezja në shumë “hapa” kalon nëpër fibrën optike, ku rrezja me kënd më të vogël rënës kalon rrugë më të gjatë (sepse bënë më shumë hapa) se rrezja, këndi rënës i së cilës është më i madh. Prandaj rrezet e emetuara në një interval kohor arrin në destinacion në intervale të ndryshme kohore, ku sinjali rezultant fitohet me rekombinimin e rrezeve të arritura.</p>
+            <p>Si burime të rrezeve të dritës përdoren:</p>
+            <ul>
+                <li>dioda LED (angl.: <i><b>L</b>ight <b>E</b>mitting <b>D</b>iode</i>),</li>
+                <li>dioda laserike injektuese ose ILD (angl.: <i><b>I</b>njection <b>L</b>aser <b>D</b>iode</i>) dhe</li>
+                <li>laseri.</li>
+            </ul>
+            <p>Në dy rastet e para bëhet fjalë për elemente gjysëmpërçuese të cilët emetojnë dritë kur të sjellët tensioni në ato.</p>
+            <p>Dioda LED është e lirë, punon në brez të lart të temperaturës dhe ka jetëgjatësi më të madhe, por emeton dritë jo mjaftë të fokusuar, andaj përdoret gjatë transmetimit në distanca të shkurta.</p>
+            <p>ILD është më efikase dhe mundëson transmetim më të shpejt të të dhënave.</p>
+            <p>Laseri mundëson fokusim jashtëzakonisht të madh të rrezes së dritës, andaj mund të korrigjohet këndi i rënies së rrezes. Për shkak të drejtimit të jashtzakonshëm dhe fuqisë së lartë, sinjalet laserike i mbajnë karakteristikat e tyre edhe në distanca të mëdha.</p>
+            <p>Në marrje si detektor përdoren dy lloje të fotodiodave , të cilat shndërrojnë dritën në energji elektrike: detektori PIN, më i lirë dhe me ndjeshmëri më të vogël dhe detektori më kualitativ APD.</p>
+            <p>Fibra optike ka disa përparësi në krahasim me kabllon koaksiale dhe çiftoren e përdredhur:</p>
+            <ul>
+                <li>brez më të gjerë lëshues,</li>
+                <li>përmasa dhe peshë më të vogël,</li>
+                <li>dobësim më të vogël,</li>
+                <li>rezistent ndaj pengesave (ndërhyrjeve),</li>
+                <li>mundësi të vogël të përgjimit.</li>
+            </ul>
+            <p>Të metat e fibrave optike janë:</p>
+            <ul>
+                <li>çmimi i lartë,</li>
+                <li>mekanikisht të dobëta (të thyeshme),</li>
+                <li>instalimi më i vështirë.</li>
+            </ul>
+
+            <h2 id="mediumet-me-vem-te-pakanalizuar">MEDIUMET ME VEM TË PAKANALIZUAR</h2>
+
+            <p>Kur bëhet fjalë për transmetimin e sinjaleve përmes mediumeve me valë elektromagnetike (VEM) të pakanalizuar, nënkuptojmë <i>komunikimin pa tela</i> ose <i>radio komunikimin</i>. Spektri elektromagnetik që përdoret tek radio komunikimet është i ndarë në tetë breze saktësisht të definuar (tabela e mëposhtme).</p>
+            <p>Sipas mënyrës se si radio-valët arrin prej dhënësit deri tek marrësi, dallojmë katër tipa të valëve:</p>
+            <ol>
+                <li>valët sipërfaqësore,</li>
+                <li>valët troposferike,</li>
+                <li>valët jonosferike dhe</li>
+                <li>valët direkte.</li>
+            </ol>
+            <p>Radio-valët sipërfaqësore përhapen nëpër shtresat më të ulëta të atmosferës, duke përshkruar lakoren e sipërfaqes së Tokës, por gjithashtu mund të përhapen edhe nëpër ujë. Sinjalet përhapen nga antena emetuese në të gjitha drejtimet, ndërsa intensiteti i fushës në vendin e marrjes varet nga përçueshmëria dhe konstanta dielektrike e terrenit, si dhe nga frekuenca e punës.</p>
+            <p>Valët troposferike mund të përhapen në dy mënyra: direkt në vijë të drejtë nga antena dhënëse deri tek ajo marrëse, apo mund të emitohen nën një kënd në shtresat e epërme të troposferës, prej nga reflektohen përsëri në sipërfaqen e Tokës.</p>
+            <p>Valët jonosferike kanë një domethënie të posaçme në radiofoni. Radio-valët e frekuencave të larta emitohen në drejtim të jonosferës, prej nga reflektohen përsëri kah Toka dhe në këtë mënyrë mundësojnë transmetimin e sinjaleve në distanca të mëdha, edhe atë me një fuqi të vogël emetuese.</p>
+            <p>Valët direkte janë sinjale me frekuenca shumë të larta të cilat transmetohen në vijë të drejtë nga antena dhënëse tek ajo marrëse (antenat duhen të jenë optikisht të dukshme në mes vete). Valët direkte kozmike përdorin satelitët si rele dhe në këtë mënyrë mbulojnë me radio-sinjale sipërfaqe të mëdha në Tokë.</p>
+            <div class="tabela3-2 tabelat">
+                <figure>
+                    <figcaption>Brezet komunikuese në rastin e VEM të pakanalizuara</figcaption>
+                    <table>
+                        <tr>
+                            <th colspan="2"></th>
+                            <th colspan="2">TË DHËNAT ANALOGE</th>
+                            <th colspan="2">TË DHËNAT DIGJITALE</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>Brezi i fekuencave</th>
+                            <th>Emërtimi</th>
+                            <th>Modulimi</th>
+                            <th>Gjerësia e brezit</th>
+                            <th>Modulimi</th>
+                            <th>Shpejtësia e transmetimit</th>
+                            <th>Aplikimi kryesor</th>
+                        </tr>
+                        <tr>
+                            <td>3 – 30 kHz</td>
+                            <td>VLF</td>
+                            <td colspan="2">në përgjithësi nuk përdoret</td>
+                            <td></td>
+                            <td></td>
+                            <td>navigacioni dhe komunikimi nëndetar</td>
+                        </tr>
+                        <tr>
+                            <td>30 – 300 kHz</td>
+                            <td>LF</td>
+                            <td colspan="2">në përgjithësi nuk përdoret</td>
+                            <td>ASK, FSK, MSK</td>
+                            <td>0,1 – 100 b/s</td>
+                            <td>navigacioni</td>
+                        </tr>
+                        <tr>
+                            <td>300 – 3000 kHz</td>
+                            <td>MF</td>
+                            <td>AM</td>
+                            <td>deri në 4 kHz</td>
+                            <td>ASK, FSK, MSK</td>
+                            <td>10 – 1000 b/s</td>
+                            <td>radio komercial AM</td>
+                        </tr>
+                        <tr>
+                            <td>3 – 30 MHz</td>
+                            <td>HF</td>
+                            <td>AM, SSB</td>
+                            <td>deri në 4 kHz</td>
+                            <td>ASK, FSK, MSK</td>
+                            <td>10 – 3000 b/s</td>
+                            <td>radio valëshkurtër; radio CB</td>
+                        </tr>
+                        <tr>
+                            <td>30 – 300 MHz</td>
+                            <td>VHF</td>
+                            <td>AM, SSB, FM</td>
+                            <td>5 kHz – 5 MHz</td>
+                            <td>FSK, PSK</td>
+                            <td>deri në 100 kb/s</td>
+                            <td>televizioni VHF; radio FM</td>
+                        </tr>
+                        <tr>
+                            <td>300 – 3000 MHz</td>
+                            <td>UHF</td>
+                            <td>FM, SSB</td>
+                            <td>deri në 20 MHz</td>
+                            <td>PSK</td>
+                            <td>deri në 10 Mb/s</td>
+                            <td>televizioni UHF; mikrovalët tokësore</td>
+                        </tr>
+                        <tr>
+                            <td>3 – 30 GHz</td>
+                            <td>SHF</td>
+                            <td>FM</td>
+                            <td>deri në 500 MHz</td>
+                            <td>PSK</td>
+                            <td>deri në 100 Mb/s</td>
+                            <td>mikrovalët tokësore; mikrovalët satelitore</td>
+                        </tr>
+                        <tr>
+                            <td>30 – 300 GHz</td>
+                            <td>EHF</td>
+                            <td>FM</td>
+                            <td>deri në 1 GHz</td>
+                            <td>PSK</td>
+                            <td>deri në 750 Mb/s</td>
+                            <td>Lidhjet eksperimentale pikë – pikë</td>
+                        </tr>
+                    </table>
+                </figure>
+            </div>
+            <figcaption style="text-align:justify;">VLF – very low frequency (frekuencë shumë e ultë); LF – low frequency (frekuencë e ultë); MF – medium frequency (frekuencë e mesme); HF – high frequency (frekuencë e lartë); VHF – very high frequency (frekuencë shumë e lartë); UHF – ultra high frequency (frekuencë ultra e lartë); SHF – super high frequency (frekuencë super e lartë); EHF – extremely  high frequency (frekuencë jashtëzakonisht e lartë).</figcaption>
+            <figcaption style="text-align:justify;">AM – amplitude modulation (modulim amplitudor); FM – frequency modulation (modulim frekuencor); SSB – single-sideband modulation (modulim me një brez anësor); ASK – amplitude-shift keying (modulimi digjital i amplitudës); FSK – frequency-shift keying (modulimi digjital i frekuencës); MSK – minimum-shift keying (modulimi minimal digjital); PSK – phase-shift keying (modulimi digjital i fazës).</figcaption>
+
+            <h3 id="telefonia-mobile">TELEFONIA MOBILE</h3>
+
+            <p>Prej zbulimit të telefonit, një prej të metave të tij ishte se pajisja telefonike ishte stacionare. Për të telefonuar, shfrytëzuesi duhet të shkonte deri tek aparati telefonik.</p>
+            <p>Pas Luftës së Dytë Botërore u paraqitën sistemet e para të telefonisë pa tela, të cilët mundësonin që në një zonë të caktuar, kryesisht në zonën e një qyteti të telefonohet nga vetura. Komunikimi i tillë ishte gjysëmdupleks që nënkupton se edhe për pranim edhe për dërgim të porosive është përdorur brezi i njejtë i frekuencave.</p>
+            <p>Para katër dekadave, në shtetet e zhvilluara filloi përdorimi i <i>sistemit të përmirësuar të telefonisë mobile</i> ose IMTS (<b>I</b>mproved <b>M</b>obile <b>T</b>elephone <b>S</b>ystem). Për dallim nga sistemi i mëparshëm, komunikimi ishte dupleks.</p>
+            <p>Para më shumë se dy dekadave u bë zhvillimi edhe më i dukshëm i telefonisë mobile. Sot zonat të cilat e mbulojnë një sistem të telefonisë mobile ndahen në <b>celula</b> (ang.: <i>cell</i>, prej nga përdoret edhe emërtimi <i>telefon celular</i>), të grupuara në formë të hararit të bletëve. Në qendër të çdo celule gjendet <i>stacioni bazë</i>, në të cilin transmetohen të gjitha porositë nga telefonat mobil që gjenden në atë moment në atë celulë. Stacioni bazë paraqet pajisjen radiorele e cila përbëhet prej kompjuterit dhe marrës-transmetuesit që është i lidhur në antenë, e cila duhet të jetë e vendosur në ndonjë pikë të lartë nga sipërfaqja e tokës. Rrezja e celulës zakonisht është prej 2 deri në 20 km. Për shkak të madhësisë së vogël të celulave, fuqia e stacionit marrës-transmetues, si dhe fuqia në dalje të telefonave mobil është shumë e vogël. Pasi sistemi përbëhet nga numri i madh i celulave, bashkësia (brezi) e frekuencave që përdoret në një celulë mund të përdoret edhe në celula tjera, por me kusht që të mos jenë celula fqinje.</p>
+            <figure>
+                <img src="lib/figura/mediumet/4.jpg" alt="Sistemi i telefonisë mobile">
+                <figcaption style="width:400px; margin: auto;" class="celulari">Sistemi i telefonisë mobile prej pesë grupeve me nga shtatë celula. Celulat e shënuara me shkronja të njëjta përdorin frekuenca të njëjta. Është e qartë se celulat që përdorin bashkësi të njëjtë të frekuencave janë të ndara s’paku me nga dy celula që përdorin frekuenca tjera.</figcaption>
+            </figure>
+            <p>Në Evropë është zhvilluar sistemi digjital me emrin sistemi global për komunikime mobile ose GSM (<b>G</b>lobal <b>S</b>ystem for <b>M</b>obile Communications). Punon në brezin e frekuencave prej 1,8 GHz, ndërsa përdor edhe multipleks kohor edhe frekuencor. Telefonat GSM përdorin <i>kartela inteligjente</i> (ang.: <i>smart cards</i>).</p>
+            <p>Në SHBA është i zhvilluar sistemi digjital celular i ashtuquajtur AMPS (<b>A</b>dvanced <b>M</b>obile <b>P</b>hone <b>S</b>ystem).</p>
+            <p>Njëkohësisht telefonia mobile është lidhur edhe me komunikimet kompjuterike, ashtu që shfrytëzuesi sot mundet përmes pajisjes së tij mobile, përveç bartjes së të folurit dhe imazheve, të ketë qasje edhe në shërbime tjera, para se gjithash në Internet dhe në sistemin e pozicionimit global (GPS).</p>
+
+            <h2 id="transmetimi-i-multipleksuar">TRANSMETIMI I MULTIPLEKSUAR</h2>
+
+            <p>Që nëpër një linjë komunikuese, p.sh. nëpër çiftoren e përdredhur të transmetohen më shumë porosi të pavarura njëra nga tjetra, ekzistojnë disa mënyra që kjo të arrihet. Transmetimi i disa sinjaleve të pavarur nëpër një linjë komunikuese quhet <i>transmetim i multipleksuar</i> ose <i>multipleksim</i>.</p>
+            <p>Dy mënyra më të shpeshta të multipleksimit janë:</p>
+            <ol>
+                <li>multipleksimi me ndarje frekuencore të kanalit dhe</li>
+                <li>multipleksimi me ndarje kohore të kanalit.</li>
+            </ol>
+
+            <h3 id="multipleksimi-frekuencor">MULTIPLEKSIMI FREKUENCOR</h3>
+
+            <p>Multiplekseri frekuencor mund të realizohet kryesisht në transmetimin e frekuencave të larta, që do të thotë se sinjal të porosisë duhet që përmes ndonjë lloji të modulimit të transponohet nga brezi fizik i frekuencave në ndonjë brez më të lartë. Pra, çdo sinjali ju ndahet nga një zonë e kufizuar e spektrit. Kjo nënkupton që para modulimit, spektri i sinjaleve të transmetuar duhet të jetë i kufizuar, e kjo arrihet me lëshimin e sinjaleve nëpër filtrat lëshues të frekuencave të ulëta.</p>
+            <p>Sinjalet e multipleksuar në frekuencë mund të transmetohen nëpër linjat fizike dhe në sistemet radio-rele.</p>
+            <figure>
+                <img src="lib/figura/mediumet/5.jpg" alt="Multipleksimi frekuencor">
+                <figcaption>Plani frekuencor në rastin e multiplekserit frekuencor trekanalësh (B<sub>S</sub> = 3,1 [kHz] – gjerësia e spektrit të sinjalit telefonik, B<sub>k</sub> = 4 [kHz] – gjerësia e kanalit telefonik)</figcaption>
+            </figure>
+            <p>Bashkësia e spektrit që definon radhën e kanaleve në boshtin e frekuencave në rastin e transmetimit të multipleksuar quhet <i>plan frekuencor</i>.</p>
+            <p>Multipleksimi frekuencor aplikohet gjatë transmetimit të sinjaleve telefonike, të radios, televizionit dhe të dhënave. Në këtë mënyrë mund të multipleksohen sinjalet e llojllojshëm. Numri i sinjaleve që mund të multipleksohen sipas frekuencës, në parim, është i pakufizuar, varet vetëm nga brezi frekuencor të cilin e kemi në dispozicion.</p>
+
+            <h3 id="multipleksimi-kohor">MULTIPLEKSIMI KOHOR</h3>
+
+            <p>Kur sinjali i porosisë është i paraqitur me vargun e pulseve (p.sh. sinjali digjital), atëherë sinjali i tillë ekziston vetëm në intervale të caktuara kohore, ndërsa në intervalet tjera nuk ka sinjal. Idea e multipleksimit kohor është që në momentet kur në linjë nuk ka sinjal të porosisë, nëpër këtë linjë mund të barten impulset të cilë i takojnë ndonjë sinjali tjetër të informacionit.</p>
+            <figure>
+                <img src="lib/figura/mediumet/6.jpg" alt="Multipleksimi kohor">
+                <figcaption>Forma kohore e sinjalit në rastin e multipleksit trekanalësh me ndarje kohore të kanalit. Në figurat (a), (b) dhe (c) janë paraqitur mostrat e sinjaleve të caktuar. Në figurën (d) është paraqitur pamja e sinjalit të multipleksuar në kohë të krijuar me “ndërthurrjen” e mostrave të tre PAM sinjaleve të informacionit.</figcaption>
+            </figure>
+            <p>Për dallim nga multiplekseri frekuencor, multiplekseri kohor kryesisht realizohet në brezin themelor të frekuencave.</p>
+
+        </article>
+
+        <article id="shtresa-fizike">
+
+            <h1>Shtresa Fizike</h1>
+            <hr />
+
+            <div class="permbajtja">
+                <p>Përmbajtje</p><hr />
+                <ul>
+                    <li id="komunikimi-me-modem-scroll">Komunikimi me modem</li>
+                    <li class="h3-titull" id="qasja-telefonike-scroll">Qasja telefonike</li>
+                    <li class="h4-titull" id="adsl-scroll">ADSL</li>
+                    <li id="standardi-rs-232-dhe-rs-485-scroll">Standardi RS-232 dhe RS-485</li>
+                </ul>
+            </div>
+
+            <p>Shtresa fizike definon të gjitha specifikacionet mekanike, elektrike dhe funksionale si dhe definon raportin ndërmjet pajisjeve dhe mediumeve në transmetimin e të dhënave.</p>
+            <p>Shtresa fizike mund të realizohet në disa mënyra. Mediumet e ndryshme dhe teknikat e ndryshme të transmetimit kërkojnë edhe shtresa fizike të ndryshme.</p>
+            <p>Protokollet e shtresës fizike definojnë parametrat siç janë niveli i tensionit, forma dhe struktura e konektorëve, forma e sinjalit, mënyra e transmetimit, etj.</p>
+            <p>Pajisjet që punojnë në shtresën fizike janë rigjeneratori dhe koncentratori (habi).</p>
+
+            <h2 id="komunikimi-me-modem">KOMUNIKIMI ME MODEM</h2>
+
+            <p>Në kompjuter të gjitha informacionet paraqiten në formën digjitale. Nëse kompjuterët "lidhen" pa tela, duhet që sinjalet digjitale të shndërrohen në sinjale analoge (konvertimi digjital-analog - D/A). Në mënyrë të njëjtë duhet të aplikohet edhe kur sinjalet digjitale barten nëpër sisteme që janë të projektuar për transmetim analog. Në hyrje të kompjuterit duhet të kryhet procesi invers, pra, sinjalet analoge të shndërrohen në sinjale digjitale (konvertimi analog-digjital - A/D). Këto konvertime realizohen në pajisjen që përbëhet nga modulatori dhe demodulatori, e që me një emër quhet <em>modem</em> (<strong>mo</strong>dulator/<strong>dem</strong>odulator). Modemi mund të jetë i ndërtuar në vet kompjuterin (modemi <em>intern</em>) dhe mund të lidhet nga jashtë (modemi <em>ekstern</em>).</p>
+            <p>Modulimi realizohet ashtu që sinjali digjital (që në këtë rast quhet <em>sinjal modulues</em>), ndikon në sinjalin sinusoidal (i cili quhet <em>sinjal bartës</em>), duke ja ndryshuar ndonjërin prej parametrave themelor të sinjali bartës (amplitudën, frekuencën apo fazën) në ritmin e ndryshimit të sinjali modulues.</p>
+            <p>Për transformimin e sinjaleve digjitale në sinjale analoge, përdoren tri teknika themelore moduluese:</p>
+            <ol>
+            <li>modulimi digjital i amplitudës ose ASK (<strong>A</strong>mplitude-<strong>S</strong>hift <strong>K</strong>eying),</li>
+            <li>modulimi digjital i frekuencës ose FSK (<strong>F</strong>requency-<strong>S</strong>hift <strong>K</strong>eying) dhe</li>
+            <li>modulimi digjital i fazës ose PSK (<strong>P</strong>hase-<strong>S</strong>hift <strong>K</strong>eying).</li>
+            </ol>
+            <p>Në tre rastet, sinjali rezultant mbulon brezin frekuencor përreth sinjalit bartës.</p>
+
+            <h3 id="qasja-telefonike">QASJA TELEFONIKE</h3>
+
+            <p>Me nocionin&nbsp;<em>rrjet&euml; telefonike</em>&nbsp;n&euml;nkuptohet rrjeta komutuese e telefonis&euml; publike. Rrjeta telefonike &euml;sht&euml; e parapar&euml; p&euml;r transmetimin e sinjalit t&euml; t&euml; folurit, pra, sinjalit analog. Andaj n&euml; rastin kur lidhja nd&euml;rmjet kompjuter&euml;ve realizohet p&euml;rmes linj&euml;s telefonike, duhet q&euml; n&euml; dalje t&euml; kompjuterit, e para hyrjes n&euml; linj&euml;n telefonike, t&euml; b&euml;het konvertimi D/A, nd&euml;rsa n&euml; hyrje nga linja n&euml; kompjuter konvertimi A/D.</p>
+            <figure>
+                <img src="lib/figura/shtresa-fizike/1.jpg" alt="Lidhja e kompjuterëve me modem përmes rrjetit telefonik">
+                <figcaption>Lidhja e kompjuterëve me modem përmes rrjetit telefonik</figcaption>
+            </figure>
+            <p>Me nocionin&nbsp;<em>qasje telefonike</em>&nbsp;n&euml;nkuptohet m&euml;nyra e qasjes n&euml; Internet kur shfryt&euml;zuesi me ndihm&euml;n e modemit t&euml; lidhur n&euml; kompjuter dhe linj&euml; telefonike p&euml;r mes zgjedhjes vendoset konekcioni me kompjuterin e provajderit t&euml; sh&euml;rbimeve t&euml; Internetit. Pasi rrjeta telefonike &euml;sht&euml; rrjet&euml; telekomunikuese m&euml; e p&euml;rhapur, e cila praktikisht mbulon &ccedil;do vendbanim n&euml; bot&euml;, qasja telefonike praktikisht i mund&euml;son &ccedil;dokujt q&euml; &euml;sht&euml; i interesuar t&rsquo;i p&euml;rdor sh&euml;rbimet e Internetit.</p>
+            <p>N&euml; shum&euml; pjes&euml; t&euml; bot&euml;s para nj&euml; dekade, qasja telefonike &euml;sht&euml; z&euml;vend&euml;suar me&nbsp;<em>qasje brezgjer&euml; t&euml; Internetit</em>, e cila realizohet ose me lidhje kabllore ose me teknikat DSL (<strong>D</strong>igital&nbsp;<strong>S</strong>ubscriber&nbsp;<strong>L</strong>ine &ndash; linja digjitale e abonentit), e cila tek ne m&euml; e njohur &euml;sht&euml; ADSL (<strong>A</strong>symmetrical&nbsp;<strong>D</strong>igital&nbsp;<strong>S</strong>ubcriber&nbsp;<strong>L</strong>ine). Lidhjet brezgjer&euml; gjithashtu mund&euml;sojn&euml; shpejt&euml;si m&euml; t&euml; madhe t&euml; transmetimit.</p>
+            <p>Var&euml;sisht prej mediumit q&euml; p&euml;rdoret, modem&euml;t mund t&euml; jen&euml; telefonik, kabllor dhe pa tela.</p>
+
+            <h4 id="adsl">ADSL</h4>
+
+            <p>ADSL (<strong>A</strong>symmetrical&nbsp;<strong>D</strong>igital&nbsp;<strong>S</strong>ubscriber&nbsp;<strong>L</strong>ine &ndash; linja asimetrike digjitale e abonentit) quhet&nbsp;<em>linj&euml; asimetrike</em>&nbsp;sepse ofron bit-shpejt&euml;si m&euml; t&euml; madhe n&euml; kahun nga serveri i Internetit t&euml; provajderit kah abonenti (<em>komunikimi te posht&euml; &ndash; download</em>) n&euml; krahasim me kahun nga abonenti kah serveri i Internetit t&euml; provajderit (<em>komunikimi p&euml;rpjet&euml; &ndash; upload</em>). Ndarje e k&euml;till&euml; &euml;sht&euml; b&euml;r&euml; sepse shfryt&euml;zuesit kryesisht d&euml;shirojn&euml; q&euml; nga Interneti t&euml; &ldquo;marrin&rdquo; fajlla t&euml; mdhej, deri sa vet zakonisht d&euml;rgojn&euml; fajlla t&euml; vegj&euml;l, p.sh. post&euml; elektronike.</p>
+            <figure>
+                <img src="lib/figura/shtresa-fizike/2.jpg" alt="Modemi ADSL" class="jonata">
+                <figcaption>Një prej ADSL modemëve/ruterëve që përdoret tek ne</figcaption>
+            </figure>
+            <p>Brezi l&euml;shues i kabllos me &ccedil;iftore t&euml; p&euml;rdredhura &euml;sht&euml; rreth 1Mhz (1000kHz). ADSL-i e ndan&euml; brezin l&euml;shues t&euml; k&euml;saj kablloje n&euml; tri n&euml;nbreze. N&euml;nbrezi i par&euml; &euml;sht&euml; prej 0 deri n&euml; 25kHz dhe p&euml;rdoret p&euml;r sh&euml;rbimin e telefonis&euml; standarde, pra p&euml;r transmetimin e t&euml; folurit. Ky sh&euml;rbim p&euml;rdor brez frekuencor prej vet&euml;m 4kHz (gjer&euml;sia standarde e kanalit telefonik), pjesa tjet&euml;r p&euml;rdoret si zon&euml; mbrojt&euml;se p&euml;r t&euml; mund&euml;suar ndarjen e kanalit t&euml; t&euml; folurit dhe kanalit p&euml;r transmetimin e t&euml; dh&euml;nave. N&euml;nbrezi i dyt&euml;, zakonisht prej 25kHz deri n&euml; 200kHz, p&euml;rdoret p&euml;r komunikim p&euml;rpjet&euml;. N&euml;nbrezi i tret&euml; zakonisht gjendet n&euml; brezin e frekuencave prej 200kHz deri n&euml; 1Mhz dhe p&euml;rdoret p&euml;r komunikim te posht&euml;.</p>
+            <figure>
+                <img src="lib/figura/shtresa-fizike/3.jpg" alt="Paraqitja grafike e nënbrezeve frekuencore në teknologjinë ADSL">
+                <figcaption>Paraqitja grafike e nënbrezeve frekuencore në teknologjinë ADSL</figcaption>
+            </figure>
+            <p>Duke u mb&euml;shtetur n&euml; teknologjin&euml; ADSL, vitet e fundit ekspanzion m&euml; t&euml; madh kan&euml; shfaqur t&euml; ashtuquajturat rrjetat Triple Play, t&euml; cilat abonentit ju mund&euml;sojn&euml; transmetimin e t&euml; folurit t&euml; paketuar (VoIP), t&euml; dh&euml;nave dhe programeve televizive me ndihm&euml;n e protokollit IP (IPTV).</p>
+
+            <h2 id="standardi-rs-232-dhe-rs-485">STANDARDI RS-232 dhe RS-485</h2>
+
+            <p>Interfejsi nd&euml;rmjet kompjuterit dhe modemit paraqet shembull tipik t&euml; protokollit n&euml; shtres&euml;n fizike.</p>
+            <p>Ekzistojn&euml; shum&euml; standarde t&euml; cil&euml;t definojn&euml; lidhjen nd&euml;rmjet pajisjeve DTE (<strong>D</strong>ata&nbsp;<strong>T</strong>erminal&nbsp;<strong>E</strong>quipment &ndash; pajisje e cila gjeneron dhe/ose p&euml;rdor t&euml; dh&euml;na digjitale) dhe DCE (<strong>D</strong>ata&nbsp;<strong>C</strong>ircuit-terminating&nbsp;<strong>E</strong>quipment &ndash; pajisje e cila nga DTE-ja i pranon t&euml; dh&euml;nat digjitale dhe i shnd&euml;rron n&euml; sinjale q&euml; jan&euml; t&euml; p&euml;rshtatshme p&euml;r transmetim n&euml;p&euml;r linj&euml;n komunikuese ose e cila sinjalet e marra nga rrjeta i transformon n&euml; t&euml; dh&euml;na digjitale q&euml; ja p&euml;rcjell pajisjes DTE). T&euml; gjith&euml; k&euml;to standarde definojn&euml; karakteristikat mekanike, elektrike dhe funksionale t&euml; interfejs&euml;ve, p&euml;rkat&euml;sisht lidhjen nd&euml;rmjet pajisjeve DTE dhe DCE:</p>
+            <ul>
+                <li>specifikacioni mekanik definon numrin e telave n&euml; kabllo, p&euml;rkat&euml;sisht numrin e pin&euml;ve/foleve n&euml; konektor, form&euml;n dhe dimenzionet e konektor&euml;ve, pin&euml;ve dhe foleve.</li>
+                <li>specifikacioni elektrik definon nivelet e tensionit dhe m&euml;nyrat e kodimit, gjithashtu llojet e sinjaleve q&euml; barten nd&euml;rmjet pajisjeve DTE dhe DCE, si dhe bit-shpejt&euml;sin&euml; maksimale.</li>
+                <li>specifikacioni funksional definon rradhitjen e pin&euml;ve dhe foleve, gjegj&euml;sisht funksionet e p&euml;r&ccedil;uesve t&euml; caktuar n&euml; kabllo.</li>
+            </ul>
+            <p>RS-232 (<strong>R</strong>ecommened&nbsp;<strong>S</strong>tandard 232) &euml;sht&euml; standard p&euml;r bartje serike nd&euml;rmjet kompjuterit dhe periferive t&euml; tij (modemit, mausit, etj.). P&euml;rdoret konektori 25-pin&euml;sh DB-25 dhe konektori 9-pin&euml;sh DB-9. P&euml;r lidhje sh&euml;rbejn&euml; portet serike t&euml; kompjuterit. Gjat&euml;sia e kabllos zakonisht &euml;sht&euml; disa metra, megjith&euml;se kabllot e kualitetit t&euml; lart&euml; mund&euml;sojn&euml; q&euml; distanca nd&euml;rmjet pajisjeve t&euml; jet&euml; deri n&euml; nj&euml;qind metra.</p>
+            <p>RS-485 (<strong>R</strong>ecommened&nbsp;<strong>S</strong>tandard 485) &euml;sht&euml; standard q&euml; paraqet specifikacionin elektrik t&euml; shtres&euml;s fizike t&euml; modelit OSI p&euml;r lidhje serike dy-tel&euml;she gjys&euml;mduplekse e shum&euml;pik&euml;she. RS-485 mund&euml;son konfigurimin e rrjetave lokale t&euml; lira dhe linqeve shum&euml;pik&euml;she.</p>
+
+        </article>
+
+        <article id="shtresa-data-linkut">
+
+            <h1>Shtresa e Data-Linkut</h1>
+            <hr />
+
+            <div class="permbajtja" style="float:right; margin-right:0; margin-left:25px; box-shadow: -4px 4px 8px 0 rgba(0, 0, 0, 0.2), -6px 6px 15px 0 rgba(0, 0, 0, 0.19);">
+                <p>Përmbajtje</p><hr />
+                <ul>
+                    <li id="detyrat-e-shtreses-se-data-linkut-scroll">Detyrat e shtresës së data-linkut</li>
+                    <li class="h3-titull" id="formimi-i-kornizave-scroll">Formimi i kornizave</li>
+                    <li class="h3-titull" id="adresimi-fizik-scroll">Adresimi fizik</li>
+                    <li class="h3-titull" id="dirigjimi-i-qasjes-ne-medium-scroll">Dirigjimi i qasjes në medium</li>
+                    <li class="h4-titull" id="konkurrenca-scroll">Konkurrenca</li>
+                    <li class="h5-titull" id="protokolli-csma-cd-scroll">Protokolli CSMA/CD</li>
+                    <li class="h5-titull" id="ethernet-i-scroll">ETHERNET-i</li>
+                    <li class="h4-titull" id="ndarja-e-tokenit-scroll">Ndarja e tokenit</li>
+                    <li class="h3-titull" id="dirigjimi-i-rrjedhes-scroll">Dirigjimi i rrjedhës</li>
+                    <li class="h3-titull" id="kontrolli-i-gabimeve-scroll">Kontrolli i gabimeve</li>
+                </ul>
+            </div>
+
+            <p><strong>PROJEKTI IEEE 802</strong>. N&euml; rrjetat kompjuterike lokale m&euml; shpesh t&euml; p&euml;rdorura jan&euml; kat&euml;r arkitektura: <em>ethernet</em>, <em>magjistralja me token</em> (ang.: <em>token bus</em>), unaza me token (ang.: <em>token ring</em>) dhe <em>FDDI</em> (<strong><em>F</em></strong><em>iber <strong>D</strong>istributed <strong>D</strong>ata <strong>I</strong>nterface</em>). Tri arkitekturat e para jan&euml; standarde IEEE dhe jan&euml; pjes&euml; e projektit t&euml; njohur si projekti 802. FDDI &euml;sht&euml; projekt i standardit ANSI. Projekti IEEE 802 &euml;sht&euml; modular dhe p&euml;rfshin&euml; shtres&euml;n fizike dhe t&euml; data-linkut, e pjes&euml;risht edhe shtres&euml;n e rrjetit. T&rsquo;i cekim vet&euml;m disa prej k&euml;tyre moduleve:</p>
+            <ul>
+            <li>802.1 merret me lidhjen e rrjetave lokale dhe globale dhe ai &euml;sht&euml; pjes&euml;risht i lidhur me shtres&euml;n e rrjetit;</li>
+            <li>802.2 merret me t&euml; ashtuquajtur&euml;n n&euml;nshtresa LLC t&euml; shtres&euml;s s&euml; data-likut n&euml;nshtresa LLC &euml;sht&euml; e p&euml;rbashk&euml;t p&euml;r t&euml; gjith&euml; protokollet e rrjetave lokale q&euml; i ka definuar IEEE-ja;</li>
+            <li>802.3 merret me LAN-&euml;t q&euml; logjikisht paraqesin rrjet&euml; me magjistrale;</li>
+            <li>802.4 merret me LAN-&euml;t q&euml; funksionojn&euml; si magjistrale me token;</li>
+            <li>802.5 merret me LAN-&euml;t n&euml; form&euml; t&euml; unaz&euml;s me token.</li>
+            </ul>
+            <p>Modulet tjer&euml; 802, q&euml; tani jan&euml; m&euml; shum&euml; se nj&euml;zet, ju referohen rrjetave t&euml; qytetit, rrjetave pa tela, siguris&euml; n&euml; rrjeta, etj.</p>
+
+            <h2 id="detyrat-e-shtreses-se-data-linkut">DETYRAT E SHTRES&Euml;S S&Euml; DATA-LINKUT</h2>
+
+            <p>N&euml; shtres&euml;n fizike kryhet bartja (transmetimi), por ky ende nuk &euml;sht&euml; komunikim. N&euml;se fizikisht i lidhim dy kompjuter, duhet para fillimit t&euml; k&euml;mbimit t&euml; informacioneve t&euml; zgjidhen disa detyra, si&ccedil; jan&euml;: pajisja A e cila d&euml;shiron t&euml; d&euml;rgoj t&euml; dh&euml;na duhet ta dij&euml; se pajisja B a &euml;sht&euml; e gatshme t&rsquo;i pranoj, n&euml; rastin e komunikimit gjys&euml;mdupleks duhet t&rsquo;ju pamund&euml;sohet pajisjeve tjera q&euml; t&euml; emitojn&euml; deri sa pajisja e par&euml; &euml;sht&euml; duke d&euml;rguar t&euml; dh&euml;na.</p>
+            <p>Shtresa e data-linkut merret me d&euml;rgimin e kornizave nd&euml;rmjet dy nyejve fqinje. P&euml;r t&euml; realizuar k&euml;t&euml; kjo shtres&euml; kryen k&euml;to detyra:</p>
+            <ul>
+            <li><strong>formimin e kornizave</strong>. N&euml; dispe&ccedil;im, shtresa e data-linkut pakos s&euml; ardhur nga shtresa e rrjetit ja shton <em>kok&euml;n</em> dhe bishtin. N&euml; marrje shtresa e data-linkut e ndan&euml; vargun e bit&euml;ve t&euml; pastrukturuar n&euml; korniza, e hjek kok&euml;n dhe bishtin e pjes&euml;s s&euml; mbetur t&euml; korniz&euml;s, pra pakon e fituar ja p&euml;rcjell shtres&euml;s s&euml; rrjetit;</li>
+            <li><strong>adresimin fizik</strong>. N&euml; kok&euml;n e korniz&euml;s vendoset adresa fizike e burimit dhe destinacionit;</li>
+            <li><strong>dirigjimin e qasjes n&euml; medium</strong>. Kur n&euml; nj&euml; linj&euml; jan&euml; t&euml; lidhur disa stacione, n&euml; shtres&euml;n e data linkut p&euml;rcaktohet se cili stacion n&euml; cilin moment ka t&euml; drejt&euml; t&euml; emetoj;</li>
+            <li><strong>dirigjimin e rrjedh&euml;s</strong>. N&euml;se shpejt&euml;sia me t&euml; cil&euml;n destinacioni i pranon t&euml; dh&euml;nat &euml;sht&euml; m&euml; e vog&euml;l se shpejt&euml;sia me t&euml; cil&euml;n burimi i d&euml;rgon t&euml; dh&euml;nat, kjo shtres&euml; aktivizon mekanizmin p&euml;r dirigjimin e rrjedh&euml;s, q&euml; t&euml; pamund&euml;soj burimin e shpejt t&euml; ngulfat destinacionin e ngadalsh&euml;m;</li>
+            <li><strong>korrigjimin e gabimeve</strong>. Shtresa e data-linkut e shnd&euml;rron shtres&euml;n fizike n&euml; lidhje t&euml; besueshme ashtu q&euml; me ndihm&euml;n e informacioneve n&euml; bishtin e korniz&euml;s mund&euml;sohet zbulimi dhe ritransmetimi i kornizave t&euml; d&euml;mtuara apo t&euml; humbura si dhe pamund&euml;son paraqitjen e kornizave t&euml; dyfishta.</li>
+            </ul>
+            <p>P&euml;r t&rsquo;ju p&euml;rgjigjur numrit t&euml; madh t&euml; detyrave, shtresa e data-linkut zakonisht ndahet n&euml; dy n&euml;nshtresa:</p>
+            <ol>
+            <li>N&euml;nshtresa p&euml;r dirigjimin e lidhjes logjike &ndash; LLC (<strong>L</strong>ogical <strong>L</strong>ink <strong>C</strong>ontrol)</li>
+            <li>N&euml;nshtresa p&euml;r dirigjimin e qasjes n&euml; medium &ndash; MAC (<strong>M</strong>edia <strong>A</strong>ccess <strong>C</strong>ontrol).</li>
+            </ol>
+            <p>Detyra e n&euml;nshtres&euml;s LLC &euml;sht&euml; t&rsquo;ju mund&euml;soj protokolleve t&euml; shtres&euml;s s&euml; rrjetit q&euml; n&euml; m&euml;nyr&euml; t&euml; p&euml;rbashk&euml;t t&euml; p&euml;rdorin shtres&euml;n e data-linkut.</p>
+            <figure>
+                <img src="lib/figura/shtresa-data-linkut/1.jpg" alt="LLC dhe MAC" class="sm300">
+                <figcaption>Shtresa e data-linkut përbëhet prej dy nënshtresave : LLC dhe MAC</figcaption>
+            </figure>
+
+            <h3 id="formimi-i-kornizave">FORMIMI I KORNIZAVE</h3>
+            <p>N&euml; shtres&euml;n e data-linkut korniza formohet ashtu q&euml; pakos s&euml; ardhur nga shtresa e rrjetit ju shtohet koka dhe bishti. Fusha e par&euml; n&euml; kok&euml; dhe fusha e fundit n&euml; bisht paraqesin fillimin dhe fundin e korniz&euml;s. N&euml; bishtin e korniz&euml;s gjendet <em>numri kontrollues</em> i cili mund&euml;son q&euml; n&euml; marrje t&euml; verifikoj se gjat&euml; transmetimit a &euml;sht&euml; d&euml;mtuar korniza.</p>
+            <p>N&euml; pranim detyra e par&euml; e shtres&euml;s s&euml; data-linkut &euml;sht&euml; q&euml; n&euml; vargjet e bit&euml;ve t&euml; ardhur t&rsquo;i njoh kufijt&euml; e kornizave dhe n&euml; k&euml;t&euml; m&euml;nyr&euml; t&euml; konvertoj vargjet e bit&euml;ve n&euml; korniza.</p>
+            <figure>
+                <img src="lib/figura/shtresa-data-linkut/2.jpg" alt="Struktura themelore e kornizës">
+                <figcaption>Struktura themelore e kornizës</figcaption>
+            </figure>
+
+            <h3 id="adresimi-fizik">ADRESIMI FIZIK</h3>
+            <p>Detyra e shtres&euml;s s&euml; data-linkut &euml;sht&euml; lidhja e kompjuter&euml;ve t&euml; cil&euml;t gjenden n&euml; rrjet&euml;n e <strong>nj&euml;jt&euml;</strong>. Andaj n&euml; kok&euml;n e korniz&euml;s vendoset adresa <strong>fizike</strong> e kompjuterit. N&euml; rrjetat LAN 802 adresat fizike jan&euml; t&euml; standardizuara dhe t&euml; gjata gjasht&euml; bajt.</p>
+            <p>P&euml;r adres&euml;n fizike p&euml;rdoren edhe em&euml;rtimet <em>LAN adresa</em>, <em>MAC adresa</em>, <em>NIC adresa</em> dhe <em>PROM adresa</em>. Adresa fizike &euml;sht&euml; unike dhe ju p&euml;rcaktohet gjat&euml; fabrikimit <em>kartelave intefejs t&euml; rrjetit</em> &ndash; NIC (<strong>N</strong>etwork <strong>I</strong>nterface <strong>C</strong>ard).</p>
+            <p>Kartela e rrjetit punon n&euml; shtres&euml;n fizike dhe t&euml; data-linkut dhe ka nj&euml; varg t&euml; funksioneve. P&euml;rve&ccedil; se n&euml; t&euml; gjendet adresa fizike, n&euml; kartelat NIC p.sh. formohen kornizat, kryhet konvertimi i transmetimit paralel n&euml; serik dhe anasjelltas, p&euml;rshtatet forma e sinjalit digjital t&euml; cilin e p&euml;rdor kompjuteri n&euml; form&euml;n q&euml; i p&euml;rgjigjet mediumit n&euml;p&euml;r t&euml; cilin kryhet transmetimi. N&euml; destinacion kartela e rrjetit v&euml;zhgon kornizat q&euml; kalojn&euml; n&euml;p&euml;r rrjet&euml; dhe verifikon se adresa destinuese e tyre a &euml;sht&euml; e nj&euml;jt&euml; me adres&euml;n fizike t&euml; saj, ashtu q&euml; t&rsquo;i pranoj vet&euml;m ato korniza q&euml; ju kan&euml; d&euml;rguar atij stacioni.</p>
+            <figure>
+                <img src="lib/figura/shtresa-data-linkut/3.jpg" alt="Pamja e kornizës në rastin kur kompjuteri me adresë fizike 13 i dërgon porosi kompjuterit adresa fizike e të cilit është 42">
+                <figcaption>Pamja e kornizës në rastin kur kompjuteri me adresë fizike 13 i dërgon porosi kompjuterit adresa fizike e të cilit është 42</figcaption>
+            </figure>
+
+            <h3 id="dirigjimi-i-qasjes-ne-medium">DIRIGJIMI I QASJES N&Euml; MEDIUM</h3>
+            <p>N&euml; rrjetat difuzive problemi ky&ccedil; &euml;sht&euml; se si n&euml; rastet kur ekzistojn&euml; disa t&euml; interesuar p&euml;r t&euml; d&euml;rguar, t&euml; caktohet se cilit prej tyre t&rsquo;ju ndahet kanali. Duke marr&euml; parasysh n&euml; at&euml; se t&euml; gjith&euml; stacionet shfryt&euml;zojn&euml; t&euml; nj&euml;jtin kanal, n&euml;se dy apo m&euml; shum&euml; stacione nj&euml;koh&euml;sisht emitojn&euml; do t&euml; vije deri te ndeshja, p&euml;rkat&euml;sisht <em>kolizioni</em> i kornizave. Kjo do t&euml; shkaktoj d&euml;mtimin e k&euml;tyre kornizave. P&euml;r t&euml; parandaluar k&euml;t&euml;, nevojitet q&euml; n&euml; nj&euml; interval kohor n&euml;p&euml;r kanal t&euml; d&euml;rgoj vet&euml;m nj&euml; stacion.</p>
+            <p>Sot, kryesisht aplikohen dy metoda themelore p&euml;r qasje n&euml; medium, edhe at&euml;:</p>
+            <ul>
+            <li>konkurrenca dhe</li>
+            <li>ndarja e tokenit.</li>
+            </ul>
+
+            <h4 id="konkurrenca">Konkurrenca</h4>
+            <p><em>Konkurrenca</em> paraqet metod&euml;n e decentralizuar p&euml;r ndarjen e kanalit, q&euml; n&euml;nkupton se nuk ekziston ndonj&euml; mekaniz&euml;m p&euml;r arbitrazh, i cili n&euml; rastet kur disa stacione kan&euml; t&euml; dh&euml;na p&euml;r t&euml; d&euml;rguar, t&euml; caktoj se cilit stacion t&rsquo;ju ndaj kanalin.</p>
+            <p>N&euml; k&euml;t&euml; metod&euml; t&euml; gjitha stacionet mund t&euml; fillojn&euml; emetimin kur t&euml; d&euml;shirojn&euml; (kuptohet, kur t&euml; ken&euml; &ccedil;ka t&euml; d&euml;rgojn&euml;) pa marr&euml; parasysh aktivitetin e ndonj&euml; stacioni tjet&euml;r. Andaj edhe vije deri tek kolizioni i kornizave.</p>
+            <p>Tipar i transmetimit difuziv &euml;sht&euml; ekzistimi i lidhjes s&euml; rikthyeshme: transmetuesi mundet, si edhe &ccedil;do stacion tjet&euml;r, ta p&euml;rgjoj kanalin. Duke p&euml;rgjuar at&euml;, transmetuesi mund t&euml; hetoj se a jan&euml; d&euml;mtuar kornizat e tij apo jo, ashtu q&euml; krahason fuqin&euml; e sinjalit t&euml; pranuar me at&euml; t&euml; sinjalit q&euml; e ka emituar: e n&euml;se sinjali i pranuar ka fuqi m&euml; t&euml; lart&euml;, at&euml;her&euml; ka ardhur deri tek kolizioni gjat&euml; emetimit.</p>
+            <p>N&euml;se korniza &euml;sht&euml; d&euml;mtuar, transmetuesi pret nj&euml; koh&euml; t&euml; <strong>rast&euml;sishme</strong>, pastaj riemeton at&euml; korniz&euml;. Kjo n&euml;nkupton se transmetuesi e ruan n&euml; baferin (memorie e brendshme) e tij kopjen e korniz&euml;s s&euml; d&euml;rguar, deri sa nuk m&euml;son q&euml; transmetimi ishte i suksessh&euml;m.</p>
+            <p>Metoda n&euml; t&euml; cil&euml;n &ccedil;do stacion emeton kur t&euml; d&euml;shiroj, duke mos p&euml;rfillur stacionet tjer&euml; n&euml; rrjet&euml;, nuk mund t&euml; jet&euml; efikase, sepse me rritjen e komunikacionit n&euml; rrjet&euml; rriten edhe kolizionet, e me k&euml;t&euml; edhe ritransmetimet, k&euml;shtu q&euml; zvog&euml;lohet shfryt&euml;zimi i kanalit (m&euml; pak se 20%).</p>
+
+            <p id="protokolli-csma-cd"><u>Protokolli CSMA/CD</u></p>
+            <p>P&euml;r t&euml; eliminuar t&euml; metat e metod&euml;s s&euml; konkurrenc&euml;s p&euml;rdoret <em>metoda&nbsp; e p&euml;rgjimit (ekzaminimit) t&euml; sinjalit bart&euml;s me detektim t&euml; kolizionit </em>apo protokolli CSMA /CD (<strong>C</strong>arrier <strong>S</strong>ense <strong>M</strong>ultiple <strong>A</strong>ccess with <strong>C</strong>ollision <strong>D</strong>etection) &ndash; q&euml; n&euml;nkupton qasje e shum&euml;fisht&euml; n&euml; mediumin bart&euml;s me metod&euml;n e detektimit t&euml; kolizionit (p&euml;rplasjes).</p>
+            <p><strong>Multiple Access</strong> &ndash; n&euml;nkupton se t&euml; gjith&euml; kompjuter&euml;t jan&euml; t&euml; lidhur n&euml; nj&euml; medium t&euml; p&euml;rbashk&euml;t, n&euml; t&euml; cilin kan&euml; qasje disa prej tyre n&euml; nj&euml; interval kohor.</p>
+            <p><strong>Carrier Sense</strong> &ndash; n&euml;nkupton q&euml; para emetimit t&euml; t&euml; dh&euml;nave, stacioni e p&euml;rgjon mediumin p&euml;r t&euml; v&euml;rtetuar se a &euml;sht&euml; duke emituar t&euml; dh&euml;na ndonj&euml; stacion tjet&euml;r. N&euml;se n&euml; medium nuk ka ndonj&euml; emetim tjet&euml;r at&euml;her&euml; stacioni p&euml;rkat&euml;s do t&euml; filloj transmetimin e t&euml; dh&euml;nave.</p>
+            <p><strong>Collision Detection</strong> &ndash; n&euml;nkupton rastin kur dy stacione fillojn&euml; nj&euml;koh&euml;sisht t&euml; emitojn&euml; t&euml; dh&euml;na dhe vije deri tek kolizioni, ekzistojn&euml; mekanizma q&euml; e mund&euml;sojn&euml; ritransmetimin e t&euml; dh&euml;nave t&euml; nj&euml;jta pas nj&euml; intervali kohor t&euml; rast&euml;sish&euml;m.</p>
+
+            <p id="ethernet-i"><u>ETHERNET-i</u></p>
+            <p><em>Ethernet</em>-i &euml;sht&euml; familja m&euml; e p&euml;rdorur e teknologjive t&euml; definuar me standardet IEEE 802.2 dhe 802.3. Ethernet-i definohet si teknik&euml; e transmetimit difuziv me dirigjim t&euml; decentralizuar p&euml;r qasje n&euml; medium, gjat&euml; s&euml; cil&euml;s sh&euml;rbimi nuk &euml;sht&euml; besnik, por &euml;sht&euml; <em>m&euml; i mir&euml; i mundsh&euml;m</em> (ang.: <em>best-effort delivery</em>), sepse burimi nuk merr informacion se porosia a &euml;sht&euml; d&euml;rguar n&euml; destinacion apo jo.</p>
+            <p>P&euml;rpar&euml;sit&euml; e rrjetave Ethernet jan&euml;:</p>
+            <ul>
+            <li>t&euml; thjeshta p&euml;r planifikim,</li>
+            <li>ekonomike p&euml;r instalim,</li>
+            <li>komponentet e rrjetit jan&euml; lira,</li>
+            <li>teknologjia &euml;sht&euml; treguar e besueshme,</li>
+            <li>shum&euml; leht&euml; mund t&euml; shtohet dhe t&euml; largohet nj&euml; kompjuter nga rrjeti,</li>
+            <li>e p&euml;rkrahin shum&euml; sisteme softuerike dhe harduerike,...</li>
+            </ul>
+            <p>Mang&euml;sit&euml; e Ethernet-it jan&euml;:</p>
+            <ul>
+            <li>&euml;sht&euml; arkitektur&euml; e hapur, ku &ccedil;do nyje mund t&euml; d&euml;rgoj dhe pranoj t&euml; dh&euml;na</li>
+            <li>shfryt&euml;zon komunikime brezgjer&euml;,</li>
+            <li>leht&euml; mund t&euml; p&euml;rgjohet dhe</li>
+            <li>nuk ka asnj&euml; harduer p&euml;r siguri.</li>
+            </ul>
+            <p>Struktura e korniz&euml;s 802.3, p&euml;rkat&euml;sisht korniz&euml;s Ethernet &euml;sht&euml; dh&euml;n&euml; n&euml; figur&euml;n e m&euml; poshtme.</p>
+            <figure>
+                <img src="lib/figura/shtresa-data-linkut/4.jpg" alt="Formati i kornizës 802.3, përkatësisht i kornizës Ethernet">
+                <figcaption>Formati i kornizës 802.3, përkatësisht i kornizës Ethernet</figcaption>
+            </figure>
+            <p>&Ccedil;do korniz&euml; fillon me hyrjen 7-bajt&euml;she, p&euml;rkat&euml;sisht 7 her&euml; p&euml;rs&euml;ritet vargu 10101010. Hyrja mund&euml;son q&euml; marr&euml;si t&euml; sinkronizohet me transmetuesin. N&euml; radh&euml; vije bajti 10101011 i cili paraqet fillimin e &ccedil;do kornize.</p>
+            <p>Fushat 6-bajt&euml;she jan&euml; t&euml; rezervuara p&euml;r adres&euml;n e transmetuesit dhe marr&euml;sit.</p>
+            <p>Fusha e t&euml; dh&euml;nave tregon se sa bajt&euml; mund t&euml; vendosen n&euml; k&euml;t&euml; fush&euml;, e ajo mund t&euml; jet&euml; e gjat&euml; deri n&euml; 1500 B.</p>
+            <p>Sipas standardit 802.3 korniza e mir&euml;fillt&euml; duhet t&euml; jet&euml; e gjat&euml; s&euml; paku 64 bajta duke llogaritur nga adresa destinuese e deri tek fusha e verifikimit t&euml; rregullsis&euml;. Pra, fusha e t&euml; dh&euml;nave duhet t&euml; jet&euml; e gjat&euml; s&euml; paku 64 &ndash; (6 + 6 + 2 + 4) = 64 &ndash; 18 = 46 B.</p>
+            <p>N&euml; fush&euml;n e <em>verifikimit t&euml; rregullsis&euml;</em> kryesisht p&euml;rdoret verifikimi ciklik i redundanc&euml;s &ndash; CRC (<strong>C</strong>yclic <strong>R</strong>edundancy <strong>C</strong>heck).</p>
+
+            <h4 id="ndarja-e-tokenit">Ndarja e tokenit</h4>
+            <p>Ndarja e tokenit paraqet metod&euml;n e centralizuar p&euml;r ndarjen e kanalit. Sot ekziston mekaniz&euml;m i cili n&euml; rastet kur disa stacione d&euml;shirojn&euml; t&euml; emitojn&euml;, cakton se cili stacion do t&euml; fitoj t&euml; drejt&euml;n p&euml;r t&euml; emituar n&euml; intervalin e ardhsh&euml;m kohor.</p>
+            <p>Elementi kryesor i k&euml;saj metode p&euml;r qasje n&euml; medium paraqet korniz&euml; t&euml; formatuar dirigjuese e t&euml; posa&ccedil;me e cila quhet <em>token</em>. Stacioni n&euml; baz&euml; t&euml; formatit t&euml; tokenit dallon at&euml; nga korniza e t&euml; dh&euml;nave. T&euml; drejt&euml;n p&euml;r t&euml; emituar e ka vet&euml;m ai stacion i cili e posedon tokenin.</p>
+            <p>Metoda e tokenit i ofron &ccedil;do nyjes mund&euml;si t&euml; barabart&euml; q&euml; t&euml; ket&euml; qasje n&euml; medium.</p>
+            <p>Metoda e ndarjes s&euml; tokenit p&euml;rb&euml;het prej dy varianteve var&euml;sisht prej topologjis&euml; s&euml; rrjetit, edhe at&euml;: <em>magjistralja me token </em>(ang.: <em>token bus</em>) <em>&ndash; IEEE 802.4</em> dhe <em>unaza me token</em> (ang.: <em>token ring</em>) &ndash; <em>IEEE</em> <em>802.5</em>. K&euml;to protokolle jan&euml; m&euml; t&euml; nd&euml;rlikuar se protokolli CSMA/CD dhe nuk do t&euml; shqyrtohen m&euml; tep&euml;r, por i lihet lexuesit q&euml; t&euml; hulumtoj literatur&euml; (gjithashtu edhe n&euml; Internet) p&euml;r m&euml; tep&euml;r njohuri.</p>
+
+            <h3 id="dirigjimi-i-rrjedhes">DIRIGJIMI I RRJEDH&Euml;S</h3>
+            <p>Dirigjimi i rrjedh&euml;s paraqet teknik&euml;n e cila siguron burimin q&euml; mos ta ngulfat me t&euml; dh&euml;na destinacionin. Stacioni destinues p&euml;rpunon t&euml; dh&euml;nat e pranuara me ndonj&euml; shpejt&euml;si t&euml; kufizuar. Shpesh kjo shpejt&euml;si e p&euml;rpunimit &euml;sht&euml; m&euml; e vog&euml;l se shpejt&euml;sia me t&euml; cil&euml;n arrin t&euml; dh&euml;nat. Andaj stacioni posedon memorie pranuese (t&euml; ashtuquajtur <em>bafer</em>) me kapacitet t&euml; caktuar, n&euml; t&euml; cil&euml;n vendosen t&euml; dh&euml;nat e ardhura, e ende t&euml; pap&euml;rpunuara.</p>
+            <p>N&euml;se t&euml; dh&euml;nat arrin me shpejt&euml;si m&euml; t&euml; madhe se sa shpejt&euml;sia e p&euml;rpunimit nga stacioni destinues, baferi do t&euml; mbushet, e kur m&euml; nuk ka vend p&euml;r t&euml; dh&euml;na tjera &ndash; stacioni thjesht do t&rsquo;i refuzoj t&euml; dh&euml;nat e radh&euml;s. P&euml;r t&euml; mos ndodhur kjo, stacioni destinues duhet n&euml; ndonj&euml; m&euml;nyr&euml; t&rsquo;i lajm&euml;roj stacionit burimor q&euml; t&euml; ngadal&euml;soj emisionin ose edhe ta nd&euml;rpres p&euml;rkoh&euml;sisht emetimin. P&euml;r t&euml; dirigjuar rrjedh&euml;n p&euml;rdoren dy metoda:</p>
+            <p>N&euml; metod&euml;n <em>ndalo dhe prit</em> burimi d&euml;rgon <strong>nj&euml;</strong> korniz&euml; dhe pret nga destinacioni ta marr&euml; konfirmimin, t&euml; ashtuquajturin <em>ack</em> (angl.: <strong>ack</strong>nowledgment), me t&euml; cilin tregohet se korniza me korrekt&euml;si &euml;sht&euml; pranuar. Kjo metod&euml; &euml;sht&euml; shum&euml; e thjesht&euml;: kur t&euml; dh&euml;nat fillojn&euml; t&euml; arrijn&euml; m&euml; shpejt&euml; se sa destinacioni t&euml; mund t&rsquo;i p&euml;rpunoj, destinacioni mund t&euml; ngadal&euml;soj emisionin e burimit ashtu q&euml; pret p&euml;r d&euml;rgimin e konfirmimit deri sa nuk e zbraz&euml; baferin e tij.</p>
+            <p>N&euml; metod&euml;n <em>ndalo dhe prit</em> mjafton q&euml; kapaciteti i baferit t&euml; mund&euml;soj pranimin e vet&euml;m nj&euml; kornize.</p>
+            <p>Pasi n&euml; linj&euml; n&euml; nj&euml; interval kohor mund t&euml; gjendet vet&euml;m nj&euml; korniz&euml;, e meta kryesore e k&euml;saj metode &euml;sht&euml; joefikasiteti i saj.</p>
+            <p>N&euml; metod&euml;n e <em>dritares rr&euml;shqit&euml;se</em> burimi mund t&euml; d&euml;rgoj disa korniza para se nga destinacioni t&euml; marr&euml; konfirmimin se transmetimi i kornizave &euml;sht&euml; realizuar me sukses. Numri maksimal i kornizave q&euml; mund t&euml; emitohen para se t&euml; konfirmohet arritja e tyre caktohet me madh&euml;sin&euml; e ashtuquajtur <em>dritare</em>. Edhe burimi edhe destinacioni posedojn&euml; dritare me madh&euml;si t&euml; nj&euml;jt&euml;. P&euml;r tu ruajtur informacioni p&euml;r at&euml; se cilat korniza jan&euml; emituar, e cilat jan&euml; pranuar, &ccedil;do korniz&euml; n&euml; dritare sh&euml;nohet me num&euml;r rendor.</p>
+            <figure>
+                <img src="lib/figura/shtresa-data-linkut/5.jpg" alt="Ilustrimi i metodës ndalo dhe prit">
+                <figcaption>Ilustrimi i metodës <em>ndalo dhe prit</em></figcaption>
+            </figure>
+
+            <h3 id="kontrolli-i-gabimeve">KONTROLLI I GABIMEVE</h3>
+            <p>Gjat&euml; transmetimit mund t&euml; vije deri te gabimet: kornizat mund t&euml; d&euml;mtohen, humbin ose t&euml; dyfishohen:</p>
+            <ul>
+            <li><em>korniza e d&euml;mtuar</em>: marr&euml;si regjistron arritjen e korniz&euml;s, por disa bit&euml; n&euml; korniz&euml; jan&euml; konvertuar n&euml; komplemente t&euml; tyre;</li>
+            <li><em>korniza e humbur</em>: korniza nuk arrin n&euml; destinacion p&euml;r ndonj&euml; arsye (p.sh. p&euml;r shkak t&euml; zhurm&euml;s s&euml; lart&euml; apo dob&euml;simit t&euml; madh), marr&euml;si nuk &euml;sht&euml; n&euml; gjendje t&euml; regjistroj arritjen e korniz&euml;s;</li>
+            <li><em>korniza e dyfishuar (shumuar)</em>: n&euml; destinacion arrin korniza origjinale dhe nj&euml; apo m&euml; shum&euml; kopje t&euml; saj.</li>
+            </ul>
+            <p>Shtresa e data-linkut n&euml; destinacion zbulon kornizat e d&euml;mtuara dhe t&euml; humbura dhe k&euml;rkon nga burimi q&euml; t&rsquo;i riemetoj ato korniza. K&euml;t&euml; e b&euml;n&euml; ashtu q&euml; &ccedil;do her&euml; kur heton ndonj&euml; gabim gjat&euml; pranimit t&euml; kornizave, i d&euml;rgon burimit t&euml; ashtuquajturin <em>konfirmim negativ</em> apo <em>nak</em> (angl.: <strong><em>n</em></strong><em>egative <strong>a</strong>c<strong>k</strong>nowledgment</em>) p&euml;r korniz&euml;n e d&euml;mtuar, p&euml;rkat&euml;sisht p&euml;r kornizat e d&euml;mtuara, ku burimi duhet ato t&rsquo;i d&euml;rgoj p&euml;rs&euml;ri. Ky mekaniz&euml;m i korrigjimit t&euml; gabimeve quhet k&euml;rkesa me p&euml;rs&euml;ritje automatike ose ARQ (<strong>A</strong>utomatic <strong>R</strong>epeat re<strong>Q</strong>uest).</p>
+            <p>Shtresa e data-linkut gjithashtu zgjidh edhe problemin e kornizave t&euml; dyfishta ashtu q&euml; i identifikon dhe i refuzon kopjet e ardhura.</p>
+
+        </article>
+
+        <article id="shtresa-rrjetit">
+
+            <h1>Shtresa e Rrjetit</h1>
+            <hr />
+            <h2>Adresimi logjik</h2>
+            <p>N&euml;se dy stacione gjenden n&euml; rrjetin e nj&euml;jt&euml;, shtresa e rrjetit &euml;sht&euml; e panevojshme. Nevojitet at&euml;her&euml; kur dy stacione q&euml; don&euml; t&euml; komunikojn&euml; gjenden n&euml; rrjeta t&euml; ndryshme, nd&euml;rsa linqet apo rrjetat lidhen p&euml;rmes <strong>ruter&euml;ve</strong>.</p>
+            <p>P&euml;r dallim nga shtresa e data-linkut ku komunikimi realizohet me an&euml; t&euml; kornizave mes linqeve fqinje (n&euml; rrjetat lokale &ndash; LAN), shtresa e rrjetit merret me d&euml;rgimin e nj&euml;sis&euml; s&euml; t&euml; dh&euml;nave t&euml; k&euml;saj shtrese (paketave) nga burimi deri tek caku, p&euml;rkat&euml;sisht <strong>nga nj&euml;ri skaj n&euml; tjetrin</strong>. Shtresa e rrjetit &euml;sht&euml; p&euml;rgjegj&euml;se p&euml;r:</p>
+            <ul>
+            <li>adresimin logjik (at&euml;her&euml; kur stacionet q&euml; komunikojn&euml; <strong>nuk gjenden n&euml; rrjetin e nj&euml;jt&euml;</strong>),</li>
+            <li>p&euml;rcaktimin e rrug&euml;timit, p&euml;rkat&euml;sisht <em>rutimin</em>,</li>
+            <li>kontrollin e ngufatjes,</li>
+            <li>fragmentimin e paketave n&euml;se &euml;sht&euml; e nevojshme.</li>
+            </ul>
+            <p><strong>Adresimi logjik</strong> m&euml; s&euml; miri sqarohet me shembullin e dh&euml;n&euml; n&euml; figur&euml;, ku me shkronja jan&euml; paraqitur adresat logjike, nd&euml;rsa me numra adresat fizike.</p>
+            <figure>
+                <img src="lib/figura/shtresa-rrjetit/1.jpg" alt="Adresimi logjik">
+                <figcaption>Shembull i adresimit logjik</figcaption>
+            </figure>
+
+            <h2>Rutimi</h2>
+            <p>Me rutim (rrug&euml;tim) zgjidhet rruga m&euml; e p&euml;rshtatshme p&euml;r d&euml;rgimin e paketave nd&euml;rmjet rrjetave t&euml; ndryshme apo n&euml; Internet.</p>
+            <p>P&euml;r t&euml; arritur paketi nga burimi n&euml; destinacion, shpesh nevojitet t&euml; kaloj n&euml;p&euml;r disa mesnyje dhe rrjeta, pra t&euml; b&euml;j&euml; disa k&euml;rcime. P&euml;r t&euml; realizuar k&euml;t&euml; shtresa e rrjetit duhet ta dij&euml; topologjin&euml; e rrjetit paketor komutues ose Internetit dhe t&euml; zgjedh rrug&euml;n m&euml; t&euml; p&euml;rshtatshme. Kjo rrug&euml; mund t&euml; zgjidhet sipas disa kritereve: sipas larg&euml;sis&euml; fizike, numrit t&euml; k&euml;rcimeve, vones&euml;s, &ccedil;mimit, etj.</p>
+            <p>Rutimi mund t&euml; b&euml;het n&euml; disa m&euml;nyra:</p>
+            <ul>
+            <li>zgjedhja e rrug&euml;s mund t&euml; bazohet n&euml; tabelat statike q&euml; jan&euml; t&euml; &ldquo;tel&euml;zuara&rdquo; n&euml; rrjet&euml; dhe rrall&euml; nd&euml;rrohen,</li>
+            <li>rruga mund t&euml; zgjidhet n&euml; fillim t&euml; vendosjes s&euml; komunikimit dhe</li>
+            <li>p&euml;rcaktimi i rrug&euml;s mund t&euml; jet&euml; me dinamiz&euml;m t&euml; lart&euml; ashtu q&euml; rruga zgjidhet nga fillimi p&euml;r &ccedil;do paket&euml; n&euml; varshm&euml;ri nga mbingarkesa momentale.</li>
+            </ul>
+            <p>Rrjetat mund t&euml; jen&euml; <em>konektuese</em> dhe <em>jokonektuese</em>.</p>
+            <p>N&euml; rastin e par&euml; rruga e qarkullimit t&euml; paketave p&euml;rcaktohet n&euml; fillim dhe t&euml; gjitha paketat sipas radh&euml;s nj&euml;ra pas tjetr&euml;s d&euml;rgohen tek caku. Konekcioni i till&euml; i realizuar quhet qark virtual, nd&euml;rsa rrjetat e k&euml;tilla quhen rrjetat me qarqe virtuale.</p>
+            <p>N&euml; rrjetat paketore jokonektuese qarkullimi i paketave b&euml;het n&euml; rrug&euml; t&euml; ndryshme, andaj n&euml; cak nevojitet radhitja e tyre.</p>
+            <p>Algoritmet p&euml;r rutim duhet para se gjithash t&euml; jen&euml; t&euml; afta q&euml; shpejt t&rsquo;ju p&euml;rshtaten ndryshimeve n&euml; topologjin&euml; e rrjetave komutuese apo Internetit deri te cilat vije nga arsye t&euml; ndryshme (ky&ccedil;ja apo shky&ccedil;ja e stacioneve apo ruter&euml;ve t&euml; ri n&euml; rrjet&euml;, defektet harduerike, gabimet softuerike, etj.).</p>
+            <p>Algoritmet p&euml;r rutim ndahen n&euml; dy grupe themelore, edhe at&euml;:</p>
+            <ul>
+            <li>algoritme statike dhe</li>
+            <li>algoritme dinamike.</li>
+            </ul>
+            <p>Gjithashtu ekzistojn&euml; edhe algoritme p&euml;r kontroll t&euml; ngufatjes s&euml; komunikimit n&euml; rrjetat kompjuterike.</p>
+
+        </article>
+
+        <article id="shtresa-transportit">
+
+            <h1>Shtresa e Transportit</h1>
+            <hr />
+            <h2>Segmentimi dhe reasamblimi</h2>
+            <p>Shtresa e transportit &euml;sht&euml; p&euml;rgjegj&euml;se p&euml;r d&euml;rgimin e <strong>porosis&euml; s&euml; plot&euml;</strong>, pa gabime dhe sipas radh&euml;s prej nj&euml;rit skaj n&euml; skajin tjet&euml;r t&euml; konekcionit.</p>
+            <p>P&euml;r t&euml; kryer transmetimin e porosive nga nj&euml;ri skaj n&euml; tjetrin shtresa e transportit sikur edhe shtresa e data-linkut duhet t&euml; merret me adresim, dirigjimin e rrjedh&euml;s dhe kontrollin e gabimeve, por n&euml; k&euml;t&euml; rast n&euml; nivelin e lidhjes prej skajit n&euml; skaj. Gjithashtu kjo shtres&euml; merret edhe me segmentim dhe reasamblim t&euml; porosive, e sipas nevoj&euml;s edhe me operacionin e multipleksimit.</p>
+            <p>Detyrat e shtres&euml;s s&euml; transportit jan&euml; t&euml; ngjashme me detyrat e shtres&euml;s s&euml; data-linkut, me k&euml;to dallime:</p>
+            <ul>
+            <li>shtresa e data-linkut ofron sh&euml;rbime brenda nj&euml; rrjeti fizik, p&euml;rkat&euml;sisht brenda linkut q&euml; i lidh dy nyje fqinje,</li>
+            <li>shtresa e transportit ofron sh&euml;rbime brenda rrjetit t&euml; komutuar apo brenda internetit.</li>
+            </ul>
+            <figure>
+                <img src="lib/figura/shtresa-transportit/1.jpg" alt="Detyrat e shtresës së transportit">
+                <figcaption>Protokolli i shtresës së transportit mundëson dukshëm komunikim direkt në mes proceseve</figcaption>
+            </figure>
+            <p>Hardueri dhe/ose softueri q&euml; i kryen pun&euml;t e shtres&euml;s s&euml; transportit zakonisht gjendet n&euml; kompjuter&euml;t e fundm&euml;.</p>
+            <p>N&euml;se n&euml; stacionin nga shtresa m&euml; e ep&euml;rme arrin n&euml; shtres&euml;n e transportit nj&euml;sia e t&euml; dh&euml;nave m&euml; e madhe se gjat&euml;sia q&euml; mund ta pranoj shtresa e rrjetit, nj&euml;sia e t&euml; dh&euml;nave ndahet n&euml; segmente me gjat&euml;si m&euml; t&euml; vogla. N&euml; shtres&euml;n e transportit t&euml; stacionit destinues kryhet procesi i kund&euml;rt: paketat e ardhura rekombinohen n&euml; nj&euml;sin&euml; paraprake t&euml; t&euml; dh&euml;nave.</p>
+            <p>N&euml; fund t&euml; &ccedil;do segmenti futet numri rendor i segmentit ashtu q&euml; gjat&euml; reasamblimit paketat t&euml; p&euml;rputhen sipas radh&euml;s paraprake.</p>
+
+            <h2>Adresimi SAP</h2>
+            <p>Tek kompjuter&euml;t nj&euml;koh&euml;sisht mund t&euml; zhvillohen disa procese (programe) t&euml; ndryshme. Kjo mund&euml;sohet nga shtresa e transportit p&euml;rmes adresimit SAP.</p>
+            <p>Kur programi aplikativ n&euml; stacionin A duhet t&euml; lidhet me programin aplikativ p&euml;rkat&euml;s n&euml; stacionin B, &euml;sht&euml; e qart&euml; se nuk mjafton t&euml; definohet vet&euml;m stacioni destinues, por duhet t&euml; definohet edhe procesi destinues. N&euml; k&euml;t&euml; rast d&euml;rgesa <em>prej skajit n&euml; skaj</em> nuk n&euml;nkupton d&euml;rgimin e porosis&euml; nga kompjuteri burimor deri te kompjuteri destinues, por d&euml;rgimin nga procesi burimor i nj&euml;rit kompjuter n&euml; procesin destinues t&euml; kompjuterit tjet&euml;r. N&euml; k&euml;t&euml; m&euml;nyr&euml; nga &ccedil;do stacion mund t&euml; dalin dhe t&euml; hyn&euml; n&euml; t&euml; disa konekcione.</p>
+            <figure>
+                <img src="lib/figura/shtresa-transportit/2.jpg" alt="Pozita e TSAP dhe NSAP">
+                <figcaption>Pozita e TSAP dhe NSAP</figcaption>
+            </figure>
+            <p>N&euml; p&euml;rgjith&euml;si shtresa e ep&euml;rme ju qaset sh&euml;rbimeve q&euml; i ofron shtresa e poshtme p&euml;rmes t&euml; ashtuquajtur&euml;s pika qas&euml;se e sh&euml;rbimeve apo SAP (<strong><em>S</em></strong><em>ervice <strong>A</strong>ccess <strong>P</strong>oint</em>). Pasi disa procese n&euml; nj&euml; kompjuter mund t&euml; komunikoj me procese n&euml; kompjuterin tjet&euml;r ose kompjuter&euml;ve tjer&euml;, duhet t&euml; tregohet cila porosi i takon cilit konekcion dhe ky informacion vendoset n&euml; kok&euml;n e nj&euml;sis&euml; s&euml; t&euml; dh&euml;nave t&euml; shtres&euml;s s&euml; transportit. Andaj nd&euml;rmjet shtres&euml;s s&euml; transportit dhe shtres&euml;s s&euml; ep&euml;rme mund t&euml; ekzistojn&euml; m&euml; shum&euml; TSAP (<em>pika qas&euml;se e sh&euml;rbimeve t&euml; transportit</em>).</p>
+            <p>Nd&euml;rmjet shtres&euml;s s&euml; transportit dhe shtres&euml;s s&euml; rrjetit gjenden <em>pikat qas&euml;se t&euml; sh&euml;rbimit t&euml; rrjetit</em> apo NSAP. NSAP paraqet adres&euml;n logjike t&euml; kompjuterit.</p>
+
+            <h2>Kontrollimi i gabimeve</h2>
+            <p>Shtresa e data-linkut nuk &euml;sht&euml; n&euml; gjendje t&rsquo;i zbuloj gabimet t&euml; cilat shkaktohen n&euml; ruter sepse kjo shtres&euml; verifikon bartjen e paketave prej daljes nga nj&euml; nyje deri n&euml; hyrjen e nyjes tjet&euml;r. Prandaj, shtresa e transportit duhet t&euml; verifikoj a ka arritur paketa pa gabime nga stacioni burimor n&euml; at&euml; destinues pa marr&euml; parasysh numrin e ruter&euml;ve q&euml; i ka kaluar n&euml; rrug&euml;n e saj.</p>
+            <p>Gjat&euml; bartjes ndonj&euml; paket&euml; mund t&euml; humbet apo mund t&euml; dyfishohet. Shtresa e transportit n&euml; stacionin destinues leht&euml; v&euml;rteton gjat&euml; rigjenerimit t&euml; nj&euml;sis&euml; paraprake t&euml; t&euml; dh&euml;nave se a mungon ndonj&euml; paket&euml; apo paraqet paket&euml; t&euml; dyfishuar. Paketat e dyfishta shtresa e transportit i injoron, nd&euml;rsa n&euml; rastin e paketave t&euml; humbura k&euml;rkon q&euml; ato t&euml; d&euml;rgohen p&euml;rs&euml;ri.</p>
+
+            <h2>Multipleksimi</h2>
+            <p>N&euml; disa raste shtresa e transportit mund&euml;son q&euml; bartja t&euml; zhvillohet n&euml; m&euml;nyr&euml; m&euml; ekonomike, ashtu q&euml;:</p>
+            <ul>
+            <li>disa konekcione t&euml; shtres&euml;s s&euml; transportit p&euml;rdorin konekcionin e nj&euml;jt&euml; t&euml; rrjetit,</li>
+            <li>nj&euml; konekcion i shtres&euml;s s&euml; transportit p&euml;rdor disa konekcione t&euml; rrjetit.</li>
+            </ul>
+
+        </article>
+
+        <article id="shtresat-eperme">
+
+            <h1>Shtresat e Epërme</h1>
+            <hr />
+
+            <p>Modeli referent OSI mund t&euml; ndahet n&euml; disa pjes&euml; kryesore: pjesa e transportit dhe pjesa e aplikacionit. Pjesa e transportit p&euml;rfshin&euml; kat&euml;r shtresat e poshtme t&euml; modeli referent OSI: shtresa fizike, e data-linkut, e rrjetit dhe e transportit. Pjesa e aplikacionit p&euml;rfshin tri shtresa t&euml; ep&euml;rme t&euml; modelit referent OSI: shtresa e sesionit, prezantimit dhe aplikacionit.</p>
+            <p>Shpesh shtresa e rrjetit punon n&euml; mesnyje t&euml; cilat i takojn&euml; kompanive telekomunikuese, nd&euml;rsa shtresa e transportit funksionon n&euml; stacionet t&euml; cilat jan&euml; n&euml; pron&euml;si t&euml; shfryt&euml;zuesit.</p>
+            <h2>Shtresa e sesionit</h2>
+            <p>Termi sesion (ang.: <em>session</em>) paraqet period&euml;n e komunikimit, gjithashtu zhvillimin e dialogut nd&euml;rmjet proceseve (programeve).</p>
+            <p>Kjo shtres&euml; i organizon sesionet prej nj&euml;rit skaj n&euml; tjetrin, t&euml; cilat sesione quhen konverzacione n&euml; mes kompjuter&euml;ve. Sesionet p&euml;rdoren prej nivelit t&euml; aplikacionit p&euml;r ekzekutim t&euml; programeve aplikative. K&euml;to protokolle iniciojn&euml;, mbik&euml;qyrin dhe p&euml;rfundojn&euml; konferenc&euml;n n&euml; mes t&euml; shfryt&euml;zuesve.</p>
+            <h2>Shtresa e prezantimit</h2>
+            <p>Kjo shtres&euml; &euml;sht&euml; p&euml;rgjegj&euml;se p&euml;r komunikimin e koduar prej nj&euml;rit skaj n&euml; tjetrin. Gjithashtu merret me t&euml; dh&euml;nat q&euml; lexohen kur t&euml; arrin te kompjuteri tjet&euml;r. N&euml; k&euml;t&euml; shtres&euml; b&euml;het komprimimi dhe dekomprimimi i t&euml; dh&euml;nave si dhe shifrimi dhe deshifrimi i t&euml; dh&euml;nave.</p>
+            <h2>Shtresa e aplikacionit</h2>
+            <p>Kjo shtres&euml; i p&euml;rmban protokollet q&euml; kan&euml; t&euml; b&euml;jn&euml; me procesimet n&euml; aplikacion, si&ccedil; jan&euml;: e-mail, transferimi i fajllave, etj. Nj&euml; prej shtresave t&euml; k&euml;tilla &euml;sht&euml; shtresa p&euml;r bartjen e datotekave, d&euml;rgimi dhe pranimi i porosive, sh&euml;rbimi i baz&euml;s s&euml; t&euml; dh&euml;nave dhe sh&euml;rbimi i aplikacionit t&euml; rrjetit. K&euml;to urdhra i siguron programi i nivelit t&euml; aplikacionit i cili quhet <em>user intreface</em>.</p>
+
+        </article>
+
+        <article id="rrjetat-lokale">
+
+            <h1>Rrjetat Lokale Kompjuterike (LAN)</h1>
+            <hr />
+
+            <div class="permbajtja" style="float:right; margin-right:0; margin-left:25px; box-shadow: -4px 4px 8px 0 rgba(0, 0, 0, 0.2), -6px 6px 15px 0 rgba(0, 0, 0, 0.19);">
+                <p>Përmbajtje</p><hr />
+                <ul>
+                    <li id="sistemet-operative-te-rrjetit-programet-e-serverit-scroll">Sistemet operative të rrjetit, programet e serverit</li>
+                    <li id="proksy-majl-dhe-ueb-scroll">Proxy serveri, Mail serveri dhe Web serveri</li>
+                    <li id="mbrojtja-e-te-dhenave-ne-rrjete-scroll">Mbrojtja e të dhënave në rrjetë</li>
+                    <li id="mjetet-e-rrjeteve-lokale-scroll">Mjetet e rrjeteve lokale</li>
+                    <li class="h3-titull" id="rigjeneratori-dhe-habi-scroll">Rigjeneratori dhe Habi</li>
+                    <li class="h3-titull" id="ura-e-rrjetit-dhe-ruteri-scroll">Ura e rrjetit dhe Ruteri</li>
+                </ul>
+            </div>
+
+            <p>Rrjet&euml; lokale quajm&euml; &ccedil;do rrjet&euml; kompjuterike e cila punon n&euml; shtres&euml;n e dyt&euml; t&euml; modelit referent OSI (<strong><em>O</em></strong><em>pen <strong>S</strong>ystem <strong>I</strong>nterconnections</em>), p&euml;rkat&euml;sisht n&euml; shtres&euml;n e <em>Data Link-ut</em> (komunikimit).</p>
+            <p>Karakteristikat themelore t&euml; rrjetave LAN jan&euml;:</p>
+            <ul>
+                <li>n&euml; rrjetat LAN asnj&euml; kompjuter nuk mundet dhunsh&euml;m ta startoj, ndaloj apo drejtoj ndonj&euml; kompjuter tjet&euml;r,</li>
+                <li>t&euml; gjith&euml; kompjuter&euml;t jan&euml; t&euml; lidhur n&euml; mediumin e p&euml;rbashk&euml;t, q&euml; d.m.th q&euml; t&euml; gjith&euml; kompjuter&euml;t e ndajn&euml; brezin e p&euml;rgjithsh&euml;m l&euml;shues t&euml; mediumit.</li>
+                <li>shpejt&euml;sit&euml; e pun&euml;s te rrjetat lokale jan&euml; t&euml; larta prej disa dhjet&euml;ra MB/s deri n&euml; disa GB/s.</li>
+                <li>p&euml;r shkak t&euml; distanc&euml;s s&euml; af&euml;rt n&euml; mes kompjuter&euml;ve, vonesat dhe gabimet jan&euml; t&euml; pap&euml;rfillshme.</li>
+                <li>ekziston mund&euml;sia e multikastingut dhe brodkastingut.</li>
+                <li>rrjetat lokale asnj&euml;her&euml; nuk jan&euml; publike, por jan&euml; n&euml; pron&euml;si t&euml; ndonj&euml; institucioni, nd&euml;rmarrje apo individi.</li>
+            </ul>
+            <p>Natyr&euml;n e rrjetave lokale e p&euml;rcaktojn&euml; tre faktor&euml;:</p>
+            <ul>
+            <li>mediumi n&euml;p&euml;r t&euml; cilin realizohet transmetimi,</li>
+            <li>topologjia e rrjet&euml;s,</li>
+            <li>protokolli p&euml;r qasje n&euml; medium.</li>
+            </ul>
+            <p>Mediumi dhe topologjia e rrjet&euml;s n&euml; mas&euml; t&euml; madhe p&euml;rcaktojn&euml; shpejt&euml;sin&euml; dhe efikasitetin e komunikimit.</p>
+            <p>Rrjetat lokale mund t&euml; jen&euml; rrjet&euml; me tela dhe rrjeta pa tela, p&euml;rkat&euml;sisht mund t&euml; punojn&euml; n&euml; brezin themelor dhe n&euml; brezin e transponuar. Andaj n&euml; rrjetat LAN mund t&euml; p&euml;rdoren t&euml; gjitha llojet e mediumeve. Kur nevojitet shpejt&euml;si e madhe e transmetimit si medium bart&euml;s p&euml;rdoret kabllo optik.</p>
+            <p>Rrjetat lokale kryesisht p&euml;rdorin arkitektur&euml;n Ethernet dhe standardin IEEE 802.3, i cili standard i definon dy grupe themelore:</p>
+            <ul>
+            <li>Etherneti n&euml; brezin fizik (baseband Ethernet),</li>
+            <li>Etherneti brezgj&euml;r&euml; (broadband Ethernet).</li>
+            </ul>
+            <p>Vitet e fundit aplikim t&euml; madh kan&euml; gjetur rrjetat lokale pa tela (<em>Wireless</em>), sepse &euml;sht&euml; rritur numri i shfryt&euml;zuesve t&euml; kompjuter&euml;ve portativ (<em>laptop &ndash; notebook</em>).</p>
+
+            <h2 id="sistemet-operative-te-rrjetit-programet-e-serverit">Sistemet operative t&euml; rrjetit, programet e serverit</h2>
+            <p>Sistemi Operativ &euml;sht&euml; program sistemor me t&euml; cilin udh&euml;hiqet e t&euml;r&euml; puna n&euml; kompjuter. Tash do njoftohemi me nj&euml; sistem operativ i cili e udh&euml;heq pun&euml;n e rrjet&euml;s s&euml; krijuar, e ai quhet Sistem Operativ i Rrjetit.</p>
+            <p><strong>Sistemet operative t&euml; rrjetit</strong> mund t&euml; ndahen n&euml; dy grupe themelore, edhe at&euml; n&euml;:</p>
+            <ul>
+            <li>Sisteme operative t&euml; rrjetit t&euml; cil&euml;t p&euml;rdoren n&euml; rrjetat e barabarta (ang<em>. Peer-to-peer network operating system</em>) dhe</li>
+            <li>Sisteme operative t&euml; rrjetit klient-server (ang. <em>Client-server network operating system</em>).</li>
+            </ul>
+            <p>Var&euml;sisht se cili lloj i sistemeve operative aplikohet rrjetat lokale mund t&euml; jen&euml;:</p>
+            <ul>
+            <li>Rrjetat lokale t&euml; kompjuter&euml;ve t&euml; barabart&euml; dhe</li>
+            <li>Rrjetat lokale klient-server.</li>
+            </ul>
+            <p>N&euml; shumic&euml;n e SO t&euml; rrjetave <em>peer-to-peer</em> shfryt&euml;zuesit mund t&euml; caktojn&euml; se cilat resurse t&euml; veta ti v&euml;n&euml; n&euml; sh&euml;rbim t&euml; shfryt&euml;zuesve tjer&euml;. Kur nj&euml;ri disk i shfryt&euml;zuesit konfigurohet si i &ldquo;ndar&euml;&rdquo;, ai tek shfryt&euml;zuesit e tjer&euml; paraqitet si drajv i ri.</p>
+            <p>Rrjeta peer-to-peer mund t&euml; realizohet n&euml; form&euml;n t&euml; rrjet&euml;s <em>10BaseT </em>apo ethernetit t&euml; holl&euml;. Konfigurimi <em>10BaseT</em> &euml;sht&euml; e p&euml;rshtatshme p&euml;r lidhjen deri n&euml; 16 stacione t&euml; cilat nuk jan&euml; n&euml; distanc&euml; t&euml; madhe.</p>
+            <p>N&euml; rrjetat klient-server, klient&euml;t (q&euml; mund t&euml; jen&euml; disa dhjet&euml;ra, qindra apo mij&euml;ra) mund t&euml; shfryt&euml;zojn&euml; resurset t&euml; cilat i posedon serveri. Informacionet n&euml; k&euml;to rrjeta jan&euml; t&euml; centralizuara, pra, t&euml; gjitha informacionet q&euml; gjenden n&euml; server, dhe t&euml; gjitha pajisjet q&euml; i dirigjon serveri, n&euml; to kan&euml; qasje t&euml; gjith&euml; klient&euml;t.</p>
+            <p>Sistemi operativ i rrjetit klient-server kujdeset q&euml; n&euml; nj&euml; resurs nj&euml;koh&euml;sisht mos t&euml; ket&euml; qasje m&euml; shum&euml; se nj&euml; klient (p.sh. shfryt&euml;zimi i printerit). Gjithashtu, administratori i rrjet&euml;s mundet p&euml;rmes SO t&euml; rrjetit t&rsquo;ju ndaj&euml; shfryt&euml;zuesve (klient&euml;ve) nivele t&euml; ndryshme t&euml; prioriteteve.</p>
+            <p>SO i rrjetit klient-server duhet t&euml; siguroj besnik&euml;ri, siguri dhe fleksibilitet t&euml; rrjetit dhe t&euml; mund&euml;soj rikonfigurim t&euml; shpejt si t&euml; harduerit, ashtu edhe softuerit me mund&euml;si pa nd&euml;rprerje t&euml; pun&euml;s.</p>
+            <p><strong>Programi i serverit</strong> &euml;sht&euml; program n&euml; t&euml; cilin p&euml;rmes rrjet&euml;s klienti d&euml;rgon k&euml;rkes&euml;n, nd&euml;rsa programi i serverit vepron sipas k&euml;rkes&euml;s dhe pastaj klientit i d&euml;rgon p&euml;rgjigjen. Programet t&euml; cil&euml;t p&euml;rdoren n&euml; server-kompjuter&euml;t jan&euml; zhvilluar n&euml; m&euml;nyr&euml; speciale p&euml;r SO t&euml; rrjetave klient/server, si&ccedil; &euml;sht&euml; program DNS (<em>Domain Name System</em>) i cili p&euml;rdoret p&euml;r pasqyrimin e em&euml;rtimeve simbolike t&euml; kompjuter&euml;ve n&euml; adresa IP (<em>Internet Protocol</em>).</p>
+
+            <h2 id="proksy-majl-dhe-ueb">Proxy serveri, Mail serveri dhe Web serveri</h2>
+            <p>Proxy, Mail dhe Web serveri s&euml; bashku me murin mbrojt&euml;s (<em>firewall</em>) paraqesin sh&euml;rbimet baz&euml; p&euml;r sigurin&euml; e t&euml; dh&euml;nave n&euml; rrjetat kompjuterike.</p>
+            <p><strong>Proxy serveri</strong> paraqet pajisjen apo sh&euml;rbimin e rrjetit i cili i mund&euml;son klient&euml;ve t&euml; realizojn&euml; rrjet&euml; indirekte me segmentet/sh&euml;rbimet e rrjetave tjera. Roli i qasjeve indirekte mund t&euml; jet&euml; i r&euml;nd&euml;sish&euml;m kur &euml;sht&euml; n&euml; pyetje siguria, privat&euml;sia dhe/apo performansa e rrjet&euml;s. Aspekti siguris&euml; i pajisjes Proxy shum&euml; shpesh barazohet me pajisjet bashk&euml;kohore <em>firewall</em>. Aspekti i performans&euml;s s&euml; rrjet&euml;s &euml;sht&euml; n&euml; mund&euml;sin&euml; q&euml; resursi n&euml; larg&euml;si (me t&euml; cilin &euml;sht&euml; realizuar qasja) p&euml;rkoh&euml;sisht t&euml; ruhet n&euml; memorien lokale dhe n&euml; k&euml;t&euml; m&euml;nyr&euml; p&euml;r k&euml;rkesat tjera p&euml;r resursin e nj&euml;jt&euml; ti p&euml;rgjigjet pa ju qasur burimit origjinal.</p>
+            <p>Privat&euml;sia, si arsye e tret&euml; e p&euml;rdorimit t&euml; pajisjes Proxy, paraqet mund&euml;sin&euml; q&euml; klient&euml;t t&euml; gjitha k&euml;rkesat (apo vet&euml;m k&euml;rkesat lidhur me ndonj&euml; sajt t&euml; caktuar, ndonj&euml; grup t&euml; resurseve, etj.) e kompjuter&euml;ve tjer&euml; n&euml; rrjet&euml; t&rsquo;ju d&euml;rgoj p&euml;rmes pajisjes Proxy dhe n&euml; k&euml;t&euml; m&euml;nyr&euml; t&euml; pamund&euml;soj p&euml;rcaktimin e sakt&euml; t&euml; burimit t&euml; k&euml;rkes&euml;s.</p>
+            <p><strong>Mail serveri</strong>. Sistemi i Internetit t&euml; post&euml;s elektronike (SMTP &ndash; <strong><em>S</em></strong><em>imple <strong>M</strong>ail <strong>T</strong>ransfer <strong>P</strong>rotocol</em>), gjithashtu bazohet n&euml; parimin e Proxy serverit: posta elektronike nuk d&euml;rgohet drejtp&euml;rdrejt nga d&euml;rguesi tek marr&euml;si, por s&euml; pari shkon tek mail serveri.</p>
+            <p>Mail serveri apo serveri i post&euml;s &euml;sht&euml; term q&euml; n&euml;nkupton kompjuter apo softuer i cili n&euml; rrjet&euml; i kryen pun&euml;t postare. N&euml; mail server memorohet posta e cila arrin, e m&euml; pas d&euml;rgohet tek marr&euml;si n&euml;p&euml;r nj&euml; kanal p&euml;rkat&euml;s.</p>
+            <p>Dy standarde m&euml; t&euml; njohur t&euml; nd&euml;rfaqeve n&euml; mes klientit t&euml; e-mail-it dhe mail serverit jan&euml; POP3 (<strong><em>P</em></strong><em>ost <strong>O</strong>ffice <strong>P</strong>rotocol <strong>3</strong></em>) dhe IMAP4 (<strong><em>I</em></strong><em>nternet <strong>M</strong>essage <strong>A</strong>ccess <strong>P</strong>rotocol <strong>4</strong></em>). K&euml;to protokolle i shfryt&euml;zojn&euml; klient&euml;t p&euml;r komunikim me mail serverin.</p>
+            <p><strong>Web serveri</strong>. Roli kryesor i Web serverit (apo HTTP serverit) &euml;sht&euml; q&euml; t&euml; d&euml;gjoj portin 80 (portin p&euml;r protokollin HTTP), q&euml; n&euml; k&euml;rkes&euml;n e pranuar t&euml; gjej dokumentin e k&euml;rkuar n&euml; depon lokale t&euml; dokumenteve dhe p&euml;rmbajtjen t'ia d&euml;rgoj klientit apo, n&euml; rastin kur dokumenti i k&euml;rkuar nuk ekziston, klientit t'ia d&euml;rgoj porosin&euml; q&euml; &euml;sht&euml; b&euml;r&euml; gabim. Por, skenari i till&euml; p&euml;rshkruan vet&euml;m funksionalitetin themelor t&euml; Web serverit.</p>
+            <p>Nj&euml; sistem kompjuterik n&euml; ndonj&euml; nd&euml;rmarrje t&euml; vog&euml;l apo institucion q&euml; ofron t&euml; gjitha sh&euml;rbimet e Internetit, do t&euml; duhet patjet&euml;r t&euml; p&euml;rmbaj SMTP serverin, FTP serverin (shkarkimi i fajllave), HTTP serverin dhe NNTP serverin (grupet e diskutive). Sistemi i cili do t'i siguronte gjitha k&euml;to sh&euml;rbime do t&euml; paraqiste Web serverin.</p>
+
+            <h2 id="mbrojtja-e-te-dhenave-ne-rrjete">Mbrojtja e t&euml; dh&euml;nave n&euml; rrjet&euml;</h2>
+            <p>Pa mbrojtjen e kompjuter&euml;ve n&euml; rrjet&euml;, p&euml;rkat&euml;sisht n&euml; Internet p&euml;r nj&euml; koh&euml; t&euml; shkurt&euml; ata do t&euml; p&euml;sonin d&euml;mtime t&euml; paparashikueshme, si dhe mund t&euml; jen&euml; cak i keqp&euml;rdorimeve t&euml; shumta. Andaj p&euml;rdoren shum&euml; aplikacione softuerike dhe pajisje harduerike p&euml;r ti mbrojtur rrjetat kompjuterike.</p>
+            <p>Siguria e Internetit apo IS (<strong><em>I</em></strong><em>nternet <strong>S</strong>ecurity</em>) &euml;sht&euml; nocion i gjer&euml; q&euml; shpreh hapa t&euml; ndrysh&euml;m q&euml; nd&euml;rmarrin personalitetet dhe organizatat q&euml; ti mbrojn&euml; kompjuter&euml;t dhe rrjetat kompjuterike t&euml; lidhura n&euml; Internet.</p>
+            <p>Interneti sipas natyr&euml;s s&euml; tij nuk &euml;sht&euml; mjedis i sigurt sepse &euml;sht&euml; rrjet&euml; kompjuterike e hapur, e cila ka p&euml;r q&euml;llim q&euml; t&euml; leht&euml;soj k&euml;mbimin e t&euml; dh&euml;nave. T&euml; dh&euml;nat e d&euml;rguara p&euml;rmes Internetit &ndash; post&euml; elektronike personale, tregti online, udh&euml;tojn&euml; n&euml;p&euml;r nj&euml; varg t&euml; kompjuter&euml;ve dhe linqeve numri i t&euml; cil&euml;ve pand&euml;rprer&euml; ndryshon. P&euml;r k&euml;t&euml; arsye malicioz&euml;t (q&euml;llim k&euml;qijt&euml;) dhe haker&euml;t mund t&euml; kapin dhe ndryshojn&euml; porosin&euml;.</p>
+            <p>Problem m&euml; t&euml; p&euml;rhapur paraqesin <strong><em>viruset</em></strong>. Disa prej tyre n&euml; kompjuterin e shfryt&euml;zuesit modifikojn&euml; programet dhe n&euml; k&euml;t&euml; m&euml;nyr&euml; i b&euml;jn&euml; t&euml; pap&euml;rdorsh&euml;m, derisa tjer&euml;t i b&euml;jn&euml; d&euml;m dhe i shkat&euml;rrojn&euml; t&euml; dh&euml;nat. Shum&euml; virus shpejt&euml; p&euml;rhapen dhe n&euml; m&euml;nyr&euml; suptile i kryejn&euml; detyrat e veta destruktive ashtu q&euml; nuk v&euml;rehen deri sa nuk b&euml;jn&euml; d&euml;me t&euml; dukshme. Mbrojtja nga viruset b&euml;het p&euml;rmes <em>antivirus programeve</em>, nd&euml;r m&euml; t&euml; njohurit <em>Kaspersky Lab, Nod 32, AVG</em>, etj.</p>
+            <p>Problem t&euml; ve&ccedil;ant&euml; paraqesin edhe t&euml; ashtuquajturit <em>spyware</em> apo <em>spiun programet</em>. Ky &euml;sht&euml; softuer i cili vjedhurazi instalohet n&euml; kompjuterin e shfryt&euml;zuesit me q&euml;llim q&euml; pa u v&euml;rejtur, pa dijen e shfryt&euml;zuesit, mbledh informacionet rreth shfryt&euml;zuesit ose organizat&euml;s apo merr kontrollin e pjes&euml;rish&euml;m apo t&euml; t&euml;r&euml;sish&euml;m t&euml; pun&euml;s s&euml; kompjuterit. P&euml;r luftimin e spyware-ve jan&euml; zhvilluar gjithashtu programe p&euml;r bllokimin e tyre, nd&euml;r m&euml; t&euml; njohurit jan&euml;: <em>Ad-aware, Spybot, McAfee</em>, etj.</p>
+            <p>Problem shfryt&euml;zuesve t&euml; Rrjetave i paraqesin edhe e-mail-at e pad&euml;shirueshme, t&euml; ashtq. <em>spam</em>. Zakonisht k&euml;to jan&euml; reklama apo oferta t&euml; ndryshme q&euml; kan&euml; sasi t&euml; m&euml;dha, dhe n&euml; k&euml;t&euml; m&euml;nyr&euml; mund ta ngufasin ndonj&euml; segment t&euml; rrjet&euml;s apo kompjuterin e shfryt&euml;zuesit. P&euml;r mbrojtjen nga spam porosit&euml; &euml;sht&euml; zhvilluar softuer <em>antispam</em> i cili zakonisht instalohet n&euml; server&euml;t dhe ruter&euml;t.</p>
+            <p>Nj&euml; prej metodave m&euml; efikase p&euml;r mbrojtjen e rrjetave kompjuterike q&euml; jan&euml; t&euml; lidhura n&euml; Internet p&euml;r qasje t&euml; palejueshme nga jasht&euml; paraqet <em>muri mbrojt&euml;s</em>, p&euml;rkat&euml;sisht <em>barriera e rrjet&euml;s</em> (ang. <em>Firewall</em>). Aplikimi kryesor i murit mbrojt&euml;s &euml;sht&euml; ti mbroj&euml; resurset e rrjetave private ashtu q&euml; nuk lejon qasjen e shfryt&euml;zuesve jasht&euml; rrjetit, p&euml;rkat&euml;sisht nga Interneti. Muri mbrojt&euml;s &euml;sht&euml; i instaluar gati n&euml; t&euml; gjith&euml; kompjuter&euml;t personal, n&euml; kuad&euml;r t&euml; sistemeve operative &ndash; Windows XP, Windows Server 2003, Windows Vista, Windows 7.</p>
+
+            <h2 id="mjetet-e-rrjeteve-lokale">MJETET E RRJETAVE LOKALE</h2>
+            <p>N&euml; rrjetat difuzive, p&euml;rve&ccedil; stacioneve, takohen edhe pajisjet harduerike <em>rigjenerator&euml;t, hab&euml;t (p&euml;rmbledh&euml;sja ylli)</em> dhe <em>urat</em>. Lidhja e dy apo m&euml; tep&euml;r rrjeta, gjat&euml; s&euml; cil&euml;s ruhet puna e pavarur e &ccedil;do rrjete, si dhe lidhja e stacioneve n&euml; rrjetat komutuese, realizohen p&euml;rmes <em>ruter&euml;ve</em> dhe <em>porteve (gateways)</em>.</p>
+            <p>Rrjetat kompjuterike komutuese p&euml;rb&euml;het nga stacionet (kompjuter&euml;t e shfryt&euml;zuesve) dhe nga n&euml;nrrjetet. N&euml;nrrjeti ka funksion t&euml; past&euml;r komunikues, nd&euml;rsa stacionet kan&euml; funksion t&euml; past&euml;r aplikativ. N&euml;nrrjeti p&euml;rb&euml;het nga nyjet fundore dhe mesnyjet t&euml; cilat s&euml; bashku jan&euml; t&euml; lidhura p&euml;rmes linjave lidh&euml;se. Stacionet lidhen n&euml; nyjet fundore p&euml;rmes linjave ky&ccedil;&euml;se.</p>
+            <p>Nyja fundore n&euml; rrjetat kompjuterike kryesisht paraqitet n&euml; form&euml; t&euml; <em>kartelave interfejs t&euml; rrjetave</em>, e cila gjendet n&euml; kompjuterin e shfryt&euml;zuesit. Kartela e rrjetit &euml;sht&euml; pajisje harduerike e cila i mund&euml;son kompjuterit t&euml; komunikoj p&euml;rmes rrjet&euml;s kompjuterike.</p>
+            <p>Mesnyjet jan&euml; kompjuter&euml; special q&euml; p&euml;rdoren p&euml;r nd&euml;rlidhjen e dy apo m&euml; shum&euml; linjave, p&euml;rkat&euml;sisht kryejn&euml; funksionin e komutimit.</p>
+
+            <h3 id="rigjeneratori-dhe-habi">Rigjeneratori dhe habi</h3>
+            <p><strong>Rigjeneratori</strong> &euml;sht&euml; pajisje harduerike i cili e rip&euml;rt&euml;rin&euml; sinjalin digjital t&euml; ardhur dhe e p&euml;rcjell m&euml; tej. Rigjeneratori nuk posedon memorie e as inteligjenc&euml; shtes&euml;, andaj nuk i ruan sinjalet digjitale t&euml; pranuar, por thjesht&euml; i rigjeneron bit pas biti. N&euml;se n&euml; rrjet&euml; gjat&euml; bartjes paraqiten gabime, rigjeneratori k&euml;to gabime nuk mund ti eliminoj por vet&euml;m i p&euml;rcjell. Pra, rigjeneratori &euml;sht&euml; pajisje q&euml; funksionon n&euml; nivelin e shtres&euml;s fizike.</p>
+            <p>Rigjeneratori&nbsp; mund&euml;son q&euml; t&euml; zmadhohet gjat&euml;sia fizike e linj&euml;s, por nuk ndikon n&euml; funksionimin e rrjet&euml;s: n&euml;se dy a m&euml; shum&euml; segmente t&euml; rrjet&euml;s lidhen p&euml;rmes rigjenerator&euml;ve, ato edhe m&euml; tej paraqesin nj&euml; rrjet&euml;.</p>
+            <p><strong>Habi</strong> (p&euml;rmbledh&euml;sja ylli) &euml;sht&euml; pajisje harduerike shum&euml;port&euml;she. Kur korniza t&euml; arrin n&euml; nj&euml;rin port t&euml; habit, ai do ta kopjoj&euml; dhe do ta ritransmetoj n&euml; t&euml; gjitha portat e tij.</p>
+            <p>Ekzistojn&euml; dy lloje t&euml; hab&euml;ve: pasiv dhe aktiv.</p>
+            <p>Habi pasiv thjesht&euml; i lidh n&euml; m&euml;nyr&euml; elektromagnetike linqet ashtu q&euml; sinjali q&euml; vjen fizikisht bartet n&euml; gjitha linqet tjera.</p>
+            <p>Habi aktiv funksionon ngjash&euml;m me regjeneratorin: bit&euml;t q&euml; arrin p&euml;rmes ndonj&euml; linje hyr&euml;se s&euml; pari rigjenerohen e m&euml; pas transmetohen n&euml; t&euml; gjitha linqet tjer&euml;.</p>
+
+            <h3 id="ura-e-rrjetit-dhe-ruteri">Ura e rrjetit dhe ruteri</h3>
+            <p>Ura dhe ruteri ngjash&euml;m me rigjeneratorin dhe habin jan&euml; pajisje t&euml; rrjetave, por dallim i p&euml;rgjithsh&euml;m &euml;sht&euml; se k&euml;to pajisje jan&euml; inteligjente.</p>
+            <p><strong>Ura</strong> i ngjan shum&euml; regjeneratorit sepse bashkon segmentet dhe grupet punuese, por p&euml;rpar&euml;sit&euml; e ur&euml;s jan&euml; se mund ta ndaj&euml; rrjet&euml;n p&euml;r ta izoluar komunikacionin apo p&euml;r ta ve&ccedil;uar problemin. K&euml;shtu, n&euml;se nj&euml; apo m&euml; shum&euml; kompjuter e mbingarkojn&euml; rrjet&euml;n me t&euml; dh&euml;na, ura mund ta izoloj at&euml; kompjuter apo disa prej tyre. Gjithashtu p&euml;rdoren p&euml;r zmadhimin e gjat&euml;sis&euml; s&euml; segmentit dhe p&euml;r t&euml; trajtuar numrin e rritur t&euml; kompjuter&euml;ve n&euml; rrjet&euml;.</p>
+            <p>Puna e ur&euml;s bazohet n&euml; faktin q&euml; &ccedil;do nyje rrespektivisht kartel&euml; e rrjetit ka adres&euml;n e vet dhe ura i p&euml;rcjell t&euml; dh&euml;nat n&euml; baz&euml; t&euml; asaj adrese. Lidhur me k&euml;t&euml; mund t&euml; themi se urat jan&euml; intelegjent sepse mund t&euml; m&euml;sojn&euml; se ku duhet ti kalojn&euml; t&euml; dh&euml;nat.</p>
+            <p>Ura gjithashtu ka tabel&euml;n e saj t&euml; drejtimit, e cila n&euml; fillim &euml;sht&euml; e zbraz&euml;t, por ashtu nyjet duke i dor&euml;zuar paketat, adresa burimore kopjohet n&euml; tabel&euml; dhe n&euml; baz&euml; t&euml; adresave ura i din se n&euml; cilin segment jan&euml; cil&euml;t kompjuter. N&euml; momentin kur ura pranon paket&euml;n, adresa e d&euml;rguesit e cila gjendet n&euml; kok&euml;n e paket&euml;s, krahasohet me tabel&euml;n drejtuese. N&euml;se adresa nuk gjendet n&euml; tabel&euml;, at&euml;her&euml; shtohet, e m&euml; pas adresa destinuese krahasohet me baz&euml;n e t&euml; dh&euml;nave n&euml; tabel&euml;:</p>
+            <ul>
+            <li>N&euml;se adresa destinuese gjendet n&euml; tabel&euml; dhe n&euml;se &euml;sht&euml; n&euml; t&euml; njejtin segment me adres&euml;n burimore, paketa refuzohet.</li>
+            <li>N&euml;se adresa destinuese gjendet n&euml; tabel&euml; dhe nuk &euml;sht&euml; n&euml; t&euml; njejtin segment me adres&euml;n burimore, ura at&euml;her&euml; e p&euml;rcjell paket&euml;n nga lidhja e caktuar n&euml; adres&euml;n burimore.</li>
+            </ul>
+            <p>N&euml;se adresa burimore nuk gjendet n&euml; tabel&euml;, ura e p&euml;rcjell paket&euml;n n&euml; t&euml; gjitha lidhjet e tjera t&euml; rrjet&euml;s p&euml;rve&ccedil; n&euml; lidhjen prej nga vjen paketa.</p>
+            <figure>
+                <img src="lib/figura/lan/1.jpg" alt="Ura e rrjetit">
+                <figcaption>Shembull i aplikimit të urës së rrjetit</figcaption>
+            </figure>
+            <p><strong>Ruteri </strong>mund&euml;son k&euml;mbimin e t&euml; dh&euml;nave n&euml; mes kompjuter&euml;ve t&euml; cil&euml;t gjenden n&euml; rrjeta t&euml; ndara, dhe gjat&euml; k&euml;saj nuk pengohet puna e pavarur e &ccedil;do rrjete ve&ccedil;mas. Ruteri i kryhen detyrat n&euml; tri shtresat e poshtme t&euml; modelit OSI, e m&euml; shum&euml; ve&ccedil;ohet n&euml; shtres&euml;n e rrjetit. Ruter&euml;t mund ti komutojn&euml; dhe orientojn&euml; paketat n&euml;p&euml;r disa rrjeta, e k&euml;t&euml; e b&euml;jn&euml; duke i k&euml;mbyer informacionet rreth protokolleve n&euml; mes rrjetave t&euml; ndara.</p>
+            <p>Ruter&euml;t p&euml;rdoren n&euml; rrjeta m&euml; komplekse sepse mund&euml;sojn&euml; dirigjim m&euml; besnik t&euml; t&euml; dh&euml;nave dhe nd&euml;rmjet vete i ndajn&euml; t&euml; dh&euml;nat rreth orientimit, ku me k&euml;t&euml; i ikin lidhjeve t&euml; ngadalshme dhe lidhjeve q&euml; nuk jan&euml; n&euml; dispozicion.</p>
+            <p>Puna e ruter&euml;ve bazohet n&euml; &ldquo;tabelat e rutimit&rdquo; t&euml; cilat p&euml;rmbajn&euml; adresat e rrjetave me t&euml; cilat p&euml;rcaktojn&euml; adres&euml;n destinuese t&euml; t&euml; dh&euml;nave hyr&euml;se. Tabela p&euml;rmban:</p>
+            <ul>
+            <li>t&euml; gjitha adresat e njohura t&euml; rrjet&euml;s,</li>
+            <li>m&euml;nyr&euml;n e lidhjes me adresat e rrjet&euml;s,</li>
+            <li>mund&euml;sin&euml; e rrug&euml;timit n&euml; mes ruter&euml;ve,</li>
+            <li>efikasiteti i &ccedil;do rrug&euml;timi i matur me numrin e ruter&euml;ve gjat&euml; rrug&euml;s.</li>
+            </ul>
+
+        </article>
+
+        <article id="interneti">
+
+            <h1>Modeli TCP/IP dhe Interneti</h1>
+            <hr />
+
+            <div class="permbajtja">
+                <p>Përmbajtje</p><hr />
+                <ul>
+                    <li id="ip-adresimi-scroll">IP Adresimi</li>
+                    <li class="h3-titull" id="adresa-simbolike-scroll">Adresa simbolike</li>
+                    <li class="h3-titull" id="adresa-numerike-scroll">Adresa numerike</li>
+                    <li class="h3-titull" id="serveri-dns-scroll">Serveri DNS</li>
+                    <li id="kycja-ne-internet-scroll">Kyçja në Internet</li>
+                    <li class="h3-titull" id="lidhja-fizike-ne-internet-scroll">Lidhja fizike në Internet</li>
+                    <li class="h3-titull" id="regjistrimi-i-shfrytezuesit-scroll">Regjistrimi i shfrytëzuesit</li>
+                    <li class="h3-titull" id="instalimi-i-programeve-komunikuese-scroll">Instalimi i programeve komunikuese</li>
+                    <li class="h3-titull" id="sherbimet-dhe-veglat-e-internetit-scroll">Shërbimet dhe veglat e Internetit</li>
+                    <li class="h4-titull" id="posta-elektronike-scroll">Posta elektronike</li>
+                    <li class="h4-titull" id="bartja-e-fajllave-scroll">Bartja e fajllave</li>
+                    <li class="h4-titull" id="kycja-ne-kompjuterin-ne-largesi-scroll">Kyçja në kompjuterin në largësi</li>
+                    <li class="h4-titull" id="grupet-diskutive-scroll">Grupet diskutive</li>
+                    <li class="h4-titull" id="www-scroll">WWW</li>
+                    <li class="h4-titull" id="url-scroll">URL</li>
+                    <li class="h4-titull" id="shfletues-programet-scroll">Shfletues programet</li>
+                    <li class="h4-titull" id="protokolli-http-scroll">Protokolli HTTP</li>
+                    <li class="h4-titull" id="html-scroll">HTML</li>
+                    <li class="h4-titull" id="php-scroll">PHP</li>
+                    <li class="h4-titull" id="dhcp-scroll">DHCP</li>
+                    <li class="h4-titull" id="javascript-scroll">JavaScript</li>
+                </ul>
+            </div>
+
+            <p>P&euml;r dallim nga modeli OSI, ky model &euml;sht&euml; shum&euml; m&euml; i af&euml;rt me implementimin konkret t&euml; protokolleve t&euml; rrjetit. Bazohet n&euml; hierarkin&euml; e protokolleve t&euml; cil&euml;t p&euml;rb&euml;jn&euml; themelet e rrjetit global &ndash; Internetit.</p>
+            <p>Modeli TCP/IP &euml;sht&euml; krijuar nga projekti ARPANET. Ky projekt ka filluar n&euml; vitet 60-ta t&euml; shekullit t&euml; kaluar me q&euml;llim t&euml; zhvillimit t&euml; rrjetave kompjuterike komunikuese. Zhvillimin e k&euml;tij projekti e ka udh&euml;hequr trupi special DARPA (<strong><em>D</em></strong><em>efense <strong>A</strong>dvanced <strong>R</strong>esearch <strong>P</strong>roject <strong>A</strong>gency</em>), n&euml; p&euml;rb&euml;rje t&euml; Ministris&euml; s&euml; Mbrojtjes s&euml; SHBA-ve.</p>
+            <p>Modeli TCP/IP p&euml;rb&euml;het prej kat&euml;r shtresave:</p>
+            <ul style="text-indent: 30px; list-style-type: none;">
+            <li>Shtresa e qasjes n&euml; rrjet&euml;,</li>
+            <li>Shtresa e internetit,</li>
+            <li>Shtresa e transportit dhe</li>
+            <li>Shtresa e aplikacionit.</li>
+            </ul>
+            <p><strong>Shtresa e qasjes n&euml; rrjet&euml;</strong> praktikisht bashkon shtres&euml;n fizike dhe shtres&euml;n e data-linkut t&euml; modelit OSI. N&euml; k&euml;t&euml; shtres&euml; realizohet bartja e kornizave nd&euml;rmjet stacioneve t&euml; cil&euml; gjenden n&euml; rrjet&euml;n e nj&euml;jt&euml; lokale.</p>
+            <p><strong>Shtresa e internetit</strong> definon formatin zyrtar t&euml; paketave (IP paketat) dhe protokollin i cili quhet IP (<strong><em>I</em></strong><em>nternet <strong>P</strong>rotocol</em>).</p>
+            <p><strong>Shtresa e transportit</strong> &euml;sht&euml; e projektuar p&euml;r t&euml; mund&euml;suar komunikimin e &ccedil;ifteve t&euml; entiteteve n&euml; stacionet burimore dhe destinuese. N&euml; k&euml;t&euml; shtres&euml; definohen dy protokolle: TCP (<strong><em>T</em></strong><em>ransmission <strong>C</strong>ontrol <strong>P</strong>rotocol</em>) dhe UDP (<strong><em>U</em></strong><em>ser <strong>D</strong>atagram <strong>P</strong>rotocol</em>).</p>
+            <p><strong>Shtresa e aplikacionit</strong> merret me detajet e aplikacionit t&euml; dh&euml;n&euml;. Ekzistojn&euml; disa protokolle n&euml; k&euml;t&euml; shtres&euml;: DNS, SMTP, HTTP, etj.</p>
+            <figure>
+                <img src="lib/figura/interneti/1.jpg" alt="Modeli TCP/IP" class="fignata">
+                <figcaption>Protokollet kryesore TCP/IP dhe plani i radhitjes së tyre nëpër shtresa</figcaption>
+            </figure>
+
+            <h2 id="ip-adresimi">IP adresimi</h2>
+            <p>N&euml; Internet ashtu sikur edhe n&euml; &ccedil;do rrjet&euml; tjet&euml;r &ccedil;do kompjuter duhet t&euml; ket&euml; adres&euml;n unike t&euml; Internetit, p&euml;rkat&euml;sisht IP adres&euml;n. Ekzistojn&euml; disa versione t&euml; protokolleve IP, p&euml;rkat&euml;sisht protokolleve q&euml; p&euml;rdoren n&euml; shtres&euml;n e internetit (e sot n&euml; p&euml;rdorim &euml;sht&euml; versioni i 4 i protokollit IP &ndash; IPv4). IP adresa gjendet n&euml; kok&euml;n e paketit dhe p&euml;rmban adres&euml;n e rrjetit n&euml; t&euml; cil&euml;n gjendet kompjuteri dhe adres&euml;n e kompjuterit. Kompjuter&euml;t q&euml; jan&euml; t&euml; lidhur n&euml; disa rrjeta posedojn&euml; disa IP adresa, p&euml;r secil&euml;n n&euml; &ccedil;do rrjet&euml;. N&euml; t&euml; v&euml;rtet&euml;, n&euml; Internet &ccedil;do kompjuter i ka dy lloje adresash:</p>
+            <ul>
+            <li>adres&euml;n simbolike dhe</li>
+            <li>adres&euml;n numerike.</li>
+            </ul>
+
+            <h3 id="adresa-simbolike">Adresa simbolike</h3>
+            <p>Kjo adres&euml; &euml;sht&euml; e r&euml;nd&euml;sishme p&euml;r shfryt&euml;zuesin. N&euml; rastin e p&euml;rgjithsh&euml;m p&euml;rb&euml;het prej dy pjes&euml;ve t&euml; cilat jan&euml; t&euml; ndara n&euml; mes veti me pik&euml;:</p>
+            <ul>
+            <li>emri i kompjuterit dhe</li>
+            <li>domeni n&euml; t&euml; cilin kompjuteri b&euml;n&euml; pjes&euml;.</li>
+            </ul>
+            <p>Domeni definon lokacionin e kompjuterit. P&euml;rb&euml;het prej kat&euml;r elementeve (n&euml;n-domeneve):</p>
+            <ul>
+            <li>organizata n&euml; t&euml; cil&euml;n gjendet kompjuteri,</li>
+            <li>qyteti,</li>
+            <li>aktiviteti i organizat&euml;s dhe</li>
+            <li></li>
+            </ul>
+            <p>P.sh. adresa simbolike <strong>kondor.etf.bg.ac.rs</strong> definon kompjuterin <em>kondor</em> n&euml; Fakultetin Elektroteknik <em>(etf) </em>n&euml; Beograd <em>(bg)</em> q&euml; &euml;sht&euml; pjes&euml; e rrjetit akademik <em>(ac)</em> n&euml; Serbi <em>(rs).</em></p>
+            <p>Duhet cekur se adresa simbolike nuk duhet patjet&euml;r t&euml; p&euml;rmbaj emrin e kompjuterit, p.sh. etf.bg.ac.rs paraqet adres&euml;n simbolike t&euml; ueb-faqes s&euml; Fakultetit Elektroteknik n&euml; Beograd.</p>
+
+            <h3 id="adresa-numerike">Adresa numerike</h3>
+            <p>P&euml;r dallim nga adresa simbolike, adresa numerike e kompjuterit nuk ka ndonj&euml; dometh&euml;nie p&euml;r shfryt&euml;zuesin, por &euml;sht&euml; e vlefshme p&euml;r administratorin e rrjetit.</p>
+            <p>Adresa numerike e kompjuterit &euml;sht&euml; e gjat&euml; 4 bajt&euml; dhe paraqitet me ndihm&euml;n e kat&euml;r numrave decimal, nga nj&euml; num&euml;r decimal prej 0 deri n&euml; 255 p&euml;r &ccedil;do bajt t&euml; adres&euml;s binare, t&euml; ndar&euml; n&euml; mes veti me pika. P.sh. adresa n&euml; form&euml;n binare:</p>
+            <p style="text-align:center;">01111110 00000101 00001001 00001111</p>
+            <p>e ka form&euml;n decimale</p>
+            <p style="text-align:center;">126.5.9.15</p>
+            <p>Prandaj adresa m&euml; e ult&euml; &euml;sht&euml; 0.0.0.0, nd&euml;rsa m&euml; e larta &euml;sht&euml; 255.255.255.255</p>
+            <p>Adresat n&euml; Internet jan&euml; t&euml; ndara n&euml; pes&euml; klas&euml;: A, B, C, D dhe E.</p>
+            <figure>
+                <img src="lib/figura/interneti/2.jpg" alt="Formatet e IP adresave">
+                <figcaption>Formatet e pesë klasëve të IP adresave</figcaption>
+            </figure>
+            <p>Pjesa e IP adres&euml;s e cila e p&euml;rcakton rrjetin n&euml; t&euml; cilin gjendet stacioni shpesh quhet ID e rrjetit (ang.: <em>Network Internet Domain</em>). Pjesa e IP adres&euml;s e cila i identifikon stacionet individuale n&euml; rrjet&euml; shpesh quhet ID e stacionit (ang.: <em>host ID</em>). T&euml; gjith&euml; stacionet q&euml; kan&euml; adres&euml;n e rrjetit t&euml; nj&euml;jt&euml; gjenden n&euml; rrjetin e nj&euml;jt&euml; dhe mund t&euml; komunikojn&euml; ne mes veti. Stacionet q&euml; kan&euml; adresa t&euml; ndryshme t&euml; rrjetit nuk mund t&euml; komunikojn&euml; n&euml; mes veti pa ndihm&euml;n e ruterit. &Euml;sht&euml; e qart&euml; se stacionet q&euml; gjenden n&euml; rrjetin e nj&euml;jt&euml; nuk guxojn&euml; t&euml; ken&euml; ID host-in e nj&euml;jt&euml;, p&euml;r ndryshe vije deri tek i ashtuquajturi <em>konflikt i IP-ve.</em></p>
+            <p>Klasa A mund&euml;son adresimin e 2<sup>7</sup> = 128 rrjetave me nga 2<sup>24</sup> &asymp; 16 milion stacione n&euml; &ccedil;do rrjet&euml;. N&euml; klas&euml;n B mund t&euml; ekzistojn&euml; 2<sup>14</sup> = 16384 rrjeta me nga 2<sup>16</sup> = 65536 stacione, nd&euml;rsa n&euml; klas&euml;n C mund t&euml; adresohen mbi 2 milion rrjeta (2<sup>21</sup>) me nga 2<sup>8</sup> = 256 stacione.</p>
+            <p>Duhet p&euml;rmendur se numri i stacioneve dhe rrjetave &euml;sht&euml; p&euml;r 2 m&euml; i vog&euml;l se numri p&euml;rkat&euml;s, sepse adresat q&euml; p&euml;rb&euml;hen me t&euml; gjitha zero dhe t&euml; gjitha nj&euml; ju &euml;sht&euml; ndar&euml; kuptim i ve&ccedil;ant&euml;. P.sh. 000....00 do t&euml; thot&euml; <em>kjo rrjet&euml;</em> apo <em>ky stacion</em>, nd&euml;rsa 111....11 n&euml; adres&euml;n e kompjuterit do t&euml; thot&euml; porosi difuzive (<em>brodcast</em>), pra, porosin&euml; q&euml; duhet p&euml;rcjellur t&euml; gjith&euml; kompjuter&euml;ve n&euml; at&euml; rrjet&euml;.</p>
+
+            <h3 id="serveri-dns">Serveri DNS</h3>
+            <p>T&euml; shqyrtojm&euml; rastin kur shfryt&euml;zuesi nga kompjuteri A do t&rsquo;i d&euml;rgoj nj&euml; paket&euml; shfryt&euml;zuesit n&euml; kompjuterin B. Hapi i par&euml; &euml;sht&euml; gjetja e IP adres&euml;s s&euml; kompjuterit B, p&euml;rkat&euml;sisht adresa e tij simbolike t&euml; pasqyrohet n&euml; IP adres&euml; 32 bit&euml;she. N&euml; bashk&euml;sin&euml; e protokolleve TCP/IP kjo detyr&euml; kryhet n&euml; t&euml; ashtuquajturin server DNS, e vet sh&euml;rbimi quhet DNS (<strong><em>D</em></strong><em>omain <strong>N</strong>ame <strong>S</strong>ervice</em>). Server&euml;t DNS jan&euml; t&euml; organizuar n&euml; m&euml;nyr&euml; hierarkike. Klienti (n&euml; rastin ton&euml; kompjuteri A) ja d&euml;rgon serverit DNS emrin simbolik t&euml; kompjuterit destinues dhe k&euml;rkon q&euml; serveri t&rsquo;ia jap&euml; IP adres&euml;n e atij kompjuteri. N&euml;se ndodh q&euml; serveri DNS nuk e din adres&euml;n e k&euml;rkuar, k&euml;rkes&euml;n e klientit do t&rsquo;ia p&euml;rcjell serverit DNS t&euml; nivelit m&euml; t&euml; lart&euml;. Ky proces mund t&euml; vazhdoj&euml; deri sa arrihet te serveri DNS m&euml; i larti n&euml; hierarki, i ashtuquajturi <strong>serveri themelor DNS</strong> (ang.: <em>root DNS server</em>).</p>
+            <p>Zakonisht server&euml;t DNS i ruajn&euml; adresat e k&euml;rkuara n&euml; memoriet KESH, ashtu q&euml; t&euml; zmadhohet shpejt&euml;sia e qasjes. Serveri DNS n&euml; t&euml; v&euml;rtet paraqet aplikacion softuerik, e cila realizohet n&euml; serverin e rrjetit. Me r&euml;nd&euml;si &euml;sht&euml; q&euml; klienti DNS mund t&rsquo;i marr&euml; adresat e pasqyruara nga cilido server DNS. Pra, pasi kompjuteri A i ka d&euml;rguar serverit DNS adres&euml;n simbolike t&euml; kompjuterit B, ky ja kthen IP adres&euml;n e kompjuterit B; Le t&euml; jet&euml; ajo 195.252.92.4, tash n&euml; shtres&euml;n e internetit t&euml; kompjuterit, formohet paketa dhe n&euml; fush&euml;n &ldquo;adresa e destinacionit&rdquo; futet IP adresa e kompjuterit B, p&euml;rkat&euml;sisht 195.252.92.4.</p>
+
+            <h2 id="kycja-ne-internet">Ky&ccedil;ja n&euml; Internet</h2>
+            <p>&Ccedil;ka n&euml; t&euml; v&euml;rtet&euml; n&euml;nkuptojm&euml; &ldquo;t&euml; qenit n&euml; Internet&rdquo;? Em&euml;rtimi i p&euml;rgjithsh&euml;m internet &euml;sht&euml; p&euml;rdorimi i protokolleve TCP/IP, p&euml;rkat&euml;sisht rrjeta bazohet n&euml; modelin TCP/IP. Prandaj, thuhet se kompjuteri &euml;sht&euml; i lidhur n&euml; internet n&euml;se realizon bashk&euml;sin&euml; e protokolleve TCP/IP, n&euml;se ka IP adres&euml; dhe n&euml;se mund t&euml; d&euml;rgoj IP paketa kompjuter&euml;ve tjer&euml; n&euml; rrjet&euml;. Kompjuteri q&euml; shqyrtohet &euml;sht&euml; n&euml; Internet deri sa &euml;sht&euml; i lidhur n&euml; Provajderin e Sh&euml;rbimit t&euml; Internetit &ndash; ISP (<strong><em>I</em></strong><em>nternet <strong>S</strong>ervice <strong>P</strong>rovider</em>). Furnizuesit me sh&euml;rbime t&euml; Internetit n&euml; p&euml;rgjith&euml;si mund t&euml; ndahen n&euml; tri nivele:</p>
+            <ul>
+            <li>niveli i par&euml;, niveli m&euml; i ult&euml; &ndash; paraqesin furnizuesit <em>lokal</em>,</li>
+            <li>niveli i dyt&euml; &ndash; paraqesin furnizuesit <em>regjional</em>,</li>
+            <li>niveli i tret&euml;, niveli m&euml; i lart&euml; &ndash; paraqesin furnizuesit <em>global</em>. K&euml;ta jan&euml; t&euml; lidhur nd&euml;rmjet veti me linja shum&euml; t&euml; shpejta, kryesisht kabllo optik apo linqe satelitore. Ky grup i furnizuesve p&euml;rb&euml;jn&euml; t&euml; ashtuquajturin <em>boshtin e Internetit.</em></li>
+            </ul>
+            <p>Q&euml; kompjuteri t&euml; lidhet n&euml; Internet, nevojiten t&euml; kryhen tri veprime t&euml; cilat reduktohen n&euml;:</p>
+            <ul>
+            <li>lidhja fizike e kompjuterit,</li>
+            <li>regjistrimi i shfryt&euml;zuesit dhe</li>
+            <li>instalimi i programeve komunikuese.</li>
+            </ul>
+
+            <h3 id="lidhja-fizike-ne-internet">Lidhja fizike n&euml; Internet</h3>
+            <p>Shfryt&euml;zuesi n&euml; Internet mund t&euml; lidhet n&euml; dy m&euml;nyra themelore:</p>
+            <ul>
+            <li>p&euml;rmes linj&euml;s telefonike apo linj&euml;s s&euml; televizionit kabllor</li>
+            <li>p&euml;rmes rrjetit lokal t&euml; tyre.</li>
+            </ul>
+            <p>N&euml; m&euml;nyr&euml;n e par&euml; zakonisht lidhen shfryt&euml;zuesit individual, p.sh. nga sht&euml;pia. M&euml;nyr&euml;n e dyt&euml; t&euml; lidhjes e p&euml;rdorin institucionet dhe nd&euml;rmarrjet.</p>
+            <p>Lidhja me provajderin (sh&euml;rbyesin e Internetit) mund t&euml; jet&euml; lidhje e p&euml;rkohshme dhe lidhje e p&euml;rhershme.</p>
+            <p>N&euml;se kompjuteri i shfryt&euml;zuesit &euml;sht&euml; i lidhur n&euml; rrjetin lokal, shfryt&euml;zuesi mund t&euml; qaset n&euml; Internet p&euml;rmes linkut i cili gjithnj&euml; ekziston apo sipas nevoj&euml;s vendoset lidhja nd&euml;rmjet LAN-it dhe provajderit. N&euml;nkuptohet se n&euml; kompjuter duhet t&euml; jet&euml; e instaluar kartela e rrjetit me softuerin p&euml;rkat&euml;s p&euml;r dirigjim.</p>
+
+            <h3 id="regjistrimi-i-shfrytezuesit">Regjistrimi i shfryt&euml;zuesit</h3>
+            <p>M&euml;nyra e regjistrimit t&euml; shfryt&euml;zuesit varet nga ajo se n&euml; Internet lidhet nj&euml; kompjuter apo lidhet rrjeta lokale.</p>
+            <p>N&euml;se lidhet nj&euml; kompjuter, provajderi regjistron shfryt&euml;zuesin n&euml; serverin e tij, p&euml;rcakton sh&euml;rbimet q&euml; mund t&rsquo;i p&euml;rdor dhe kushtet me t&euml; cilat mund t&rsquo;i p&euml;rdor si dhe definon parametrat n&euml; baz&euml; t&euml; s&euml; cilave b&euml;het llogaritja e sh&euml;rbimeve t&euml; shfryt&euml;zuara. Shfryt&euml;zuesi merr:</p>
+            <ul>
+            <li>emrin e shfryt&euml;zuesit (<em>username</em>),</li>
+            <li>fjal&euml;kalimin (<em>password</em>),</li>
+            <li>IP adres&euml;n,</li>
+            <li>numrin telefonik p&euml;r vendosjen e lidhjes me provajderin e Internetit (n&euml;se lidhja realizohet p&euml;rmes linj&euml;s telefonike) dhe disa t&euml; dh&euml;na tjera.</li>
+            </ul>
+            <p>N&euml;se n&euml; Internet lidhet rrjeti lokal, at&euml;her&euml; provajderi duhet t&euml;:</p>
+            <ul>
+            <li>p&euml;rcaktoj sh&euml;rbimet q&euml; ju ofrohen shfryt&euml;zuesit,</li>
+            <li>t&euml; siguroj hyrje n&euml; rrjet&euml;n lokale p&euml;r provajderin e Internetit.</li>
+            </ul>
+            <p>Nga ana e tij menaxheri i rrjetit lokal duhet t&euml;:</p>
+            <ul>
+            <li>rregulloj parametrat e pajisjes q&euml; sh&euml;rben p&euml;r lidhjen me provajderin,</li>
+            <li>regjistroj shfryt&euml;zuesin n&euml; serverin p&euml;rkat&euml;s t&euml; rrjetit lokal,</li>
+            <li>definoj rregullat p&euml;r shfryt&euml;zimin e sh&euml;rbimeve t&euml; Internetit.</li>
+            </ul>
+
+            <h3 id="instalimi-i-programeve-komunikuese">Instalimi i programeve komunikuese</h3>
+            <p>Q&euml; shfryt&euml;zuesi t&euml; lidhet n&euml; Rrjet&euml;, nevojitet posedimi i softuerit komunikues p&euml;rkat&euml;s. K&euml;to jan&euml; p&euml;rkrahja softuerike p&euml;r protokollet TCP/IP dhe p&euml;rkrahja p&euml;r qasje n&euml; sh&euml;rbimet e Internetit. Kur instalohet hardueri i rrjetit dhe merret IP adresa apo kur p&euml;rmes linj&euml;s telefonike fitohet qasja n&euml; server t&euml; provajderit t&euml; Internetit, shfryt&euml;zuesi duhet t&euml; instaloj bashk&euml;sin&euml; e protokolleve TCP/IP dhe programet e klientit.</p>
+            <p>Softueri i klientit mund&euml;son lidhjen e programit p&euml;rkat&euml;s n&euml; kompjuterin e shfryt&euml;zuesit me program t&euml; serverit n&euml; ndonj&euml; kompjuter diku n&euml; Internet. P.sh., programi i klientit FTP &euml;sht&euml; program n&euml; kompjuterin e shfryt&euml;zuesit i cili ju qaset programit t&euml; serverit FTP n&euml; ndonj&euml; kompjuter n&euml; Rrjet&euml;.</p>
+            <p>Sot, numri m&euml; i madh i shfryt&euml;zuesve posedon kompjuter PC me sistem operativ Windows. Ky sistem operativ p&euml;rmban bashk&euml;sin&euml; e protokolleve TCP/IP, andaj lidhja e kompjuterit n&euml; rrjet&euml; &euml;sht&euml; shum&euml; e thjesht&euml;.</p>
+
+            <h3 id="sherbimet-dhe-veglat-e-internetit">Sh&euml;rbimet dhe veglat e Internetit</h3>
+            <p>Deri n&euml; paraqitjen e World Wide Web, apo shkurtimisht sh&euml;rbimet e WWW, p&euml;r shumic&euml;n e shfryt&euml;zuesve t&euml; Internetit m&euml; interesante ishin k&euml;to kat&euml;r sh&euml;rbime:</p>
+            <ul>
+            <li>posta elektronike (ang.: <em>e-mail</em>),</li>
+            <li>bartja e fajllave (ang.: <em>file transfer</em>),</li>
+            <li>lidhja me kompjuterin n&euml; larg&euml;si (ang.: <em>remote login</em>) dhe</li>
+            <li>grupet diskutive (ang.: <em>usenet Internet news</em>).</li>
+            </ul>
+            <p>P&euml;rve&ccedil; k&euml;tyre sh&euml;rbimeve themelore ekzistojn&euml; edhe sh&euml;rbime tjera, e gjithashtu &ccedil;do dit&euml; krijohen aplikacione t&euml; reja t&euml; cilat bazohen n&euml; kat&euml;r sh&euml;rbimet e cekura m&euml; lart&euml;. Dometh&euml;nie t&euml; madhe ekonomike, politike dhe shoq&euml;rore ka arritur sh&euml;rbimi WWW. Gjithashtu sh&euml;rbime shum&euml; t&euml; popullarizuara jan&euml; edhe:</p>
+            <ul>
+            <li>foltorja (ang.: <em>Internet relay chat</em>) dhe</li>
+            <li>ICQ, p&euml;rkat&euml;sisht sh&euml;rbimi <em>t&euml; k&euml;rkoj</em> (ang.: <em>I seek you</em>).</li>
+            </ul>
+            <p>Koh&euml;t e fundit sh&euml;rbim shum&euml; i aplikuar &euml;sht&euml; edhe transmetimi i z&euml;rit p&euml;rmes Internetit, i ashtuquajtur sh&euml;rbimi VoIP (<strong>V</strong>oice <strong>IP</strong>).</p>
+
+            <h4 id="posta-elektronike">Posta elektronike</h4>
+            <p>Sh&euml;rbimi i cili shfryt&euml;zuesve t&euml; kompjuter&euml;ve n&euml; rrjet&euml; ju mund&euml;son k&euml;mbimin e porosive nd&euml;rmjet vete quhet <em>post&euml; elektronike</em>.</p>
+            <p>Edhe n&euml; Internet posta elektronike edhe m&euml; tej &euml;sht&euml; sh&euml;rbimi m&euml; i p&euml;rdorur. Kuptohet se shfryt&euml;zuesi duhet t&euml; ket&euml; t&euml; hapur nj&euml; llogari n&euml; serverin p&euml;rkat&euml;s p&euml;r shfryt&euml;zimin e k&euml;tij sh&euml;rbimi. Shfryt&euml;zuesi nga softueri i e-mail-it i qaset serverit dhe:</p>
+            <ul>
+            <li>nga serveri barten porosit&euml; e ardhura n&euml; kompjuterin e shfryt&euml;zuesit,</li>
+            <li>porosia e sh&euml;nuar n&euml; kompjuterin e shfryt&euml;zuesit bartet n&euml; serverin prej nga d&euml;rgohen n&euml; destinacionin p&euml;rfundimtar kudo n&euml; Bot&euml;, me kusht q&euml; kompjuteri destinues t&euml; ket&euml; qasje n&euml; k&euml;t&euml; sh&euml;rbim.</li>
+            </ul>
+            <p>Porosia nga serveri nuk &euml;sht&euml; patjet&euml;r menj&euml;her&euml; t&euml; d&euml;rgohet n&euml; destinacion, n&euml;se p&euml;r ndonj&euml; arsye, kjo nuk &euml;sht&euml; e mundur (p.sh. p&euml;r shkak t&euml; ngufatjes s&euml; linjave komunikuese), por at&euml;her&euml; kur t&euml; plot&euml;sohen kushtet.</p>
+
+            <h4 id="bartja-e-fajllave">Bartja e fajllave</h4>
+            <p>Duke p&euml;rdorur protokollin FTP (<strong><em>F</em></strong><em>ile <strong>T</strong>ransfer <strong>P</strong>rotocol</em>) mund t&euml; barten, p&euml;rkat&euml;sisht t&euml; kopjohen fajllat nga nj&euml; kompjuter n&euml; nj&euml; tjet&euml;r, me kusht q&euml; t&euml; dy kompjuter&euml;t t&euml; jen&euml; t&euml; lidhur n&euml; Rrjet&euml;. Mund t&euml; barten &ccedil;do lloj fajlli pa marr&euml; parasysh a b&euml;het fjal&euml; p&euml;r fajlla tekstual apo ndonj&euml; fajll q&euml; paraqet ndonj&euml; program, audio apo imazhe.</p>
+            <p>K&euml;shtu shfryt&euml;zuesve t&euml; Internetit ju &euml;sht&euml; mund&euml;suar qasja n&euml; nj&euml; num&euml;r t&euml; madh t&euml; bazave t&euml; t&euml; dh&euml;nave, muzikave dhe informacioneve tjera t&euml; llojllojshme.</p>
+
+            <h4 id="kycja-ne-kompjuterin-ne-largesi">Ky&ccedil;ja n&euml; kompjuterin n&euml; larg&euml;si</h4>
+            <p>Shfryt&euml;zuesi i cili &euml;sht&euml; i lidhur n&euml; Internet mundet me ndihm&euml;n e programit p&euml;rgjegj&euml;s (p.sh. Telnet apo ndonj&euml; programi tjet&euml;r) t&euml; ky&ccedil;et, p&euml;rkat&euml;sisht t&euml; &ldquo;identifikohet&rdquo; (ang.: <em>log in</em>) n&euml; ndonj&euml; kompjuter t&euml; madh n&euml; Rrjet&euml;.</p>
+            <p>Q&euml; t&euml; mund t&euml; shfryt&euml;zoj k&euml;t&euml; sh&euml;rbim, shfryt&euml;zuesi duhet n&euml; shumic&euml;n e rasteve t&euml; ket&euml; qasje t&euml; lejuar, p&euml;rkat&euml;sisht llogari t&euml; hapur p&euml;r pun&euml; n&euml; kompjuterin e dh&euml;n&euml;.</p>
+            <p>Sot, n&euml; kuad&euml;r t&euml; Windows-it ekziston mund&euml;sia e ky&ccedil;jes n&euml; kompjuterin n&euml; larg&euml;si (<em>Remote Desktop Connection</em>), e gjithashtu ekzistojn&euml; edhe programe tjera q&euml; e mund&euml;sojn&euml; k&euml;t&euml;, nd&euml;r m&euml; t&euml; popullarizuarit <em>LogMeIn</em> dhe <em>TeamViewer</em>.</p>
+
+            <h4 id="grupet-diskutive">Grupet diskutive</h4>
+            <p>K&euml;to jan&euml; forume t&euml; specializuara q&euml; i tubojn&euml; personalitetet me interesim t&euml; njejt&euml; duke ja mund&euml;suar q&euml; t&euml; k&euml;mbejn&euml; informacionet. Ekzistojn&euml; disa dhjet&euml;ra, e sigurisht edhe disa qindra mij&euml;ra t&euml; k&euml;tyre grupeve (t&euml; ashtuquajtura <em>news group</em>) q&euml; p&euml;rfshin&euml; sfera interesimi t&euml; llojllojshme.</p>
+            <p>Sistemi funksionon sipas k&euml;tij parimi. Nj&euml; person d&euml;rgon nj&euml; porosi, e t&euml; gjith&euml; an&euml;tar&euml;t tjer&euml; t&euml; grupit e marrin k&euml;t&euml; porosi, e ata q&euml; don&euml; pas nj&euml; intervali t&euml; caktuar (apo edhe pas nj&euml; ore ose nj&euml; dite), kur t&euml; mendojn&euml; p&euml;r opinionin e dh&euml;n&euml; apo p&euml;r pyetjen e shtruar, i d&euml;rgojn&euml; gjykimet e tyre q&euml; mund t&rsquo; shohin t&euml; gjith&euml; an&euml;tar&euml;t t&euml; atij grupi diskutiv.</p>
+            <p>Protokolli q&euml; e mund&euml;son k&euml;t&euml; lloj komunikimi &euml;sht&euml; NNTP (<strong>N</strong>etwork <strong>N</strong>ews <strong>T</strong>ransfer <strong>P</strong>rotocol).</p>
+
+            <h4 id="www">WWW</h4>
+            <p>Aplikacioni www u paraqit n&euml; fillim t&euml; decenies s&euml; fundit t&euml; shek. XX dhe pati nj&euml; ndikim t&euml; madh n&euml; shpejt&euml;sin&euml; e p&euml;rhapjes s&euml; Internetit. WWW &ndash; <strong><em>W</em></strong><em>orld <strong>W</strong>ide <strong>W</strong>eb</em> n&euml;nkupton &ldquo;rrjeta mbar&euml;bot&euml;rore&rdquo;.</p>
+            <p>Aplikacioni www mund&euml;son q&euml; n&euml; &ldquo;dritaren&rdquo; virtuale, elektronike, t&euml; ashtuquajtur <em>sajt</em> (ang. <em>site</em>), t&euml; publikohen shum&euml; faqe t&euml; informacioneve t&euml; cilat p&euml;rmbajn&euml; jo vet&euml;m tekst dhe ilustrime statike por edhe audio dhe ilustrime dinamike.</p>
+            <p>WWW &euml;sht&euml; e organizuar ashtu q&euml; t&euml; i mund&euml;soj shfryt&euml;zuesve t&euml; gjejn&euml; dhe ti nxjerrin informacionet duke l&euml;vizur n&euml;p&euml;r sistem t&euml; dokumenteve n&euml; form&euml; t&euml; <em>hiper-tekstit.</em> Kjo arrihet ashtu q&euml; n&euml; faqen e shqyrtuar nd&euml;rtohen shkurtesat, p&euml;rkat&euml;sisht <em>hiperlidhjet</em> (ang.: <em>Hyperlinks</em>) n&euml; faqet tjera ose dokumentet tjera. Kur shfryt&euml;zuesi klikon n&euml; hiperlidhje menj&euml;her&euml; kalon n&euml; faqen apo dokumentin q&euml; specifikohen me k&euml;t&euml; hiperlidhje. Audio dhe video gjithashtu mund t&euml; aktivizohen n&euml;se klikojm&euml; n&euml; hiperlidhjen tekstuale apo hiperlidhjen me imazh. N&euml; k&euml;t&euml; m&euml;nyr&euml; shfletimi i ueb-dokumenteve me ndihm&euml;n e Internet Explorer-it apo ndonj&euml; shfletuesi tjet&euml;r t&euml; kujton leximin e ndonj&euml; reviste apo shikimin e televizionit.</p>
+            <p>Uebi i mund&euml;son lexuesit t&euml; kaloj nga nj&euml; dokument n&euml; tjetrin pa marr&euml; parasysh k&euml;to dokumente a gjenden n&euml; nj&euml; server apo n&euml; server&euml; t&euml; ndrysh&euml;m.</p>
+            <p>WWW ka nxitur zhvillimin e aplikacioneve t&euml; reja, posa&ccedil;&euml;risht tregtis&euml; elektronike, biznesit elektronik, shkollimin n&euml; larg&euml;si, etj. K&euml;to aplikacione t&euml; reja, para se gjithash biznesi financiar n&euml; Internet kan&euml; vendosur nj&euml; problem t&euml; ri para Internetit: si t&euml; mbrohen dhe t&euml; sigurojn&euml; privat&euml;si dhe siguri t&euml; informacioneve dhe t&euml; pamund&euml;sohet i ashtq. sajber-kriminaliteti.</p>
+
+            <h4 id="url">URL</h4>
+            <p>URL apo lokatori universal/uniform i resurseve (<strong><em>U</em></strong><em>niform <strong>R</strong>esource <strong>L</strong>ocator</em>, m&euml; par&euml; &euml;sht&euml; quajtur <strong><em>U</em></strong><em>niversal <strong>R</strong>esource</em> <strong><em>L</em></strong><em>ocator</em>) paraqet adres&euml;n unike p&euml;r fajllin t&euml; cilin n&euml; Internet d&euml;shirojm&euml; t&rsquo;ju qasemi. P&euml;rdoret n&euml; shfletuesit e uebit p&euml;r gjetjen e resursit t&euml; d&euml;shiruar n&euml; Internet. M&euml;nyra m&euml; e thjesht&euml; p&euml;r t&euml; arritur n&euml; ueb-sajt &euml;sht&euml; q&euml; shfryt&euml;zuesi n&euml; linj&euml;n e adres&euml;s t&euml; ueb-shfletuesit t&euml; sh&euml;noj URL-n&euml; am&euml; t&euml; faqes s&euml; fajllit.</p>
+            <p>P&euml;r shembull:</p>
+            <p style="text-align:center"><a href="http://www.sezaisurroi.com/index.php/material2/shablloni_per_provimin_e_matures.docx">http://www.sezaisurroi.com/index.php/material2/shablloni_per_provimin_e_matures.docx</a></p>
+            <p>specifikohet: me p&euml;rdorimin e aplikacionit HTTP, kompjuteri i cili quhet</p>
+            <p style="text-align:center"><a href="http://www.sezaisurroi.com">www.sezaisurroi.com</a></p>
+            <p>&nbsp;rrug&euml;timi <strong>/index.php/material2/shablloni_per_provimin_e_matures</strong><strong>.docx</strong> me t&euml; cilin arrihet deri te lokacioni i dokumentit.</p>
+
+            <h4 id="shfletues-programet">Shfletues programet</h4>
+            <p>P&euml;r t&euml; leht&euml;suar administrimin dhe shfletimin n&euml; Internet, nevojitet softuer p&euml;rkat&euml;s. P&euml;r k&euml;t&euml; q&euml;llim jan&euml; zhvilluar t&euml; ashtuquajtur shfletues t&euml; Rrjetit (ang.: <em>Web browser</em>) t&euml; cil&euml;t pand&euml;rprer&euml; p&euml;rsosen q&euml; t&euml; b&euml;hen m&euml; efikas dhe m&euml; t&euml; leht&euml; p&euml;r shfryt&euml;zim. Sot, shfletuesit m&euml; t&euml; njohur jan&euml; Internet Explorer, Mozilla Firefox, Google Chrome, Safari, Opera, etj.</p>
+            <p>Ueb-shfletuesi &euml;sht&euml; aplikacion softuerik me ndihm&euml;n e t&euml; cilit shfryt&euml;zuesi mund t&euml; qaset n&euml; informacione t&euml; llojllojshme (tekst, imazhe, audio, imazhe dinamike, etj.) q&euml; gjenden n&euml; ueb-faqe t&euml; ueb-sajtit n&euml; www apo n&euml; rrjetin lokal. Tekstet dhe figurat n&euml; ueb-faqe mund t&euml; p&euml;rmbajn&euml; <em>lidhje</em>, p&euml;rkat&euml;sisht <em>hiperlinqe</em> n&euml; drejtim t&euml; ueb-faqeve t&euml; po atij ueb-sajti apo n&euml; drejtim t&euml; ueb-sajteve tjera.</p>
+            <p>Ueb-shfletuesit komunikojn&euml; me ueb-server&euml;t kryesisht duke p&euml;rdorur HTTP-n&euml; (<strong>H</strong>yper<strong>T</strong>ext <strong>T</strong>ransfer <strong>P</strong>rotocol). P&euml;rmes k&euml;tij protokolli komunikohet me Ueb-faqet q&euml; zakonisht jan&euml; n&euml; formatin HTML (<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arcup <strong>L</strong>anguage).</p>
+
+            <h4 id="protokolli-http">Protokolli HTTP</h4>
+            <p>HTTP (<strong>H</strong>yper<strong>T</strong>ext <strong>T</strong>ransfer <strong>P</strong>rotocol) &euml;sht&euml; protokoll komunikues i cili p&euml;rdoret p&euml;r lidhjen n&euml; ueb-server&euml;&nbsp; n&euml; Internet ose n&euml; rrjetin lokal. Funksioni themelor i HTTP-s&euml; &euml;sht&euml; vendosja e konekcionit me serverin dhe d&euml;rgimi i faqeve HTML prapa tek programi i shfryt&euml;zuesit p&euml;r shfletim. Gjithashtu p&euml;rdoret p&euml;r shkarkimin e fajllave nga serveri qoft&euml; nga shfletuesi apo nga ndonj&euml; aplikacion tjet&euml;r q&euml; p&euml;rdor HTTP-n&euml;.</p>
+            <p>Adresat e ueb-sajteve fillojn&euml; me prefiksin <em>http://</em>. Mir&euml;po, me q&euml; ueb-shfletuesit gati gjithmon&euml; si t&euml; parazgjedhur p&euml;rdorin protokollin HTTP, andaj edhe nuk duhet sh&euml;nuar. P.sh. me sh&euml;nimin <a href="http://www.google.com">www.google.com</a> &euml;sht&euml; nj&euml;jt&euml; sikur kur ta sh&euml;nojm&euml; <a href="http://www.google.com">http://www.google.com</a>, e p&euml;r m&euml; tep&euml;r mund ta sh&euml;nojm&euml; edhe vet&euml;m <a href="http://www.google.com">google.com</a> &nbsp;e shfletuesi do ta shtoj pjes&euml;n tjet&euml;r.</p>
+            <p>HTTP funksionon n&euml; shtres&euml;n e aplikacionit t&euml; modelit TCP/IP. Mir&euml;po, HTTP mund t&euml; implementohet n&euml; maje t&euml; &ccedil;do t&euml;r&euml;sie t&euml; protokolleve: HTTP k&euml;rkon transport t&euml; besuesh&euml;m andaj edhe mund t&euml; p&euml;rdoret &ccedil;do t&euml;r&euml;si protokollesh q&euml; e garanton at&euml;.</p>
+
+            <h4 id="html">HTML</h4>
+            <p>HTML (<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arcup <strong>L</strong>anguage &ndash; gjuh&euml; strukturale hipertekstuale) &euml;sht&euml; gjuh&euml; q&euml; p&euml;rdoret p&euml;r nd&euml;rtimin e dokumenteve p&euml;r World Wide Web. HTML-ja definon pamjen e faqes, fonteve dhe elementeve grafike, si dhe hiperlidhjet n&euml; drejtim t&euml; dokumenteve tjera n&euml; Rrjet&euml;. &Ccedil;do lidhje (link) p&euml;rmban URL-n&euml;, p&euml;rkat&euml;sisht ueb-adres&euml;n e ndonj&euml; faqeje tjet&euml;r, pa marr&euml; parasysh ajo faqe a gjendet n&euml; serverin e nj&euml;jt&euml; apo n&euml; ndonj&euml; server tjet&euml;r n&euml; Rrjet&euml;.</p>
+            <p>Urdhrat me t&euml; cil&euml;t definohet pamja e elementeve t&euml; dokumentit (p.sh. titulli, paragrafi, teksti, fonti, stili, ngjyra dhe linqet kah dokumentet tjera) vendosen n&euml; mes k&euml;tyre dy simboleve &lt; &gt;.</p>
+            <p>HTML <strong>nuk &euml;sht&euml;</strong> gjuh&euml; programuese, por gjuh&euml; strukturale, p&euml;rkat&euml;sisht <em>gjuh&euml; p&euml;r prezantim </em>n&euml; t&euml; cil&euml;n p&euml;rdoren nj&euml; bashk&euml;si e caktuar e simboleve, t&euml; ashtuquajtur tag (ang.: <em>tags</em>). P&euml;r t&euml; qen&euml; faqet interaktive, n&euml; faqet HTML mund t&euml; vendosen kode programore: p.sh., JavaScript-i shum&euml; shpesh p&euml;rdoret n&euml; ueb, p&euml;rkat&euml;sisht n&euml; faqet HTML.</p>
+
+            <h4 id="php">PHP</h4>
+            <p>PHP (<strong>P</strong>HP <strong>H</strong>ypertext <strong>P</strong>reprocessor), m&euml; her&euml;t &euml;sht&euml; quajtur <strong>P</strong>ersonal <strong>H</strong>ome <strong>P</strong>age, paraqet skript-gjuh&euml; programuese t&euml; aplikimit t&euml; p&euml;rgjithsh&euml;m q&euml; p&euml;rdoret p&euml;r nd&euml;rtimin e e ueb-faqeve dinamike. Instruksionet PHP integrohen brenda faqeve HTML nga ana e serverit: Instruksionet PHP paraqesin hyrjen n&euml; ueb-server, e dalja &euml;sht&euml; ueb-faqja. Zakonisht p&euml;rdoren p&euml;r ekstraktim t&euml; t&euml; dh&euml;nave nga bazat e t&euml; dh&euml;nave dhe paraqitjen n&euml; ueb-faqe, andaj thuhet se PHP b&euml;n&euml; filtrimin e t&euml; dh&euml;nave.</p>
+
+            <h4 id="dhcp">DHCP</h4>
+            <p>DHCP (<strong>D</strong>ynamic <strong>H</strong>ost <strong>C</strong>onfiguration <strong>P</strong>rotocol) &euml;sht&euml; softuer i cili n&euml; m&euml;nyr&euml; automatike i ndan&euml; IP adresa t&euml; p&euml;rkohshme stacioneve q&euml; jan&euml; lidhur n&euml; rrjetin IP, p.sh. n&euml; Internet. P&euml;r t&rsquo;i ikur ndarjes manuale t&euml; IP adresave t&euml; p&euml;rhershme, softueri DHCP integrohet brenda n&euml; server&euml; dhe n&euml; ruter&euml;.</p>
+
+            <h4 id="javascript">JavaScript</h4>
+            <p>JavaScript &euml;sht&euml; string-gjuh&euml; programuese q&euml; ju shtohet HTML-s&euml; p&euml;r t&euml; krijuar dokumente interaktive. Gjen aplikim t&euml; madh n&euml; ueb-shfletues dhe n&euml; ueb-vegla tjera. JavaScript-i mundet shpejt t&euml; ju shtohet faqes HTML p&euml;r t&rsquo;i dh&euml;n&euml; karakteristika dinamike si&ccedil; jan&euml; llogaritja automatike e dat&euml;s aktuale apo aktivizimi i ndonj&euml; aksioni. Ueb-shfletuesi duhet t&euml; interpretoj dhe t&euml; ekzekutoj instruksionin e JavaScript-it gjat&euml; leximit t&euml; ueb-faqes, deri sa ueb-serveri k&euml;t&euml; e b&euml;n&euml; para se t&rsquo;ia d&euml;rgoj faqen shfletuesit.</p>
+
+        </article>
+
+        <article id="referencat">
+
+            <h1><em>Referencat</em></h1>
+            <hr />
+
+            <p style="padding-top:5px;">[1] Zoran Uro&scaron;ević: RAČUNARSKE MREŽE I KOMUNIKACIJE, Zavod za udžbenike, Beograd, 2008.</p>
+            <p>[2] Andrew S. Tanenbaum, David J. Wetherall: COMPUTER NETWORKS - Fifth Edition.</p>
+            <p>[3] Mladen Veinović, Aleksandar Jevremović: RAČUNARSKE MREŽE, Univerzitet Singidunum, Beograd.</p>
+            <p>[4] Edmond Beqiri: INTERNETI - Komunikimet kompjuterike, International Organization Migration, 2000.</p>
+            <p>[5] Faqe nga Interneti:</p>
+            <div id="linqe-interneti">
+                <p><a href="https://www.tutorialspoint.com/computer_fundamentals/computer_networking.htm" target="_blank">https://www.tutorialspoint.com/computer_fundamentals/computer_networking.htm</a></p>
+                <p><a href="http://www.studytonight.com/computer-networks/" target="_blank">http://www.studytonight.com/computer-networks/</a></p>
+                <p><a href="https://thenewboston.com/videos.php?cat=44" target="_blank">https://thenewboston.com/videos.php?cat=44</a></p>
+                <p><a href="http://www.computernetworkingnotes.com/" target="_blank">http://www.computernetworkingnotes.com/</a></p>
+                <p><a href="http://abazmemeti.webs.com/rrjetatkompjuterike.htm" target="_blank">http://abazmemeti.webs.com/rrjetatkompjuterike.htm</a></p>
+                <p><a href="https://selmanhaxhijaha.wordpress.com/2013/10/20/ligjeratat-rrjetat-kompjuterike/" target="_blank">https://selmanhaxhijaha.wordpress.com/2013/10/20/ligjeratat-rrjetat-kompjuterike/</a></p>
+                <p><a href="http://book.tsp.edu.rs/course/view.php?id=5" target="_blank">http://book.tsp.edu.rs/course/view.php?id=5</a></p>
+                <p><a href="https://www.youtube.com/watch?v=n2D1o-aM-2s&amp;list=PLh94XVT4dq02frQRRZBHzvj2hwuhzSByN" target="_blank">https://www.youtube.com/watch?v=n2D1o-aM-2s&amp;list=PLh94XVT4dq02frQRRZBHzvj2hwuhzSByN</a></p>
+                <p><a href="https://www.cisco.com/c/en/us/solutions/small-business/resource-center/" target="_blank">https://www.cisco.com/c/en/us/solutions/small-business/resource-center/</a></p>
+                <p><a href="http://tutoriali.org/Mreze_i_Umrezavanje.html" target="_blank">http://tutoriali.org/Mreze_i_Umrezavanje.html</a></p>
+                <p><a href="https://wiki.mikrotik.com/wiki/Main_Page" target="_blank">https://wiki.mikrotik.com/wiki/Main_Page</a></p>
+            </div>
+            <p style="padding-top:15px;">[6] Figurat n&euml; k&euml;t&euml; material jan&euml; marr&euml; nga faqe t&euml; ndryshme n&euml; Internet dhe jan&euml; krijuar nga ana e autorit.</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </article>
+        
+    </div>
+    
+</div>
+
+<script>
+    var myhref = document.getElementById("uncheck");
+    var myhref1 = document.getElementById("content");
+    var myhref2 = document.getElementById("brand");
+    var myfield = document.getElementById("menuToggle");
+    myhref.addEventListener("click", function() {
+        myfield.checked = false;
+    });
+    myhref1.addEventListener("click", function() {
+        myfield.checked = false;
+    });
+    myhref2.addEventListener("click", function() {
+        myfield.checked = false;
+    });
+    
+    $("button").click(function(){
+        $("html").toggleClass("nata");
+    });
+</script>
+
+</body>
+</html>
